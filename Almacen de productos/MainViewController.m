@@ -14,8 +14,7 @@
     ADPStoreHouse * _house;
     ADPProduct* _prodToFill;
 }
-@property (nonatomic,strong)ADPStoreHouse * house;
-@property (nonatomic,strong)ADPProduct * prodToFill;
+
 
 @end
 

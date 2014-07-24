@@ -13,4 +13,5 @@
 
 @interface SubtitleViewController : UIViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
+@property (weak, nonatomic) IBOutlet UITextField *subtitleTextField;
 @end

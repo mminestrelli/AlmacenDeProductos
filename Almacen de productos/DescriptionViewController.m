@@ -36,6 +36,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setTitle:@"Descripción"];
+    if(self.prodToFill.description!=nil){
+        self.descriptionTextView.text=self.prodToFill.description;
+        
+    }
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
 }
@@ -47,6 +51,7 @@
 }
 
 - (IBAction)saveButtonPressed:(UIButton *)sender {
+    self.prodToFill.description=self.descriptionTextView.text;
     PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:priceView animated:YES];
 }

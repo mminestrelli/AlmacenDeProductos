@@ -28,7 +28,6 @@
     if (self) {
         self.house=storeHouse;
         self.prodToFill=productToFill;
-        //if([self.prodToFill getTitle]!=nil)
     }
     return self;
 }
@@ -38,8 +37,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setTitle:@"Título"];
+    if(self.prodToFill.title!=nil){
+        self.titleTextField.text=self.prodToFill.title;
+        
+    }
+    
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
+                                             initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,9 +52,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 - (IBAction)saveButtonPressed:(id)sender {
+    self.prodToFill.title=self.titleTextField.text;
     SubtitleViewController * subtitleView = [[SubtitleViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill];
     [self.navigationController pushViewController:subtitleView animated:YES];
 }
+
+
 
 @end

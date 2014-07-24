@@ -31,6 +31,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setTitle:@"Subtítulo"];
+    if(self.prodToFill.subtitle!=nil){
+        self.subtitleTextField.text=self.prodToFill.subtitle;
+    }
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
 }
@@ -41,6 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)saveButtonPressed:(UIButton *)sender {
+    self.prodToFill.subtitle=self.subtitleTextField.text;
     DescriptionViewController * descriptionView = [[DescriptionViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill];
     [self.navigationController pushViewController:descriptionView animated:YES];
 }

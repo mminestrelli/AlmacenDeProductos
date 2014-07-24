@@ -12,4 +12,5 @@
 
 @interface TitleViewController : UIViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @end
