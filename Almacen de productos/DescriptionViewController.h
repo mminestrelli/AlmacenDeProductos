@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
 #import "ADPStoreHouse.h"
+#import "PriceViewController.h"
 
 @interface DescriptionViewController : UIViewController
-
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
 @end

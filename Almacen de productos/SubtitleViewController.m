@@ -17,10 +17,11 @@
 @end
 
 @implementation SubtitleViewController
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:productToFill{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.house=storeHouse;
+        self.prodToFill=productToFill;
     }
     return self;
 }
@@ -40,8 +41,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)saveButtonPressed:(UIButton *)sender {
-    SubtitleViewController * subtitleView = [[SubtitleViewController alloc]initWithNibName:nil bundle:nil ];
-    [self.navigationController pushViewController:subtitleView animated:YES];
+    DescriptionViewController * descriptionView = [[DescriptionViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill];
+    [self.navigationController pushViewController:descriptionView animated:YES];
 }
 
 @end

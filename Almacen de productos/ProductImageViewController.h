@@ -11,5 +11,5 @@
 #import "ADPStoreHouse.h"
 
 @interface ProductImageViewController : UIViewController
-
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
 @end

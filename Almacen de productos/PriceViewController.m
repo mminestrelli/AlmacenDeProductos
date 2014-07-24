@@ -20,11 +20,12 @@
 
 @implementation PriceViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:productToFill
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.house=storeHouse;
+        self.prodToFill=productToFill;
     }
     return self;
 }
@@ -44,7 +45,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)saveButtonPressed:(UIButton *)sender {
-    ProductImageViewController * imageView = [[ProductImageViewController alloc]initWithNibName:nil bundle:nil ];
+    ProductImageViewController * imageView = [[ProductImageViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill];
     [self.navigationController pushViewController:imageView animated:YES];
 }
 

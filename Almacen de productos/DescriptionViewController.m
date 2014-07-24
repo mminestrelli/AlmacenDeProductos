@@ -21,11 +21,12 @@
 
 @implementation DescriptionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:productToFill
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.house=storeHouse;
+        self.prodToFill=productToFill;
     }
     return self;
 }
@@ -34,6 +35,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setTitle:@"Descripción"];
+    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
+                                             initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,7 +47,7 @@
 }
 
 - (IBAction)saveButtonPressed:(UIButton *)sender {
-    PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:nil bundle:nil ];
+    PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:priceView animated:YES];
 }
 

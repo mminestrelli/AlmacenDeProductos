@@ -46,7 +46,7 @@
 }
 
 - (IBAction)onAddButtonPressed:(UIButton *)sender {
-     TitleViewController * titleView = [[TitleViewController alloc]initWithNibName:nil bundle:nil ];
+     TitleViewController * titleView = [[TitleViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:titleView animated:YES];
 }
 

@@ -49,7 +49,7 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    SubtitleViewController * subtitleView = [[SubtitleViewController alloc]initWithNibName:nil bundle:nil storeHouse: nil];
+    SubtitleViewController * subtitleView = [[SubtitleViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill];
     [self.navigationController pushViewController:subtitleView animated:YES];
 }
 
