@@ -15,9 +15,9 @@
 @property (nonatomic,copy) NSString * description;
 @property (nonatomic,strong) UIImage * image;
 @property  (nonatomic) CGFloat price;
-@property  (nonatomic) int id;
+@property  (nonatomic) NSInteger code;
 
 -(id) initWithTitle:(NSString*) aTitle code:(NSInteger) aCode subtitle:(NSString*) aSubtitle description:(NSString*) aDescription price:(CGFloat) aPrice andImage:(UIImage*) anImage;
-
+-(id) initWithCode:(NSInteger) aCode;
 -(NSInteger)getIdentification;
 @end

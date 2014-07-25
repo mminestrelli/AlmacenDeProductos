@@ -12,12 +12,14 @@
 #import "ADPProduct.h"
 #import "SubtitleViewController.h"
 #import "TitleViewController.h"
+#import "ProductImageViewController.h"
+#import "ProductListViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     ADPStoreHouse * house = [[ADPStoreHouse alloc] init];
-    ADPProduct * productToFill=[[ADPProduct alloc]init];
+    ADPProduct * productToFill=[[ADPProduct alloc]initWithCode:0];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -26,8 +28,16 @@
     
     //TitleViewController * mainViewController= [[TitleViewController alloc]initWithNibName:nil bundle:nil];
     //SubtitleViewController* mainViewController= [[SubtitleViewController alloc]initWithNibName:nil bundle:nil storeHouse:house ];
-    UINavigationController * navController = [[UINavigationController alloc]initWithRootViewController: mainViewController];
-    [self.window setRootViewController:navController];
+//    ProductImageViewController * mainViewController= [[ProductImageViewController alloc]initWithNibName:nil bundle:nil andProductToFill:productToFill ];
+    ProductListViewController *productList=[[ProductListViewController alloc]init];
+    UINavigationController * navigationController = [[UINavigationController alloc]initWithRootViewController: mainViewController];
+    UITabBarController * tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+    NSArray* items = [tabBarController.tabBar items];
+    [[items objectAtIndex:0] setTitle:@"Home"];
+    [[items objectAtIndex:1] setTitle:@"Cool"];
+    
+    [tabBarController setViewControllers:@[navigationController, productList]];
+    self.window.rootViewController= tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

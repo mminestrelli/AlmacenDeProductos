@@ -9,18 +9,15 @@
 #import "SubtitleViewController.h"
 
 @interface SubtitleViewController (){
-    ADPStoreHouse * _house;
     ADPProduct* _prodToFill;
 }
-@property (nonatomic,strong)ADPStoreHouse * house;
 @property (nonatomic,strong)ADPProduct * prodToFill;
 @end
 
 @implementation SubtitleViewController
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:productToFill{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.house=storeHouse;
         self.prodToFill=productToFill;
     }
     return self;
@@ -45,7 +42,7 @@
 }
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     self.prodToFill.subtitle=self.subtitleTextField.text;
-    DescriptionViewController * descriptionView = [[DescriptionViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill];
+    DescriptionViewController * descriptionView = [[DescriptionViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill];
     [self.navigationController pushViewController:descriptionView animated:YES];
 }
 

@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
-#import "ADPStoreHouse.h"
 #import "ProductImageViewController.h"
 
 @interface PriceViewController : UIViewController
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UITextField *priceTextField;
 @end

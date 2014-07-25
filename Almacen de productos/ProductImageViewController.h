@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
-#import "ADPStoreHouse.h"
 
-@interface ProductImageViewController : UIViewController
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
+
+@interface ProductImageViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
+@property (weak, nonatomic) IBOutlet UIScrollView *productImageSV;
+@property (weak, nonatomic) IBOutlet UIPickerView *imagePickerView;
+@property (weak, nonatomic) IBOutlet UIImageView *displayImageView;
+@property (nonatomic,strong) NSArray * imagesNames;
+@property (nonatomic,strong) NSArray * imagesPaths;
 @end

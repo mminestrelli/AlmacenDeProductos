@@ -9,7 +9,7 @@
 #import "ADPProduct.h"
 
 @interface ADPProduct(){
-    NSInteger _id;
+    NSInteger _code;
     NSString * _title;
     NSString * _subtitle;
     NSString * _description;
@@ -27,7 +27,7 @@
 price:(CGFloat) aPrice andImage:(UIImage*) anImage{
     if([super init]){
         self.title=aTitle;
-        self.id=aCode;
+        self.code=aCode;
         self.subtitle=aSubtitle;
         self.description=aDescription;
         self.price=aPrice;
@@ -39,8 +39,15 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
     return self;
 }
 
+-(id) initWithCode:(NSInteger) aCode{
+   if([super init]){
+       self.code=aCode;
+   }
+    return self;
+}
+
 -(NSInteger)getIdentification{
-    return self.id;
+    return self.code;
 }
 
 @end

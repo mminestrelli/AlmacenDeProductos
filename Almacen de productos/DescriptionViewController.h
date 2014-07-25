@@ -12,6 +12,6 @@
 #import "PriceViewController.h"
 
 @interface DescriptionViewController : UIViewController
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 @end

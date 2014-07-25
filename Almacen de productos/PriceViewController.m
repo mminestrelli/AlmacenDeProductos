@@ -10,21 +10,18 @@
 #import "ProductImageViewController.h"
 
 @interface PriceViewController (){
-    ADPStoreHouse * _house;
     ADPProduct* _prodToFill;
 }
-@property (nonatomic,strong)ADPStoreHouse * house;
 @property (nonatomic,strong)ADPProduct * prodToFill;
 
 @end
 
 @implementation PriceViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:productToFill
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.house=storeHouse;
             self.prodToFill=productToFill;
 
     }
@@ -56,7 +53,7 @@
     }else{
      self.prodToFill.price= 0.0;
     }
-    ProductImageViewController * imageView = [[ProductImageViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill];
+    ProductImageViewController * imageView = [[ProductImageViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill];
     [self.navigationController pushViewController:imageView animated:YES];
 }
 

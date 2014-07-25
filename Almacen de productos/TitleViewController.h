@@ -11,6 +11,6 @@
 #import "ADPStoreHouse.h"
 
 @interface TitleViewController : UIViewController
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:(ADPProduct*)productToFill;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @end

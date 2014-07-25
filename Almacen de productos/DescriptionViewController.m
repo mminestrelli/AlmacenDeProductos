@@ -10,10 +10,8 @@
 #import "PriceViewController.h"
 
 @interface DescriptionViewController (){
-    ADPStoreHouse * _house;
     ADPProduct* _prodToFill;
 }
-@property (nonatomic,strong)ADPStoreHouse * house;
 @property (nonatomic,strong)ADPProduct * prodToFill;
 
 
@@ -21,11 +19,10 @@
 
 @implementation DescriptionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:productToFill
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.house=storeHouse;
         self.prodToFill=productToFill;
     }
     return self;
@@ -52,7 +49,7 @@
 
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     self.prodToFill.description=self.descriptionTextView.text;
-    PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:nil bundle:nil storeHouse: self.house andProductToFill:self.prodToFill ];
+    PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:priceView animated:YES];
 }
 
