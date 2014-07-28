@@ -38,12 +38,22 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.tableViewStoreHouse reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 #pragma mark- Table
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 72;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString * tableIdentifier = @"ProductTableViewCell";
