@@ -13,7 +13,7 @@
 }
 @property (nonatomic,strong)ADPProduct * prodToFill;
 @end
-
+/* This view provides the user the possiblity to add a subtitle to the product to publish*/
 @implementation SubtitleViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -40,6 +40,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark Bar items selectors
+/*Saves the data filled in this view to the correspong property in the prodTofill, this product is passed to the next property to fill*/
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     self.prodToFill.subtitle=self.subtitleTextField.text;
     DescriptionViewController * descriptionView = [[DescriptionViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill];

@@ -17,7 +17,7 @@
 
 
 @end
-
+/* This view provides the user the possiblity to add an image to the product to publish*/
 @implementation ProductImageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
@@ -25,6 +25,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.prodToFill=productToFill;
+        //random images for the picker
         self.imagesNames=@[@"Imagen1", @"Imagen2",
                            @"Imagen3", @"Imagen4", @"Imagen5"];
         self.imagesPaths=@[@"gallery1_2256", @"gallery2_2256",
@@ -87,6 +88,7 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 #pragma mark Bar items selectors
+
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     self.prodToFill.image=self.displayImageView.image;
     [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];

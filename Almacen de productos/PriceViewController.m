@@ -15,7 +15,7 @@
 @property (nonatomic,strong)ADPProduct * prodToFill;
 
 @end
-
+/* This view provides the user the possiblity to add a price to the product to publish*/
 @implementation PriceViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
@@ -47,6 +47,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark Bar items selectors
+/*Saves the data filled in this view to the correspong property in the prodTofill, this product is passed to the next property to fill*/
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     if([self.priceTextField.text floatValue]>0.0){
     self.prodToFill.price= [self.priceTextField.text floatValue];

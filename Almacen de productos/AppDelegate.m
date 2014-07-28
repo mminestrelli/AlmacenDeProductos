@@ -21,23 +21,22 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    ADPStoreHouse * house = [[ADPStoreHouse alloc] init];
-    ADPProduct * productToFill=[[ADPProduct alloc]initWithCode:0];
-    MainViewController * mainViewController= [[MainViewController alloc]initWithNibName:nil bundle:nil storeHouse:house andProductToFill:productToFill ];
     UITabBarItem* sellProductTabBarItem = nil;
     UITabBarItem* productListTabBarItem = nil;
+    ADPStoreHouse * house = [[ADPStoreHouse alloc] init];
+    ADPProduct * productToFill=[[ADPProduct alloc]initWithCode:0];
     
-    //TitleViewController * mainViewController= [[TitleViewController alloc]initWithNibName:nil bundle:nil];
-    //SubtitleViewController* mainViewController= [[SubtitleViewController alloc]initWithNibName:nil bundle:nil storeHouse:house ];
-//    ProductImageViewController * mainViewController= [[ProductImageViewController alloc]initWithNibName:nil bundle:nil andProductToFill:productToFill ];
-    
+    //Seller navigation
+    MainViewController * mainViewController= [[MainViewController alloc]initWithNibName:nil bundle:nil andProductToFill:productToFill ];
+    //List of products added
     ProductListViewController *productList=[[ProductListViewController alloc]initWithNibName:nil bundle:nil andStoreHouse:house];
     UINavigationController * navigationController = [[UINavigationController alloc]initWithRootViewController: mainViewController];
     UITabBarController * tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
    
+    //Tab bar items
     sellProductTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Vender" image:[UIImage imageNamed:@"sellTabBar.png"] tag:0];
-    productListTabBarItem= [[UITabBarItem alloc] initWithTitle:@"Lista de Productos"  image:[UIImage imageNamed:@"categoriesTabBar.png"]  tag:1];
+    productListTabBarItem= [[UITabBarItem alloc] initWithTitle:@"Lista de Productos"  image:[UIImage imageNamed:@"categoriesTabBar.png"] tag:1];
+    
     tabBarController.tabBar.barTintColor = [self colorWith255Red:84 withGreen:84 withBlue:84];
     navigationController.tabBarItem=sellProductTabBarItem;
     productList.tabBarItem=productListTabBarItem;

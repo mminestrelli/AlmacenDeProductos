@@ -11,7 +11,7 @@
 
 
 @interface MainViewController (){
-    ADPStoreHouse * _house;
+
     ADPProduct* _prodToFill;
     ADPProduct* _productReceivedInNotification;
 }
@@ -20,16 +20,16 @@
 -(void) clearNotificationHandle:(NSNotification*)notification;
 @end
 
+/* Starting view of the app, provides the possibility of adding a product or a vehicle,starts the navigation through all the views that add properties to the product. This product(prodToFill) is passed trough all the views filling the properties title,subtitle,description,price and image*/
 @implementation MainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil storeHouse:(ADPStoreHouse*) storeHouse andProductToFill:productToFill
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        //delete
-        self.house=storeHouse;
         self.prodToFill=productToFill;
     }
+    //Suscription to clear and save notification in the last view of the navigation
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearNotificationHandle:) name:@"productClear" object:self.productReceivedInNotification];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveNotificationHandle:) name:@"productSave" object:self.productReceivedInNotification];
     return self;
@@ -55,7 +55,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onAddButtonPressed:(UIButton *)sender {
+#pragma mark Actions
+/*On product button pressed a title view is set on top to start filling the product´s properties,
+ prodToFill is passed.*/
+- (IBAction)onProductAddButtonPressed:(UIButton *)sender {
      TitleViewController * titleView = [[TitleViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:titleView animated:YES];
 }

@@ -17,7 +17,7 @@
 @property (nonatomic,strong)ADPProduct * prodToFill;
 
 @end
-
+/* This view provides the user the possiblity to add a title to the product to publish*/
 @implementation TitleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
@@ -49,8 +49,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
+#pragma mark Bar items selectors
+/*Saves the data filled in this view to the correspong property in the prodTofill, this product is passed to the next property to fill*/
 - (IBAction)saveButtonPressed:(id)sender {
     self.prodToFill.title=self.titleTextField.text;
     SubtitleViewController * subtitleView = [[SubtitleViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill];
