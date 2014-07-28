@@ -26,6 +26,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        //delete
         self.house=storeHouse;
         self.prodToFill=productToFill;
     }
@@ -37,9 +38,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setTitle:@"Vender"];
     // Do any additional setup after loading the view from its nib.
-    [self setTitle:@"Main"];
-    
 }
 //Old implementation for saving notification
 //-(void) viewDidAppear:(BOOL)animated{
@@ -64,13 +64,16 @@
 
 /* Clear notification is sent when the user selects the option clear in ProductImageViewController the selector handles the object recieved and uses the same code to initialize an empty product*/
 -(void) clearNotificationHandle:(NSNotification*)notification{
+    self.productReceivedInNotification= [[notification userInfo] objectForKey:@"producto"];
     NSInteger code=self.productReceivedInNotification.code;
     self.prodToFill=[[ADPProduct alloc]initWithCode:code];
 }
-/* Save notification is sent when the user selects the option save in ProductImageViewController the selector handles the object received adding it to the store house and initializing an empty product with the following code*/
+/* Save notification is sent when the user selects the option save in ProductImageViewController the selector handles the object received initializing an empty product with the following code*/
 -(void) saveNotificationHandle:(NSNotification*) notification{
+    self.productReceivedInNotification= [[notification userInfo] objectForKey:@"producto"];
     NSInteger code=self.productReceivedInNotification.code;
-    [self.house addProduct:self.prodToFill];
+    // Se cambio a productListViewController.m
+    //[self.house addProduct:self.prodToFill];
     self.prodToFill=[[ADPProduct alloc]initWithCode:code+1];
 }
 

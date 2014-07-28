@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ADPStoreHouse.h"
+#import "ADPProduct.h"
 
-@interface ProductListViewController : UIViewController
+@interface ProductListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andStoreHouse:(ADPStoreHouse*) storeHouse;
 @end

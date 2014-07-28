@@ -47,6 +47,7 @@
     XCTAssertEqual(2, [self.storeHouse amountOfProductsStocked], "In the end the amount of products must be two");
     [self.storeHouse deleteProduct:prod1];
     XCTAssertEqual(1, [self.storeHouse amountOfProductsStocked], "After deleting the amount of products must be 1");
+    //NSMutableArray * aux= [self.storeHouse getProducts];
 }
 
 @end

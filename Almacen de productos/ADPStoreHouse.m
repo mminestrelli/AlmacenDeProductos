@@ -23,6 +23,7 @@
 -(id)init{
     if([super init]){
         self.currentId=0;
+        self.products= [[NSMutableArray alloc]init];
     }
     return self;
 }
@@ -52,6 +53,9 @@
         }
     }
 }
+-(NSMutableArray*) getProducts{
+    return self.products;
+};
 
 -(NSInteger) amountOfProductsStocked{
     return [self.products count];

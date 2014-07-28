@@ -12,4 +12,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (UIColor*) colorWith255Red:(NSInteger) red withGreen:(NSInteger) green withBlue:(NSInteger) blue;
 @end

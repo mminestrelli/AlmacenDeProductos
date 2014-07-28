@@ -90,7 +90,7 @@ numberOfRowsInComponent:(NSInteger)component
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     self.prodToFill.image=self.displayImageView.image;
     [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

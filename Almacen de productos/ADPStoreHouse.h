@@ -14,5 +14,5 @@
 -(void) deleteProduct:(ADPProduct*) prod;
 -(void) addProduct:(ADPProduct*) prod;
 -(NSInteger) amountOfProductsStocked;
-
+-(NSMutableArray*) getProducts;
 @end
