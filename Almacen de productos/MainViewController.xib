@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="scrollViewMain" destination="EiY-dp-V5Q" id="rzm-aI-St5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,42 +15,83 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EiY-dp-V5Q">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiY-dp-V5Q">
+                    <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elige qué publicar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8F-dv-4A2">
-                            <rect key="frame" x="20" y="62" width="134" height="21"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHC-Y0-05T" userLabel="ContainerView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6e-ai-AHz">
-                            <rect key="frame" x="20" y="128" width="280" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.003501689313889605" green="0.11416511251333737" blue="0.54224694293478259" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" title="Productos">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="onProductAddButtonPressed:" destination="-1" eventType="touchUpInside" id="Yb3-Ds-B3N"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opH-cz-M7W">
-                            <rect key="frame" x="20" y="171" width="280" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.0034800282493059956" green="0.11345889969613014" blue="0.53889266304347827" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" title="Vehículos">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige qué publicar" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="a8F-dv-4A2">
+                                    <rect key="frame" x="15" y="20" width="295" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opH-cz-M7W">
+                                    <rect key="frame" x="20" y="134" width="280" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0034800282493059956" green="0.11345889969613014" blue="0.53889266304347827" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="280" id="8z2-G6-D0o"/>
+                                        <constraint firstAttribute="height" constant="30" id="h1y-Jy-wp9"/>
+                                    </constraints>
+                                    <state key="normal" title="Vehículos">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6e-ai-AHz">
+                                    <rect key="frame" x="20" y="87" width="280" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.003501689313889605" green="0.11416511251333737" blue="0.54224694293478259" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="aI2-RQ-2yv"/>
+                                        <constraint firstAttribute="width" constant="280" id="q4h-1P-aVo"/>
+                                    </constraints>
+                                    <state key="normal" title="Productos">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onProductAddButtonPressed:" destination="-1" eventType="touchUpInside" id="Yb3-Ds-B3N"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="opH-cz-M7W" firstAttribute="top" secondItem="y6e-ai-AHz" secondAttribute="bottom" constant="17" id="AZn-WN-xEU"/>
+                                <constraint firstAttribute="trailing" secondItem="a8F-dv-4A2" secondAttribute="trailing" constant="10" id="DZY-dp-qkX"/>
+                                <constraint firstAttribute="bottom" secondItem="opH-cz-M7W" secondAttribute="bottom" constant="384" id="JFd-fA-dls"/>
+                                <constraint firstItem="y6e-ai-AHz" firstAttribute="width" secondItem="opH-cz-M7W" secondAttribute="width" id="L0v-Wq-D3G"/>
+                                <constraint firstAttribute="centerX" secondItem="opH-cz-M7W" secondAttribute="centerX" id="OL5-SQ-3AU"/>
+                                <constraint firstItem="y6e-ai-AHz" firstAttribute="top" secondItem="a8F-dv-4A2" secondAttribute="bottom" constant="50" id="P3e-s7-D4q"/>
+                                <constraint firstItem="a8F-dv-4A2" firstAttribute="leading" secondItem="sHC-Y0-05T" secondAttribute="leading" constant="15" id="T35-bP-BGe"/>
+                                <constraint firstAttribute="centerX" secondItem="y6e-ai-AHz" secondAttribute="centerX" id="U6T-YI-FVq"/>
+                                <constraint firstItem="a8F-dv-4A2" firstAttribute="top" secondItem="sHC-Y0-05T" secondAttribute="top" constant="20" id="bF2-eI-l9W"/>
+                                <constraint firstItem="y6e-ai-AHz" firstAttribute="height" secondItem="opH-cz-M7W" secondAttribute="height" id="cNK-eO-hVd"/>
+                            </constraints>
+                        </view>
                     </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="sHC-Y0-05T" secondAttribute="trailing" id="0aW-Zr-MdJ"/>
+                        <constraint firstItem="sHC-Y0-05T" firstAttribute="height" secondItem="EiY-dp-V5Q" secondAttribute="height" id="8FL-eY-hSh"/>
+                        <constraint firstItem="sHC-Y0-05T" firstAttribute="top" secondItem="EiY-dp-V5Q" secondAttribute="top" id="P6x-aV-5IQ"/>
+                        <constraint firstAttribute="bottom" secondItem="sHC-Y0-05T" secondAttribute="bottom" id="TIH-Pn-XpL"/>
+                        <constraint firstItem="sHC-Y0-05T" firstAttribute="leading" secondItem="EiY-dp-V5Q" secondAttribute="leading" id="dfW-lJ-SYc"/>
+                        <constraint firstItem="sHC-Y0-05T" firstAttribute="width" secondItem="EiY-dp-V5Q" secondAttribute="width" id="jpX-qm-uww"/>
+                    </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EiY-dp-V5Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SfP-Yc-su6"/>
+                <constraint firstItem="EiY-dp-V5Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="ZpQ-UU-PDw"/>
+                <constraint firstAttribute="trailing" secondItem="EiY-dp-V5Q" secondAttribute="trailing" id="cii-fJ-iMS"/>
+                <constraint firstAttribute="bottom" secondItem="EiY-dp-V5Q" secondAttribute="bottom" id="rvX-pz-CRd"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

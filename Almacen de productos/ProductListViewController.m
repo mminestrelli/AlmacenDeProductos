@@ -36,6 +36,8 @@
     self.tableViewStoreHouse.delegate = self;
     self.tableViewStoreHouse.dataSource = self;
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
+                                             initWithTitle:@"Editar" style: UIBarButtonItemStyleBordered target:self action:@selector(tableView: commitEditingStyle:forRowAtIndexPath:)];
 }
 
 -(void) viewDidAppear:(BOOL)animated{
@@ -75,6 +77,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.house amountOfProductsStocked];
+}
+
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [self.tableViewStoreHouse setEditing:editing animated:YES];
+    if (editing) {
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+    } else {
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+    }
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    // If row is deleted, remove it from the list.
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        SimpleEditableListAppDelegate *controller = (SimpleEditableListAppDelegate *) [[UIApplication sharedApplication] delegate];
+       // [self removeObjectFromListAtIndex:indexPath.row];
+        [self.tableViewStoreHouse deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 #pragma mark -Notification handling

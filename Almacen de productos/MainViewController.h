@@ -12,6 +12,7 @@
 
 @interface MainViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewMain;
 @property (nonatomic,strong)ADPStoreHouse * house;
 @property (nonatomic,strong)ADPProduct * prodToFill;
 - (IBAction)onProductAddButtonPressed:(UIButton *)sender;

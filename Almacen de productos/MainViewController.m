@@ -39,6 +39,7 @@
 {
     [super viewDidLoad];
     [self setTitle:@"Vender"];
+    self.scrollViewMain.scrollEnabled=YES;
     // Do any additional setup after loading the view from its nib.
 }
 //Old implementation for saving notification
