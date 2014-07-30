@@ -48,6 +48,11 @@
 #pragma mark - Textfield delegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range     replacementString:(NSString *)string
 {
+    if(textField.text.length>5){
+        //enable button
+        self.buttonContinue.enabled=YES;
+        self.buttonContinue.backgroundColor=[UIColor colorWithRed:255 green:0 blue:0 alpha:1];
+    }
     if (textField.text.length >= 40 && range.length == 0)
         return NO;
     return YES;
