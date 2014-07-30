@@ -51,7 +51,7 @@
 /*Saves the data filled in this view to the correspong property in the prodTofill, this product is passed to the next property to fill*/
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     self.prodToFill.description=self.descriptionTextView.text;
-    PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill ];
+    PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:@"DescriptionAndTextFieldViewController" bundle:nil andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:priceView animated:YES];
 }
 

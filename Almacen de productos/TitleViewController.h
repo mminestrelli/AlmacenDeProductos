@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
 #import "ADPStoreHouse.h"
+#import "AbstractMasterViewController.h"
 
-@interface TitleViewController : UIViewController
+@interface TitleViewController : AbstractMasterViewController<ADPAddItemDelegate>
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @end

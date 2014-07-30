@@ -9,9 +9,7 @@
 #import "PriceViewController.h"
 #import "ProductImageViewController.h"
 
-@interface PriceViewController (){
-    ADPProduct* _prodToFill;
-}
+@interface PriceViewController ()
 @property (nonatomic,strong)ADPProduct * prodToFill;
 
 @end
@@ -20,11 +18,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-            self.prodToFill=productToFill;
-
-    }
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil andProductToFill:productToFill];
     return self;
 }
 
@@ -32,14 +26,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self setTitle:@"Precio"];
-    if(self.prodToFill.price!=0.0){
-        self.priceTextField.text=[NSString stringWithFormat:@"%f",self.prodToFill.price];
-    }
-
-    [ self.priceTextField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation ];
-    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,16 +34,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark Bar items selectors
-/*Saves the data filled in this view to the correspong property in the prodTofill, this product is passed to the next property to fill*/
-- (IBAction)saveButtonPressed:(UIButton *)sender {
-    if([self.priceTextField.text floatValue]>0.0){
-    self.prodToFill.price= [self.priceTextField.text floatValue];
-    }else{
-     self.prodToFill.price= 0.0;
+
+#pragma mark - AddItemDelegate methods
+
+-(NSString*) getTitle{
+    return @"Precio";
+}
+-(NSString*)getDescription{
+    return @"Ingresá el precio de tu producto";
+}
+
+-(void) setFieldContentIfSaved{
+    if(self.prodToFill.price!=0.0){
+        self.textField.text=[self.prodToFill getFormattedPriceString];
     }
-    ProductImageViewController * imageView = [[ProductImageViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill];
-    [self.navigationController pushViewController:imageView animated:YES];
+}
+-(void)saveField{
+    self.prodToFill.price=[self.textField.text floatValue];
+}
+
+-(UIViewController*) getNextViewController:(ADPProduct*)productToFill{
+    ProductImageViewController * controller = [[ProductImageViewController alloc] initWithNibName:nil bundle:nil andProductToFill:productToFill];
+    return controller;
+}
+-(UIKeyboardType)getKeyboardType{
+    return UIKeyboardTypeDecimalPad;
 }
 
 @end

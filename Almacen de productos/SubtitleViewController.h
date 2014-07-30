@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
-
+#import "AbstractMasterViewController.h"
 #import "DescriptionViewController.h"
 
-@interface SubtitleViewController : UIViewController
+@interface SubtitleViewController : AbstractMasterViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UITextField *subtitleTextField;
 @end

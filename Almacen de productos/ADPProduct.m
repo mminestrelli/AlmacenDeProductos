@@ -8,16 +8,10 @@
 
 #import "ADPProduct.h"
 
-@interface ADPProduct(){
-    NSInteger _code;
-    NSString * _title;
-    NSString * _subtitle;
-    NSString * _description;
-    CGFloat _price;
-    UIImage * _image;
-};
+@interface ADPProduct();
 
-
+//User number formatting preferences
+@property (nonatomic,strong) NSNumberFormatter * numberFormatter;
 
 @end
 
@@ -32,8 +26,8 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
         self.description=aDescription;
         self.price=aPrice;
         self.image=anImage;
-        //self.numberFormatter = [[NSNumberFormatter alloc] init];
-        //[self.numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        self.numberFormatter = [[NSNumberFormatter alloc] init];
+        [self.numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
 
     }
     return self;
@@ -49,6 +43,8 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
 -(NSInteger)getIdentification{
     return self.code;
 }
-
+-(NSString*)getFormattedPriceString{
+    return [self.numberFormatter stringFromNumber:[NSNumber numberWithFloat:self.price]];
+}
 @end
 

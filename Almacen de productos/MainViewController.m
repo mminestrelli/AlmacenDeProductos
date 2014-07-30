@@ -60,7 +60,7 @@
 /*On product button pressed a title view is set on top to start filling the product´s properties,
  prodToFill is passed.*/
 - (IBAction)onProductAddButtonPressed:(UIButton *)sender {
-     TitleViewController * titleView = [[TitleViewController alloc]initWithNibName:nil bundle:nil andProductToFill:self.prodToFill ];
+     TitleViewController * titleView = [[TitleViewController alloc]initWithNibName:@"DescriptionAndTextFieldViewController" bundle:nil andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:titleView animated:YES];
 }
 

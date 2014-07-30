@@ -20,4 +20,5 @@
 -(id) initWithTitle:(NSString*) aTitle code:(NSInteger) aCode subtitle:(NSString*) aSubtitle description:(NSString*) aDescription price:(CGFloat) aPrice andImage:(UIImage*) anImage;
 -(id) initWithCode:(NSInteger) aCode;
 -(NSInteger)getIdentification;
+-(NSString*)getFormattedPriceString;
 @end
