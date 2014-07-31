@@ -11,15 +11,17 @@
 @protocol ADPAddItemDelegate <NSObject>
 /*All the methods an adding product step must or have the possibility to implement*/
 @required
-- (IBAction)saveButtonPressed:(UIButton *)sender;
+
 -(NSString*) getTitle;
 -(NSString*) getDescription;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @optional
+
 - (IBAction)clearButtonPressed:(UIButton *)sender;
 -(void)setFieldContentIfSaved;
 -(UIViewController*)getNextViewController:(ADPProduct*)productToFill;
 -(void) saveField;
 -(UIKeyboardType)getKeyboardType;
 -(NSInteger)minCharactersAllowed;
+- (IBAction)saveButtonPressed:(UIButton *)sender;
 @end

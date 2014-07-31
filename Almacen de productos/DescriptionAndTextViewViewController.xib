@@ -4,7 +4,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DescriptionAndTextViewViewController">
+            <connections>
+                <outlet property="buttonContinue" destination="M4s-mk-NaY" id="ivD-eh-wtF"/>
+                <outlet property="labelDescription" destination="95b-z5-2Bn" id="YTd-kl-TjX"/>
+                <outlet property="scrollViewContainer" destination="3AT-U2-HCc" id="6kx-VW-Len"/>
+                <outlet property="textView" destination="HPZ-Ql-uNE" id="3s6-zf-6nV"/>
+                <outlet property="view" destination="TAU-zL-OYX" id="CmC-xo-vVS"/>
+                <outlet property="viewContainer" destination="8AL-LG-PgC" id="Jq2-DM-COD"/>
+                <outlet property="viewInside" destination="gQu-fY-1nP" id="O0L-DX-Pkt"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TAU-zL-OYX">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -39,7 +49,6 @@
                                             <rect key="frame" x="20" y="51" width="260" height="99"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
@@ -70,6 +79,9 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="saveButtonPressed:" destination="-1" eventType="touchUpInside" id="B48-SQ-Eq5"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

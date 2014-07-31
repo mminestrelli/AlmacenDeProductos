@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
 #import "ProductImageViewController.h"
-#import "AbstractMasterViewController.h"
+#import "DescriptionAndTextFieldViewController.h"
 
-@interface PriceViewController :AbstractMasterViewController
+@interface PriceViewController :DescriptionAndTextFieldViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 

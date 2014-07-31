@@ -11,18 +11,13 @@
 
 @interface DescriptionViewController ()
 
-@property (nonatomic,strong)ADPProduct * prodToFill;
-
 @end
 /* This view provides the user the possiblity to add a description to the product to publish*/
 @implementation DescriptionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.prodToFill=productToFill;
-    }
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil andProductToFill:productToFill];
     return self;
 }
 
@@ -30,13 +25,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self setTitle:@"Descripción"];
-    if(self.prodToFill.description!=nil){
-        self.descriptionTextView.text=self.prodToFill.description;
-        
-    }
-    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,12 +33,32 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark Bar items selectors
-/*Saves the data filled in this view to the correspong property in the prodTofill, this product is passed to the next property to fill*/
-- (IBAction)saveButtonPressed:(UIButton *)sender {
-    self.prodToFill.description=self.descriptionTextView.text;
-    PriceViewController * priceView = [[PriceViewController alloc]initWithNibName:@"DescriptionAndTextFieldViewController" bundle:nil andProductToFill:self.prodToFill ];
-    [self.navigationController pushViewController:priceView animated:YES];
+#pragma mark - AddItemDelegate methods
+
+-(NSString*) getTitle{
+    return @"Descripción";
+}
+-(NSString*)getDescription{
+    return @"Contanos más acerca de tu producto";
 }
 
+-(void) setFieldContentIfSaved{
+    if(self.prodToFill.description!=nil){
+        self.textView.text=self.prodToFill.description;
+    }
+}
+-(void)saveField{
+    self.prodToFill.description=self.textView.text;
+}
+
+-(UIViewController*) getNextViewController:(ADPProduct*)productToFill{
+    PriceViewController * controller = [[PriceViewController alloc] initWithNibName:@"DescriptionAndTextFieldViewController" bundle:nil andProductToFill:productToFill];
+    return controller;
+}
+-(UIKeyboardType)getKeyboardType{
+    return UIKeyboardTypeDefault;
+}
+-(NSInteger)minCharactersAllowed{
+    return 0;
+}
 @end

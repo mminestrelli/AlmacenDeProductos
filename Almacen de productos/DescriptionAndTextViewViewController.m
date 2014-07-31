@@ -1,18 +1,19 @@
 //
-//  AbstractMasterViewController.m
+//  DescriptionAndTextViewViewController.m
 //  Almacen de productos
 //
-//  Created by Mauricio Minestrelli on 7/29/14.
+//  Created by Mauricio Minestrelli on 7/31/14.
 //  Copyright (c) 2014 Mercadolibre. All rights reserved.
 //
 
-#import "DescriptionAndTextFieldViewController.h"
+#import "DescriptionAndTextViewViewController.h"
 
-@interface DescriptionAndTextFieldViewController ()<ADPAddItemDelegate,UITextViewDelegate,UITextFieldDelegate>
+@interface DescriptionAndTextViewViewController ()<ADPAddItemDelegate,UITextFieldDelegate,UITextViewDelegate>
+
 
 @end
 
-@implementation DescriptionAndTextFieldViewController
+@implementation DescriptionAndTextViewViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*) productToFill
 {
@@ -24,16 +25,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.labelDescription.text=[self getDescription];
-    self.textField.delegate=self;
+    //self.labelDescription.text=[self getDescription];
+    self.textView.delegate=self;
     [self setFieldContentIfSaved];
     [self setKeyboard];
 
-    
 //    self.buttonContinue.backgroundColor=[UIColor grayColor];
-//    self.buttonContinue.enabled=NO;
 //    self.navigationItem.rightBarButtonItem.enabled=NO;
-//    
+    self.buttonContinue.backgroundColor=[UIColor blueColor];
+    self.buttonContinue.enabled=YES;
+    self.navigationItem.rightBarButtonItem.enabled=YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,15 +42,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - TextView delegate
 
-#pragma mark - Textfield delegate
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range     replacementString:(NSString *)string
-{
-    [self enableButtonsWithAmountOfCharacters: textField.text.length andFloor:[self minCharactersAllowed]]; 
-    if (textField.text.length >= 40 && range.length == 0)
-        return NO;
-    return YES;
-}
 
 //-(void) enableButtonsWithAmountOfCharacters:(NSInteger) amount andFloor: (NSInteger) floor{
 //    if(amount>=floor-1){
@@ -64,9 +58,17 @@
 //    }
 //}
 
+-(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    //[self enableButtonsWithAmountOfCharacters: textView.text.length andFloor:[self minCharactersAllowed]];
+    if (textView.text.length >= 300 && range.length == 0)
+        return NO;
+    return YES;
+}
+
 #pragma mark - Keyboard handling
 -(void)setKeyboard{
-    [self.textField setKeyboardType:[self getKeyboardType]];
+    [self.textView setKeyboardType:[self getKeyboardType]];
 }
 
 #pragma mark - First Responder
@@ -91,37 +93,16 @@
     [self.view endEditing:YES];
 }
 
-//-(void) keyboardWillShow: (NSNotification *) notification{
-//    NSDictionary* info = [notification userInfo];
-//    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-//    
-//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(64.0, 0.0, kbSize.height, 0.0);
-//    self.scrollViewContainer.contentInset = contentInsets;
-//    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
-//    
-//    
-//}
-//
-//-(void) keyboardWillHide: (NSNotification *) notification{
-//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(64.0, 0.0, 0.0, 0.0);;
-//    self.scrollViewContainer.contentInset = contentInsets;
-//    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
-//}
-//#pragma mark - gesture
-//-(void) onTapPressed:(id) sender{
-//    
-//    [self.fResponder resignFirstResponder];
-//}
+
 #pragma mark - AddItemDelegate methods
 
 //- (IBAction)saveButtonPressed:(id)sender {
-//
+//    
 //    [self saveField];
 //    UIViewController * nextViewController= [self getNextViewController:self.prodToFill];
 //    [self.navigationController pushViewController:nextViewController animated:YES];
 //    
 //}
-
 - (IBAction)saveButtonPressed:(id)sender {
     [super saveButtonPressed:sender];
 }
@@ -131,6 +112,4 @@
 -(NSString*)getDescription{
     return @"";
 }
-
 @end
-

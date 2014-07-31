@@ -42,7 +42,7 @@
 }
 
 -(void) setFieldContentIfSaved{
-    if(self.prodToFill.title!=nil){
+    if(self.prodToFill.subtitle!=nil){
         self.textField.text=self.prodToFill.subtitle;
     }
 }
@@ -51,7 +51,7 @@
 }
 
 -(UIViewController*) getNextViewController:(ADPProduct*)productToFill{
-    DescriptionViewController * controller = [[DescriptionViewController alloc] initWithNibName:nil bundle:nil andProductToFill:productToFill];
+    DescriptionViewController * controller = [[DescriptionViewController alloc] initWithNibName:@"DescriptionAndTextViewViewController" bundle:nil andProductToFill:productToFill];
     return controller;
 }
 -(UIKeyboardType)getKeyboardType{

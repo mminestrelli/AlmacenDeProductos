@@ -36,8 +36,10 @@
 		4E82531C19817BF50002F68E /* gallery5_2256.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E82531719817BF50002F68E /* gallery5_2256.jpg */; };
 		4E82532019821DC20002F68E /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E82531E19821DC20002F68E /* ProductListViewController.m */; };
 		4E82532119821DC20002F68E /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E82531F19821DC20002F68E /* ProductListViewController.xib */; };
+		4E83C97B198A89850010C8A5 /* DescriptionAndTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */; };
+		4E83C97E198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */; };
 		4E90D74A1987E46800D4A482 /* DescriptionAndTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */; };
-		4E90D74E198813CE00D4A482 /* AbstractMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90D74D198813CE00D4A482 /* AbstractMasterViewController.m */; };
+		4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90D74D198813CE00D4A482 /* DescriptionAndTextFieldViewController.m */; };
 		4EBCD1E6197E9ABC00B5F0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBCD1E5197E9ABC00B5F0A8 /* Foundation.framework */; };
 		4EBCD1E8197E9ABC00B5F0A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBCD1E7197E9ABC00B5F0A8 /* CoreGraphics.framework */; };
 		4EBCD1EA197E9ABC00B5F0A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBCD1E9197E9ABC00B5F0A8 /* UIKit.framework */; };
@@ -102,10 +104,14 @@
 		4E82531D19821DC20002F68E /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
 		4E82531E19821DC20002F68E /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		4E82531F19821DC20002F68E /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		4E83C979198A89850010C8A5 /* DescriptionAndTextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionAndTextViewViewController.h; sourceTree = "<group>"; };
+		4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionAndTextViewViewController.m; sourceTree = "<group>"; };
+		4E83C97C198A95210010C8A5 /* AbstractDescriptionAndTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDescriptionAndTextViewController.h; sourceTree = "<group>"; };
+		4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractDescriptionAndTextViewController.m; sourceTree = "<group>"; };
 		4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionAndTextFieldViewController.xib; sourceTree = "<group>"; };
 		4E90D74B1988135500D4A482 /* ADPAddItemDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADPAddItemDelegate.h; sourceTree = "<group>"; };
-		4E90D74C198813CE00D4A482 /* AbstractMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMasterViewController.h; sourceTree = "<group>"; };
-		4E90D74D198813CE00D4A482 /* AbstractMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMasterViewController.m; sourceTree = "<group>"; };
+		4E90D74C198813CE00D4A482 /* DescriptionAndTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionAndTextFieldViewController.h; sourceTree = "<group>"; };
+		4E90D74D198813CE00D4A482 /* DescriptionAndTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionAndTextFieldViewController.m; sourceTree = "<group>"; };
 		4EBCD1E2197E9ABC00B5F0A8 /* Almacen de productos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Almacen de productos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBCD1E5197E9ABC00B5F0A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EBCD1E7197E9ABC00B5F0A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -309,8 +315,12 @@
 			children = (
 				4E82435119893B6B0010AD53 /* Table Flow */,
 				4E82435019893B460010AD53 /* Seller Flow */,
-				4E90D74C198813CE00D4A482 /* AbstractMasterViewController.h */,
-				4E90D74D198813CE00D4A482 /* AbstractMasterViewController.m */,
+				4E83C97C198A95210010C8A5 /* AbstractDescriptionAndTextViewController.h */,
+				4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */,
+				4E90D74C198813CE00D4A482 /* DescriptionAndTextFieldViewController.h */,
+				4E90D74D198813CE00D4A482 /* DescriptionAndTextFieldViewController.m */,
+				4E83C979198A89850010C8A5 /* DescriptionAndTextViewViewController.h */,
+				4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -435,15 +445,17 @@
 				4E825305197FFD800002F68E /* PriceViewController.m in Sources */,
 				4E8252ED197FFD260002F68E /* MainViewController.m in Sources */,
 				4E8252F8197FFD510002F68E /* DescriptionViewController.m in Sources */,
+				4E83C97E198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m in Sources */,
 				4E82530A197FFD940002F68E /* ProductImageViewController.m in Sources */,
 				4EBCD226197EB47B00B5F0A8 /* ADPProduct.m in Sources */,
+				4E83C97B198A89850010C8A5 /* DescriptionAndTextViewViewController.m in Sources */,
 				4EBCD1F6197E9ABC00B5F0A8 /* AppDelegate.m in Sources */,
 				4E8252FD197FFD620002F68E /* SubtitleViewController.m in Sources */,
 				4E82530F197FFE1A0002F68E /* TitleViewController.m in Sources */,
 				4EBCD1F2197E9ABC00B5F0A8 /* main.m in Sources */,
 				4E2F14391982CD80002A74E6 /* ProductTableViewCell.m in Sources */,
 				4EBCD22C197EB92100B5F0A8 /* ADPStoreHouse.m in Sources */,
-				4E90D74E198813CE00D4A482 /* AbstractMasterViewController.m in Sources */,
+				4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */,
 				4E82532019821DC20002F68E /* ProductListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

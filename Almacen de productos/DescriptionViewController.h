@@ -10,8 +10,9 @@
 #import "ADPProduct.h"
 #import "ADPStoreHouse.h"
 #import "PriceViewController.h"
+#import "DescriptionAndTextViewViewController.h"
 
-@interface DescriptionViewController : UIViewController
+@interface DescriptionViewController :DescriptionAndTextViewViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 @end
