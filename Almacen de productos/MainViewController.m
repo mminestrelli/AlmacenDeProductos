@@ -12,8 +12,6 @@
 
 @interface MainViewController (){
 
-    ADPProduct* _prodToFill;
-    ADPProduct* _productReceivedInNotification;
 }
 @property (nonatomic,strong) ADPProduct* productReceivedInNotification;
 

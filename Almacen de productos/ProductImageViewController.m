@@ -8,11 +8,7 @@
 
 #import "ProductImageViewController.h"
 
-@interface ProductImageViewController (){
-    ADPProduct* _prodToFill;
-    NSArray * _imagesNames;
-    NSArray * _imagesPaths;
-}
+@interface ProductImageViewController ()
 @property (nonatomic,strong)ADPProduct * prodToFill;
 
 
