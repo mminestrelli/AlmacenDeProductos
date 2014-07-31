@@ -10,7 +10,6 @@
 #import "ProductImageViewController.h"
 
 @interface PriceViewController ()
-@property (nonatomic,strong)ADPProduct * prodToFill;
 
 @end
 /* This view provides the user the possiblity to add a price to the product to publish*/
@@ -60,5 +59,7 @@
 -(UIKeyboardType)getKeyboardType{
     return UIKeyboardTypeDecimalPad;
 }
-
+-(NSInteger)minCharactersAllowed{
+    return 0;
+}
 @end

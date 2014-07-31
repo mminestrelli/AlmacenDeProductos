@@ -31,13 +31,14 @@
     [self setTitle:[self getTitle]];
     self.labelDescription.text=[self getDescription];
     self.textField.delegate=self;
-    self.buttonContinue.enabled=NO;
     [self setFieldContentIfSaved];
     [self setKeyboard];
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
     UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapPressed:)];
     [self.view addGestureRecognizer:tapGesture];
+    self.buttonContinue.backgroundColor=[UIColor grayColor];
+    self.navigationItem.rightBarButtonItem.enabled=NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,14 +49,23 @@
 #pragma mark - Textfield delegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range     replacementString:(NSString *)string
 {
-    if(textField.text.length>5){
-        //enable button
-        self.buttonContinue.enabled=YES;
-        self.buttonContinue.backgroundColor=[UIColor colorWithRed:255 green:0 blue:0 alpha:1];
-    }
+    [self enableButtonsWithAmountOfCharacters: textField.text.length andFloor:[self minCharactersAllowed]]; 
     if (textField.text.length >= 40 && range.length == 0)
         return NO;
     return YES;
+}
+
+-(void) enableButtonsWithAmountOfCharacters:(NSInteger) amount andFloor: (NSInteger) floor{
+    if(amount>=floor-1){
+        //enable button
+        self.buttonContinue.enabled=YES;
+        self.navigationItem.rightBarButtonItem.enabled=YES;
+        self.buttonContinue.backgroundColor=[UIColor blueColor];
+    }else{
+        self.buttonContinue.backgroundColor=[UIColor grayColor];
+        self.buttonContinue.enabled=NO;
+        self.navigationItem.rightBarButtonItem.enabled=NO;
+    }
 }
 
 #pragma mark - Keyboard handling
@@ -85,22 +95,22 @@
     [self.view endEditing:YES];
 }
 
--(void) keyboardWillShow: (NSNotification *) notification{
-    NSDictionary* info = [notification userInfo];
-    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-    
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(64.0, 0.0, kbSize.height, 0.0);
-    self.scrollViewContainer.contentInset = contentInsets;
-    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
-    
-    
-}
-
--(void) keyboardWillHide: (NSNotification *) notification{
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(64.0, 0.0, 0.0, 0.0);;
-    self.scrollViewContainer.contentInset = contentInsets;
-    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
-}
+//-(void) keyboardWillShow: (NSNotification *) notification{
+//    NSDictionary* info = [notification userInfo];
+//    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+//    
+//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(64.0, 0.0, kbSize.height, 0.0);
+//    self.scrollViewContainer.contentInset = contentInsets;
+//    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
+//    
+//    
+//}
+//
+//-(void) keyboardWillHide: (NSNotification *) notification{
+//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(64.0, 0.0, 0.0, 0.0);;
+//    self.scrollViewContainer.contentInset = contentInsets;
+//    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
+//}
 #pragma mark - gesture
 -(void) onTapPressed:(id) sender{
     
@@ -109,11 +119,11 @@
 #pragma mark - AddItemDelegate methods
 
 - (IBAction)saveButtonPressed:(id)sender {
-    if(self.textField.text.length>=5){
+
     [self saveField];
     UIViewController * nextViewController= [self getNextViewController:self.prodToFill];
     [self.navigationController pushViewController:nextViewController animated:YES];
-    }
+    
 }
 
 -(NSString*)getTitle{

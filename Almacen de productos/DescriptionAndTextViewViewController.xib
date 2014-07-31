@@ -29,27 +29,31 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Máximo 40 caracteres, mínimo 5." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNN-E1-URL">
-                                            <rect key="frame" x="20" y="141" width="260" height="39"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máximo 300 caracteres." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNN-E1-URL">
+                                            <rect key="frame" x="20" y="165" width="260" height="15"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPZ-Ql-uNE">
-                                            <rect key="frame" x="75" y="47" width="150" height="95"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPZ-Ql-uNE">
+                                            <rect key="frame" x="20" y="51" width="260" height="99"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.94686226220000003" green="0.94686226220000003" blue="0.94686226220000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
+                                        <constraint firstItem="dNN-E1-URL" firstAttribute="top" secondItem="HPZ-Ql-uNE" secondAttribute="bottom" constant="15" id="6Zs-OE-JHK"/>
+                                        <constraint firstItem="HPZ-Ql-uNE" firstAttribute="leading" secondItem="gQu-fY-1nP" secondAttribute="leading" constant="20" id="FcK-Aa-pSl"/>
                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dNN-E1-URL" secondAttribute="bottom" constant="5" id="HyI-4P-aNB"/>
                                         <constraint firstItem="dNN-E1-URL" firstAttribute="leading" secondItem="gQu-fY-1nP" secondAttribute="leading" constant="20" id="SJe-fr-S7n"/>
                                         <constraint firstAttribute="bottom" secondItem="dNN-E1-URL" secondAttribute="bottom" constant="10" id="bVC-aj-VZW"/>
                                         <constraint firstItem="95b-z5-2Bn" firstAttribute="top" secondItem="gQu-fY-1nP" secondAttribute="top" constant="10" id="dUI-JK-49J"/>
+                                        <constraint firstItem="HPZ-Ql-uNE" firstAttribute="top" secondItem="95b-z5-2Bn" secondAttribute="bottom" constant="20" id="hS3-tA-4qh"/>
+                                        <constraint firstAttribute="trailing" secondItem="HPZ-Ql-uNE" secondAttribute="trailing" constant="20" id="jwA-P4-mbE"/>
                                         <constraint firstAttribute="trailing" secondItem="95b-z5-2Bn" secondAttribute="trailing" constant="10" id="rhs-MO-s7d"/>
                                         <constraint firstItem="95b-z5-2Bn" firstAttribute="leading" secondItem="gQu-fY-1nP" secondAttribute="leading" constant="20" id="w42-e8-mEN"/>
                                         <constraint firstAttribute="trailing" secondItem="dNN-E1-URL" secondAttribute="trailing" constant="20" id="wWV-BQ-smZ"/>
@@ -58,7 +62,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4s-mk-NaY">
                                     <rect key="frame" x="20" y="265" width="280" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.0034800282489999999" green="0.1134588997" blue="0.53889266300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.057049662891765954" green="0.082783651035449879" blue="0.52873796224594116" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="L6t-la-FXD"/>
                                     </constraints>

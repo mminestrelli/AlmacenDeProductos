@@ -21,4 +21,5 @@
 -(UIViewController*)getNextViewController:(ADPProduct*)productToFill;
 -(void) saveField;
 -(UIKeyboardType)getKeyboardType;
+-(NSInteger)minCharactersAllowed;
 @end

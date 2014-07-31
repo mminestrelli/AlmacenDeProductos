@@ -57,4 +57,7 @@
 -(UIKeyboardType)getKeyboardType{
     return UIKeyboardTypeDefault;
 }
+-(NSInteger)minCharactersAllowed{
+    return 5;
+}
 @end

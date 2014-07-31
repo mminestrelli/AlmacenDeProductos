@@ -9,11 +9,9 @@
 #import "DescriptionViewController.h"
 #import "PriceViewController.h"
 
-@interface DescriptionViewController (){
-    ADPProduct* _prodToFill;
-}
-@property (nonatomic,strong)ADPProduct * prodToFill;
+@interface DescriptionViewController ()
 
+@property (nonatomic,strong)ADPProduct * prodToFill;
 
 @end
 /* This view provides the user the possiblity to add a description to the product to publish*/
