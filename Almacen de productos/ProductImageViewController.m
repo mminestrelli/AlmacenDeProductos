@@ -17,7 +17,7 @@
 
 
 @end
-/* This view provides the user the possiblity to add an image to the product to publish*/
+/* This step provides the user the possiblity to add an image to the product to publish,then notifies on clear o save done*/
 @implementation ProductImageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
@@ -46,9 +46,9 @@
     self.imagePickerView.delegate=self;
 
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Save" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
+                                             initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
     self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Clear" style: UIBarButtonItemStyleDone target:self action:@selector(clearButtonPressed:)];
+                                             initWithTitle:@"Borrar" style: UIBarButtonItemStyleDone target:self action:@selector(clearButtonPressed:)];
 }
 
 - (void)didReceiveMemoryWarning

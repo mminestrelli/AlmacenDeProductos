@@ -16,7 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelDescription;
 @property (weak, nonatomic) IBOutlet UIButton *buttonContinue;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewContainer;
-- (IBAction)saveButtonPressed:(id)sender;
 @property (nonatomic,strong)ADPProduct * prodToFill;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
+- (IBAction)saveButtonPressed:(id)sender;
 @end

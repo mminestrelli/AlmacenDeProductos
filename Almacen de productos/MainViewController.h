@@ -16,5 +16,5 @@
 @property (nonatomic,strong)ADPStoreHouse * house;
 @property (nonatomic,strong)ADPProduct * prodToFill;
 - (IBAction)onProductAddButtonPressed:(UIButton *)sender;
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 @end

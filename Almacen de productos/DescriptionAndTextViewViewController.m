@@ -25,13 +25,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //self.labelDescription.text=[self getDescription];
     self.textView.delegate=self;
     [self setFieldContentIfSaved];
     [self setKeyboard];
-
-//    self.buttonContinue.backgroundColor=[UIColor grayColor];
-//    self.navigationItem.rightBarButtonItem.enabled=NO;
     self.buttonContinue.backgroundColor=[UIColor blueColor];
     self.buttonContinue.enabled=YES;
     self.navigationItem.rightBarButtonItem.enabled=YES;
@@ -44,23 +40,8 @@
 }
 #pragma mark - TextView delegate
 
-
-//-(void) enableButtonsWithAmountOfCharacters:(NSInteger) amount andFloor: (NSInteger) floor{
-//    if(amount>=floor-1){
-//        //enable button
-//        self.buttonContinue.enabled=YES;
-//        self.navigationItem.rightBarButtonItem.enabled=YES;
-//        self.buttonContinue.backgroundColor=[UIColor blueColor];
-//    }else{
-//        self.buttonContinue.backgroundColor=[UIColor grayColor];
-//        self.buttonContinue.enabled=NO;
-//        self.navigationItem.rightBarButtonItem.enabled=NO;
-//    }
-//}
-
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    //[self enableButtonsWithAmountOfCharacters: textView.text.length andFloor:[self minCharactersAllowed]];
     if (textView.text.length >= 300 && range.length == 0)
         return NO;
     return YES;
@@ -96,13 +77,6 @@
 
 #pragma mark - AddItemDelegate methods
 
-//- (IBAction)saveButtonPressed:(id)sender {
-//    
-//    [self saveField];
-//    UIViewController * nextViewController= [self getNextViewController:self.prodToFill];
-//    [self.navigationController pushViewController:nextViewController animated:YES];
-//    
-//}
 - (IBAction)saveButtonPressed:(id)sender {
     [super saveButtonPressed:sender];
 }

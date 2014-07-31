@@ -118,11 +118,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/MainViewController.m"
-            timestampString = "428332419.884667"
+            timestampString = "428518284.356745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-onProductAddButtonPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -134,11 +134,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/MainViewController.m"
-            timestampString = "428332419.884667"
+            timestampString = "428518284.356745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-onProductAddButtonPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -166,11 +166,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/AppDelegate.m"
-            timestampString = "428254871.210744"
+            timestampString = "428518284.356745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "5">
          </BreakpointContent>
@@ -297,7 +297,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "-initWithNibName:bundle:andProductToFill:"
+            landmarkName = "-initWithNibName:bundle:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -324,11 +324,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/MainViewController.m"
-            timestampString = "428332419.884667"
+            timestampString = "428518284.356745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-saveNotificationHandle:"
             landmarkType = "5">
          </BreakpointContent>

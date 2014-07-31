@@ -12,5 +12,5 @@
 
 @interface ProductListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andStoreHouse:(ADPStoreHouse*) storeHouse;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 @end

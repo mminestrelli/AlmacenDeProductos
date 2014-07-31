@@ -43,11 +43,6 @@
 -(NSString*)getDescription{
     return @"Ingresá el título del producto que querés vender";
 }
-/*Saves the data filled in this view to the correspong property in the prodTofill, this product is passed to the next property to fill*/
-//- (IBAction)saveButtonPressed:(id)sender {
-//    self.prodToFill.title=self.textField.text;
-//    [super saveButtonPressed:sender];
-//}
 
 -(void) setFieldContentIfSaved{
     if(self.prodToFill.title!=nil){

@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
     [self setTitle:[self getTitle]];
     self.labelDescription.text=[self getDescription];
+    self.scrollViewContainer.scrollEnabled=YES;
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
 

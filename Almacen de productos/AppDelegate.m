@@ -7,13 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
-#import "ADPStoreHouse.h"
-#import "ADPProduct.h"
-#import "SubtitleViewController.h"
-#import "TitleViewController.h"
-#import "ProductImageViewController.h"
-#import "ProductListViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -23,13 +17,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     UITabBarItem* sellProductTabBarItem = nil;
     UITabBarItem* productListTabBarItem = nil;
-    ADPStoreHouse * house = [[ADPStoreHouse alloc] init];
-    ADPProduct * productToFill=[[ADPProduct alloc]initWithCode:0];
     
     //Seller navigation
-    MainViewController * mainViewController= [[MainViewController alloc]initWithNibName:nil bundle:nil andProductToFill:productToFill ];
+    MainViewController * mainViewController= [[MainViewController alloc]initWithNibName:nil bundle:nil ];
     //List of products added
-    ProductListViewController *productList=[[ProductListViewController alloc]initWithNibName:nil bundle:nil andStoreHouse:house];
+    ProductListViewController *productList=[[ProductListViewController alloc]initWithNibName:nil bundle:nil];
     UINavigationController * navigationController = [[UINavigationController alloc]initWithRootViewController: mainViewController];
     UITabBarController * tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
    

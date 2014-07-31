@@ -21,10 +21,10 @@
 
 @implementation ProductListViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andStoreHouse:(ADPStoreHouse*) storeHouse{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.house=storeHouse;
+        self.house=[[ADPStoreHouse alloc] init];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveNotificationHandle:) name:@"productSave" object:self.productReceivedInNotification];
     }
     return self;

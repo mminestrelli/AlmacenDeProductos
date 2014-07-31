@@ -18,10 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewContainer;
 @property (weak, nonatomic) IBOutlet UIView *viewContainer;
 @property (weak, nonatomic) IBOutlet UIView *viewInside;
-
-- (IBAction)saveButtonPressed:(id)sender;
-
 @property (nonatomic,strong)ADPProduct * prodToFill;
 
+- (IBAction)saveButtonPressed:(id)sender;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @end

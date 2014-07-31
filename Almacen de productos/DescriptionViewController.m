@@ -55,9 +55,11 @@
     PriceViewController * controller = [[PriceViewController alloc] initWithNibName:@"DescriptionAndTextFieldViewController" bundle:nil andProductToFill:productToFill];
     return controller;
 }
+
 -(UIKeyboardType)getKeyboardType{
     return UIKeyboardTypeDefault;
 }
+
 -(NSInteger)minCharactersAllowed{
     return 0;
 }

@@ -43,6 +43,7 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
 -(NSInteger)getIdentification{
     return self.code;
 }
+/*Returns saved price as string formatted acording to user preferences*/
 -(NSString*)getFormattedPriceString{
     return [self.numberFormatter stringFromNumber:[NSNumber numberWithFloat:self.price]];
 }

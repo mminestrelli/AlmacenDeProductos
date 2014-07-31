@@ -23,11 +23,11 @@
 /* Starting view of the app, provides the possibility of adding a product or a vehicle,starts the navigation through all the views that add properties to the product. This product(prodToFill) is passed trough all the views filling the properties title,subtitle,description,price and image*/
 @implementation MainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:productToFill
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.prodToFill=productToFill;
+        self.prodToFill=[[ADPProduct alloc]initWithCode:0];
     }
     //Suscription to clear and save notification in the last view of the navigation
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearNotificationHandle:) name:@"productClear" object:self.productReceivedInNotification];
@@ -42,14 +42,6 @@
     self.scrollViewMain.scrollEnabled=YES;
     // Do any additional setup after loading the view from its nib.
 }
-//Old implementation for saving notification
-//-(void) viewDidAppear:(BOOL)animated{
-//    if(self.prodToFill.image!=nil){
-//        NSInteger code=self.prodToFill.code;
-//        [self.house addProduct:self.prodToFill];
-//        self.prodToFill=[[ADPProduct alloc]initWithCode:code+1];
-//    }
-//}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
