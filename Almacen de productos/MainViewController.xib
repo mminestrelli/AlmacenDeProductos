@@ -34,6 +34,10 @@
                                     <rect key="frame" x="20" y="134" width="280" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="9Px-25-654"/>
+                                        <constraint firstAttribute="width" constant="280" id="CHs-ZJ-NS7"/>
+                                    </constraints>
                                     <state key="normal" title="Vehículos">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,6 +47,10 @@
                                     <rect key="frame" x="20" y="87" width="280" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.003501689313889605" green="0.11416511251333737" blue="0.54224694293478259" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="280" id="FuQ-6w-sl1"/>
+                                        <constraint firstAttribute="height" constant="30" id="QKq-H9-klq"/>
+                                    </constraints>
                                     <state key="normal" title="Productos">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,11 +77,9 @@
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="sHC-Y0-05T" secondAttribute="trailing" id="0aW-Zr-MdJ"/>
-                        <constraint firstItem="sHC-Y0-05T" firstAttribute="height" secondItem="EiY-dp-V5Q" secondAttribute="height" id="8FL-eY-hSh"/>
                         <constraint firstItem="sHC-Y0-05T" firstAttribute="top" secondItem="EiY-dp-V5Q" secondAttribute="top" id="P6x-aV-5IQ"/>
                         <constraint firstAttribute="bottom" secondItem="sHC-Y0-05T" secondAttribute="bottom" id="TIH-Pn-XpL"/>
                         <constraint firstItem="sHC-Y0-05T" firstAttribute="leading" secondItem="EiY-dp-V5Q" secondAttribute="leading" id="dfW-lJ-SYc"/>
-                        <constraint firstItem="sHC-Y0-05T" firstAttribute="width" secondItem="EiY-dp-V5Q" secondAttribute="width" id="jpX-qm-uww"/>
                     </constraints>
                 </scrollView>
             </subviews>

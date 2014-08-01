@@ -34,6 +34,10 @@
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="270" translatesAutoresizingMaskIntoConstraints="NO" id="Doc-FP-EPp" userLabel="Label - LabelDescription">
                                             <rect key="frame" x="20" y="10" width="270" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="270" id="7uw-df-Sb7"/>
+                                                <constraint firstAttribute="height" constant="21" id="GLu-K8-ger"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -41,12 +45,20 @@
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="84t-50-mdS">
                                             <rect key="frame" x="20" y="71" width="260" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="260" id="Rls-ME-pAm"/>
+                                                <constraint firstAttribute="height" constant="30" id="vY2-uG-K9w"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máximo 40 caracteres, mínimo 5." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xn-aF-t3d">
                                             <rect key="frame" x="20" y="141" width="260" height="39"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="260" id="Yim-oI-BCb"/>
+                                                <constraint firstAttribute="height" constant="39" id="hdL-iz-ips"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -71,6 +83,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.0034800282489999999" green="0.1134588997" blue="0.53889266300000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
+                                        <constraint firstAttribute="width" constant="280" id="Cq5-uQ-9LU"/>
                                         <constraint firstAttribute="height" constant="40" id="oKg-it-CWt"/>
                                     </constraints>
                                     <state key="normal" title="Guardar">
@@ -95,11 +108,9 @@
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="PIj-eS-FF1" secondAttribute="width" id="3mQ-Ss-BJP"/>
                         <constraint firstAttribute="trailing" secondItem="PIj-eS-FF1" secondAttribute="trailing" id="5Yd-Ax-gkO"/>
                         <constraint firstAttribute="bottom" secondItem="PIj-eS-FF1" secondAttribute="bottom" constant="-13" id="HQh-EZ-JEw"/>
                         <constraint firstItem="PIj-eS-FF1" firstAttribute="leading" secondItem="ASa-Dy-qCi" secondAttribute="leading" id="NLh-gD-Ohk"/>
-                        <constraint firstAttribute="height" secondItem="PIj-eS-FF1" secondAttribute="height" id="WCb-hv-RGW"/>
                         <constraint firstItem="PIj-eS-FF1" firstAttribute="top" secondItem="ASa-Dy-qCi" secondAttribute="top" constant="13" id="oRs-h1-hgF"/>
                     </constraints>
                 </scrollView>
