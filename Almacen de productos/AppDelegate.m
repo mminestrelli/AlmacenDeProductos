@@ -22,7 +22,8 @@
     MainViewController * mainViewController= [[MainViewController alloc]initWithNibName:nil bundle:nil ];
     //List of products added
     ProductListViewController *productList=[[ProductListViewController alloc]initWithNibName:nil bundle:nil];
-    UINavigationController * navigationController = [[UINavigationController alloc]initWithRootViewController: mainViewController];
+    UINavigationController * navigationControllerSelling = [[UINavigationController alloc]initWithRootViewController: mainViewController];
+    UINavigationController * navigationControllerListing = [[UINavigationController alloc]initWithRootViewController: productList];
     UITabBarController * tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
    
     //Tab bar items
@@ -31,10 +32,10 @@
     
     tabBarController.tabBar.barTintColor = [self colorWith255Red:84 withGreen:84 withBlue:84];
     //tabBarController.tabBar.barTintColor=[UIColor colorWithRed:240 green:210 blue:0 alpha:1];
-    navigationController.tabBarItem=sellProductTabBarItem;
+    navigationControllerSelling.tabBarItem=sellProductTabBarItem;
     productList.tabBarItem=productListTabBarItem;
     
-    [tabBarController setViewControllers:@[navigationController, productList]];
+    [tabBarController setViewControllers:@[navigationControllerSelling, navigationControllerListing]];
     
     self.window.rootViewController= tabBarController;
     [self.window makeKeyAndVisible];

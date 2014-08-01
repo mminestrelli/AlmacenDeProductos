@@ -14,19 +14,20 @@
 @property (nonatomic,copy) NSString * description;
 @property (nonatomic,strong) UIImage * image;
 @property  (nonatomic) CGFloat price;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewContainer;
 @end
 
 @implementation ProductDetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil title:(NSString*) aTitle subtitle:(NSString*) aSubtitle price:(CGFloat)aPrice description:(NSString*) aDescription andImage:(UIImage*)anImage
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProduct:(ADPProduct*)product
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title=aTitle;
-        self.subtitle=aSubtitle;
-        self.description=aDescription;
-        self.image=anImage;
-        self.price=aPrice;
+        self.title=product.title;
+        self.subtitle=product.subtitle;
+        self.description=product.description;
+        self.image=product.image;
+        self.price=product.price;
     }
     return self;
 }
@@ -39,6 +40,7 @@
     self.labelSubtitle.text=self.subtitle;
     self.textViewDescription.text=self.description;
     self.imageViewProduct.image=self.image;
+    self.scrollViewContainer.scrollEnabled=YES;
 }
 
 - (void)didReceiveMemoryWarning

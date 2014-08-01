@@ -36,8 +36,9 @@
     self.tableViewStoreHouse.delegate = self;
     self.tableViewStoreHouse.dataSource = self;
     // Do any additional setup after loading the view from its nib.
-    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Editar" style: UIBarButtonItemStyleBordered target:self action:@selector(tableView: commitEditingStyle:forRowAtIndexPath:)];
+    [self setTitle:@"Mis Publicaciones"];
+    //self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
+//                                             initWithTitle:@"Editar" style: UIBarButtonItemStyleBordered target:self action:@selector(tableView: commitEditingStyle:forRowAtIndexPath:)];
     //Mock add
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto1" code:54 subtitle:@"sub" description:@"desc" price:23 andImage:[UIImage imageNamed: @"gallery2_2256.jpg"]]];
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto2" code:55 subtitle:@"sub" description:@"desc" price:2343 andImage:[UIImage imageNamed: @"gallery1_2256.jpg"]]];
@@ -103,8 +104,9 @@
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //ProductTableViewCell * cell = (ProductTableViewCell *)[self tableView:self.tableViewStoreHouse:indexPath];
-    ProductDetailViewController * detailView= [[ProductDetailViewController alloc] initWithNibName:nil bundle:nil ];
+
+    ADPProduct* product= [self.house getProducts][indexPath.row ];
+    ProductDetailViewController * detailView= [[ProductDetailViewController alloc] initWithNibName:nil bundle:nil andProduct:product];
     [self.navigationController pushViewController:detailView animated:YES];
     [self.tableViewStoreHouse deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -116,4 +118,5 @@
     [self.house addProduct: [usrInfo objectForKey:@"producto" ]];
 
 }
+
 @end

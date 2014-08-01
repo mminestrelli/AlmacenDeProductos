@@ -161,6 +161,7 @@
 		4E82435019893B460010AD53 /* Selling Flow */ = {
 			isa = PBXGroup;
 			children = (
+				4EC2088F198BE6C0009EF9A4 /* Abstract */,
 				4E8252EA197FFD260002F68E /* MainViewController.h */,
 				4E8252EB197FFD260002F68E /* MainViewController.m */,
 				4E82530C197FFE1A0002F68E /* TitleViewController.h */,
@@ -330,12 +331,6 @@
 			children = (
 				4E82435119893B6B0010AD53 /* Listing Flow */,
 				4E82435019893B460010AD53 /* Selling Flow */,
-				4E83C97C198A95210010C8A5 /* AbstractDescriptionAndTextViewController.h */,
-				4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */,
-				4E90D74C198813CE00D4A482 /* DescriptionAndTextFieldViewController.h */,
-				4E90D74D198813CE00D4A482 /* DescriptionAndTextFieldViewController.m */,
-				4E83C979198A89850010C8A5 /* DescriptionAndTextViewViewController.h */,
-				4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -356,6 +351,19 @@
 			children = (
 			);
 			name = Vehicles;
+			sourceTree = "<group>";
+		};
+		4EC2088F198BE6C0009EF9A4 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4E83C97C198A95210010C8A5 /* AbstractDescriptionAndTextViewController.h */,
+				4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */,
+				4E90D74C198813CE00D4A482 /* DescriptionAndTextFieldViewController.h */,
+				4E90D74D198813CE00D4A482 /* DescriptionAndTextFieldViewController.m */,
+				4E83C979198A89850010C8A5 /* DescriptionAndTextViewViewController.h */,
+				4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */,
+			);
+			name = Abstract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
