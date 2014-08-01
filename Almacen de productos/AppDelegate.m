@@ -29,7 +29,7 @@
     //Tab bar items
     sellProductTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Vender" image:[UIImage imageNamed:@"sellTabBar.png"] tag:0];
     productListTabBarItem= [[UITabBarItem alloc] initWithTitle:@"Lista de Productos"  image:[UIImage imageNamed:@"categoriesTabBar.png"] tag:1];
-    
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor yellowColor]];
     tabBarController.tabBar.barTintColor = [self colorWith255Red:84 withGreen:84 withBlue:84];
     //tabBarController.tabBar.barTintColor=[UIColor colorWithRed:240 green:210 blue:0 alpha:1];
     navigationControllerSelling.tabBarItem=sellProductTabBarItem;

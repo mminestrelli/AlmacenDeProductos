@@ -36,7 +36,7 @@
     //self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
 //                                             initWithTitle:@"Editar" style: UIBarButtonItemStyleBordered target:self action:@selector(tableView: commitEditingStyle:forRowAtIndexPath:)];
     //Mock add
-    [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto1" code:54 subtitle:@"sub" description:@"desc" price:23 andImage:[UIImage imageNamed: @"gallery2_2256.jpg"]]];
+    [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"MacBook Pro retina 17 inch" code:54 subtitle:@"sub" description:@"Retina display: 13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 resolution at 227 pixels per inch with support for millions of colors" price:21399 andImage:[UIImage imageNamed: @"gallery2_2256.jpg"]]];
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto2" code:55 subtitle:@"sub" description:@"desc" price:2343 andImage:[UIImage imageNamed: @"gallery1_2256.jpg"]]];
 }
 
