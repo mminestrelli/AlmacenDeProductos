@@ -50,6 +50,9 @@
 		4EBCD20B197E9ABC00B5F0A8 /* Almacen_de_productosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCD20A197E9ABC00B5F0A8 /* Almacen_de_productosTests.m */; };
 		4EBCD226197EB47B00B5F0A8 /* ADPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCD225197EB47B00B5F0A8 /* ADPProduct.m */; };
 		4EBCD22C197EB92100B5F0A8 /* ADPStoreHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCD22B197EB92100B5F0A8 /* ADPStoreHouse.m */; };
+		4EC20889198BCACF009EF9A4 /* ADPVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC20888198BCACF009EF9A4 /* ADPVehicle.m */; };
+		4EC2088D198BD07E009EF9A4 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */; };
+		4EC2088E198BD07E009EF9A4 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +127,11 @@
 		4EBCD225197EB47B00B5F0A8 /* ADPProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPProduct.m; sourceTree = "<group>"; };
 		4EBCD22A197EB92100B5F0A8 /* ADPStoreHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPStoreHouse.h; sourceTree = "<group>"; };
 		4EBCD22B197EB92100B5F0A8 /* ADPStoreHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPStoreHouse.m; sourceTree = "<group>"; };
+		4EC20887198BCACF009EF9A4 /* ADPVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPVehicle.h; sourceTree = "<group>"; };
+		4EC20888198BCACF009EF9A4 /* ADPVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPVehicle.m; sourceTree = "<group>"; };
+		4EC2088A198BD07E009EF9A4 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,8 @@
 				4E82531E19821DC20002F68E /* ProductListViewController.m */,
 				4E2F14361982CD80002A74E6 /* ProductTableViewCell.h */,
 				4E2F14371982CD80002A74E6 /* ProductTableViewCell.m */,
+				4EC2088A198BD07E009EF9A4 /* ProductDetailViewController.h */,
+				4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */,
 			);
 			name = "Listing Flow";
 			sourceTree = "<group>";
@@ -203,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				4E2F14381982CD80002A74E6 /* ProductTableViewCell.xib */,
+				4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */,
 				4E82531F19821DC20002F68E /* ProductListViewController.xib */,
 			);
 			name = Listing;
@@ -211,10 +222,8 @@
 		4E83C980198AB11F0010C8A5 /* Selling */ = {
 			isa = PBXGroup;
 			children = (
-				4E8252EC197FFD260002F68E /* MainViewController.xib */,
-				4E825309197FFD940002F68E /* ProductImageViewController.xib */,
-				4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */,
-				4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */,
+				4EC20886198BCA83009EF9A4 /* Vehicles */,
+				4EC20885198BCA74009EF9A4 /* Products */,
 			);
 			name = Selling;
 			sourceTree = "<group>";
@@ -301,6 +310,8 @@
 				4EBCD22B197EB92100B5F0A8 /* ADPStoreHouse.m */,
 				4EBCD225197EB47B00B5F0A8 /* ADPProduct.m */,
 				4E90D74B1988135500D4A482 /* ADPAddItemDelegate.h */,
+				4EC20887198BCACF009EF9A4 /* ADPVehicle.h */,
+				4EC20888198BCACF009EF9A4 /* ADPVehicle.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -327,6 +338,24 @@
 				4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4EC20885198BCA74009EF9A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E8252EC197FFD260002F68E /* MainViewController.xib */,
+				4E825309197FFD940002F68E /* ProductImageViewController.xib */,
+				4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */,
+				4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EC20886198BCA83009EF9A4 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vehicles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +450,7 @@
 				4E8252EE197FFD260002F68E /* MainViewController.xib in Resources */,
 				4EBCD1F0197E9ABC00B5F0A8 /* InfoPlist.strings in Resources */,
 				4E2F143E1982CE8E002A74E6 /* categoriesTabBar.png in Resources */,
+				4EC2088E198BD07E009EF9A4 /* ProductDetailViewController.xib in Resources */,
 				4EBCD1F8197E9ABC00B5F0A8 /* Images.xcassets in Resources */,
 				4E2F142F1982AABD002A74E6 /* sellTabBar_on.png in Resources */,
 				4E90D74A1987E46800D4A482 /* DescriptionAndTextFieldViewController.xib in Resources */,
@@ -443,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E825305197FFD800002F68E /* PriceViewController.m in Sources */,
+				4EC2088D198BD07E009EF9A4 /* ProductDetailViewController.m in Sources */,
 				4E8252ED197FFD260002F68E /* MainViewController.m in Sources */,
 				4E8252F8197FFD510002F68E /* DescriptionViewController.m in Sources */,
 				4E83C97E198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m in Sources */,
@@ -454,6 +485,7 @@
 				4E82530F197FFE1A0002F68E /* TitleViewController.m in Sources */,
 				4EBCD1F2197E9ABC00B5F0A8 /* main.m in Sources */,
 				4E2F14391982CD80002A74E6 /* ProductTableViewCell.m in Sources */,
+				4EC20889198BCACF009EF9A4 /* ADPVehicle.m in Sources */,
 				4EBCD22C197EB92100B5F0A8 /* ADPStoreHouse.m in Sources */,
 				4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */,
 				4E82532019821DC20002F68E /* ProductListViewController.m in Sources */,

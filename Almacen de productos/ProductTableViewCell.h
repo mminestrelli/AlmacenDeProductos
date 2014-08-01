@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductDetailViewController.h"
 
 @interface ProductTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewPreview;

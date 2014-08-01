@@ -38,6 +38,9 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Editar" style: UIBarButtonItemStyleBordered target:self action:@selector(tableView: commitEditingStyle:forRowAtIndexPath:)];
+    //Mock add
+    [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto1" code:54 subtitle:@"sub" description:@"desc" price:23 andImage:[UIImage imageNamed: @"gallery2_2256.jpg"]]];
+    [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto2" code:55 subtitle:@"sub" description:@"desc" price:2343 andImage:[UIImage imageNamed: @"gallery1_2256.jpg"]]];
 }
 
 -(void) viewDidAppear:(BOOL)animated{
@@ -70,6 +73,8 @@
     productCell.labeltitle.text=current.title;
     productCell.labelSubtitle.text=current.subtitle;
     productCell.labelPrice.text=[NSString stringWithFormat:@"%f",current.price];
+    // Debería ser, pero no esta funcionando
+    //productCell.labelPrice.text= [current getFormattedString];
     productCell.imageViewPreview.image=current.image;
    
     return productCell;
@@ -97,12 +102,18 @@
     }
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //ProductTableViewCell * cell = (ProductTableViewCell *)[self tableView:self.tableViewStoreHouse:indexPath];
+    ProductDetailViewController * detailView= [[ProductDetailViewController alloc] initWithNibName:nil bundle:nil ];
+    [self.navigationController pushViewController:detailView animated:YES];
+    [self.tableViewStoreHouse deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 #pragma mark -Notification handling
 /* Save notification is sent when the user selects the option save in ProductImageViewController the selector handles the object received adding it to the store house */
 -(void) saveNotificationHandle:(NSNotification*) notification{
     NSDictionary * usrInfo=[notification userInfo];
     [self.house addProduct: [usrInfo objectForKey:@"producto" ]];
-    //Mock add
-    //[self.house addProduct:[[ADPProduct alloc] initWithTitle:@"hola" code:2 subtitle:@"sub" description:@"desc" price:23 andImage:nil]];
+
 }
 @end

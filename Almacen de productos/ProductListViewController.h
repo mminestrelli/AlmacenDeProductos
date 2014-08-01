@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ADPStoreHouse.h"
 #import "ADPProduct.h"
+#import "ProductDetailViewController.h"
 
 @interface ProductListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
