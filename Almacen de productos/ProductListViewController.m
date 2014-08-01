@@ -69,8 +69,9 @@
     ADPProduct* current=[self.house getProducts][indexPath.row ];
     productCell.labeltitle.text=current.title;
     productCell.labelSubtitle.text=current.subtitle;
-    productCell.labelPrice.text=@"$";
-    productCell.labelPrice.text= [productCell.labelPrice.text stringByAppendingString:[current getFormattedPriceString]];
+    //productCell.labelPrice.text=@"$";
+    //productCell.labelPrice.text= [current getFormattedPriceString];
+    productCell.labelPrice.text=[NSString stringWithFormat:@"%f",current.price];
     productCell.imageViewPreview.image=current.image;
    
     return productCell;

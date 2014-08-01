@@ -27,8 +27,9 @@
         self.subtitle=product.subtitle;
         self.description=product.description;
         self.image=product.image;
-        self.price=@"$";
-        self.price= [self.price stringByAppendingString:[product getFormattedPriceString]];
+        //self.price=@"$";
+        //self.price= [self.price stringByAppendingString:[product getFormattedPriceString]];
+        self.price=[NSString stringWithFormat:@"%f",product.price];
     }
     return self;
 }
