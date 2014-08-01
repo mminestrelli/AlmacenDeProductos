@@ -84,14 +84,14 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 #pragma mark Bar items selectors
-
+/*Saves the information in the model between steps and pops to the root controller. Also notifies that the product has all it´s properties and must be saved*/
 - (IBAction)saveButtonPressed:(UIButton *)sender {
     self.prodToFill.image=self.displayImageView.image;
     [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
-
+/*Pops to the root controller and notifies to discard all the changes saved in the product*/
 - (IBAction)clearButtonPressed:(UIButton *)sender {
 
     [NSNotification  notificationWithName:@"productClear" object:self.prodToFill];

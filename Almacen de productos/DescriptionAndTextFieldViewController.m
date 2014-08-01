@@ -23,7 +23,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.textField.delegate=self;
     [self setFieldContentIfSaved];
     [self setKeyboard];
@@ -32,10 +31,10 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Textfield delegate
+//Max characters allowed:40
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range     replacementString:(NSString *)string
 {
     [self enableButtonsWithAmountOfCharacters: textField.text.length andFloor:[self minCharactersAllowed]]; 
@@ -45,6 +44,7 @@
 }
 
 #pragma mark - Keyboard handling
+//Delegates in each step to decide which keyboard to use
 -(void)setKeyboard{
     [self.textField setKeyboardType:[self getKeyboardType]];
 }

@@ -29,6 +29,6 @@
 -(UIKeyboardType)getKeyboardType;
 /*Returns the min amount of characters needed in the text component*/
 -(NSInteger)minCharactersAllowed;
-/*Saves the information in the model between steps*/
+/*Saves the information in the model between steps and pushes the next controller*/
 - (IBAction)saveButtonPressed:(UIButton *)sender;
 @end

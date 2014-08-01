@@ -39,7 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 #pragma mark - TextView delegate
-
+//Max characters allowed:300
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
     if (textView.text.length >= 300 && range.length == 0)

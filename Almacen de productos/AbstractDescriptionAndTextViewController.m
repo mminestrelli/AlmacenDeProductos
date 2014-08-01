@@ -23,6 +23,7 @@
     }
     return self;
 }
+/*On view load set the specific title and description of the step and set the save buttons */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,7 +48,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*If the amount of characters in the input is greater than the minimun requiered by the field, all buttons get enabled*/
 -(void) enableButtonsWithAmountOfCharacters:(NSInteger) amount andFloor: (NSInteger) floor{
     if(amount>=floor-1){
         //enable button

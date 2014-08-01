@@ -9,11 +9,7 @@
 #import "ProductListViewController.h"
 #import "ProductTableViewCell.h"
 
-@interface ProductListViewController (){
-    UITableView * _tableViewStoreHouse;
-    ADPStoreHouse* _house;
-    ADPProduct* _productReceivedInNotification;
-}
+@interface ProductListViewController ()
 @property (nonatomic,strong) ADPProduct* productReceivedInNotification;
 @property (strong, nonatomic) IBOutlet UITableView *tableViewStoreHouse;
 @property (strong,nonatomic) ADPStoreHouse* house;
