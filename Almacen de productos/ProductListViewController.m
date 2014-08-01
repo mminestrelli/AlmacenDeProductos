@@ -73,9 +73,7 @@
     ADPProduct* current=[self.house getProducts][indexPath.row ];
     productCell.labeltitle.text=current.title;
     productCell.labelSubtitle.text=current.subtitle;
-    productCell.labelPrice.text=[NSString stringWithFormat:@"%f",current.price];
-    // Debería ser, pero no esta funcionando
-    //productCell.labelPrice.text= [current getFormattedString];
+    productCell.labelPrice.text= [current getFormattedPriceString];
     productCell.imageViewPreview.image=current.image;
    
     return productCell;

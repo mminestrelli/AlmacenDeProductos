@@ -13,7 +13,7 @@
 @property (nonatomic,copy) NSString * subtitle;
 @property (nonatomic,copy) NSString * description;
 @property (nonatomic,strong) UIImage * image;
-@property  (nonatomic) CGFloat price;
+@property  (nonatomic,copy) NSString * price;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewContainer;
 @end
 
@@ -27,7 +27,8 @@
         self.subtitle=product.subtitle;
         self.description=product.description;
         self.image=product.image;
-        self.price=product.price;
+        self.price=@"$";
+        self.price= [self.price stringByAppendingString:[product getFormattedPriceString]];
     }
     return self;
 }
@@ -36,7 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    //self.labelPrice=;
+    self.labelPrice.text=self.price;
     self.labelSubtitle.text=self.subtitle;
     self.textViewDescription.text=self.description;
     self.imageViewProduct.image=self.image;
