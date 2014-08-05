@@ -164,6 +164,7 @@
 				4EC2088F198BE6C0009EF9A4 /* Abstract */,
 				4E8252EA197FFD260002F68E /* MainViewController.h */,
 				4E8252EB197FFD260002F68E /* MainViewController.m */,
+				4E8252EC197FFD260002F68E /* MainViewController.xib */,
 				4E82530C197FFE1A0002F68E /* TitleViewController.h */,
 				4E82530D197FFE1A0002F68E /* TitleViewController.m */,
 				4E8252F5197FFD510002F68E /* DescriptionViewController.h */,
@@ -174,6 +175,7 @@
 				4E825303197FFD800002F68E /* PriceViewController.m */,
 				4E825307197FFD940002F68E /* ProductImageViewController.h */,
 				4E825308197FFD940002F68E /* ProductImageViewController.m */,
+				4E825309197FFD940002F68E /* ProductImageViewController.xib */,
 			);
 			name = "Selling Flow";
 			sourceTree = "<group>";
@@ -338,10 +340,6 @@
 		4EC20885198BCA74009EF9A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E8252EC197FFD260002F68E /* MainViewController.xib */,
-				4E825309197FFD940002F68E /* ProductImageViewController.xib */,
-				4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */,
-				4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,8 +358,10 @@
 				4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */,
 				4E90D74C198813CE00D4A482 /* DescriptionAndTextFieldViewController.h */,
 				4E90D74D198813CE00D4A482 /* DescriptionAndTextFieldViewController.m */,
+				4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */,
 				4E83C979198A89850010C8A5 /* DescriptionAndTextViewViewController.h */,
 				4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */,
+				4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";

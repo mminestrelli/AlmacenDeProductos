@@ -7,6 +7,7 @@
 //
 
 #import "DescriptionAndTextViewViewController.h"
+#define kMaxCharactersAllowed 300
 
 @interface DescriptionAndTextViewViewController ()<ADPAddItemDelegate,UITextFieldDelegate,UITextViewDelegate>
 
@@ -28,6 +29,7 @@
     self.textView.delegate=self;
     [self setFieldContentIfSaved];
     [self setKeyboard];
+    [self setCharactersLeftLabelWithInteger:kMaxCharactersAllowed];
     self.buttonContinue.backgroundColor=[UIColor blueColor];
     self.buttonContinue.enabled=YES;
     self.navigationItem.rightBarButtonItem.enabled=YES;
@@ -42,9 +44,15 @@
 //Max characters allowed:300
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    if (textView.text.length >= 300 && range.length == 0)
+    NSString * current=[textView.text stringByReplacingCharactersInRange:range withString:text];
+    if([current length]>kMaxCharactersAllowed){
         return NO;
-    return YES;
+    }else{
+        [self setCharactersLeftLabelWithInteger:kMaxCharactersAllowed-[current length]];
+        return YES;
+    }
+    
+
 }
 
 #pragma mark - Keyboard handling

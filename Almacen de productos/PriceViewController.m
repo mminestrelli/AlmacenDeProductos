@@ -62,4 +62,10 @@
 -(NSInteger)minCharactersAllowed{
     return 0;
 }
+#pragma mark override
+-(void)setCharactersLeftLabelWithInteger:(NSInteger)charactersLeft{
+    self.labelCharactersLeft.text=@"";
+    
+}
+
 @end

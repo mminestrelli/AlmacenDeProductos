@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DescriptionAndTextViewViewController">
             <connections>
                 <outlet property="buttonContinue" destination="M4s-mk-NaY" id="ivD-eh-wtF"/>
+                <outlet property="labelCharactersLeft" destination="dNN-E1-URL" id="l37-5N-sGo"/>
                 <outlet property="labelDescription" destination="95b-z5-2Bn" id="YTd-kl-TjX"/>
                 <outlet property="scrollViewContainer" destination="3AT-U2-HCc" id="6kx-VW-Len"/>
                 <outlet property="textView" destination="HPZ-Ql-uNE" id="3s6-zf-6nV"/>
@@ -25,30 +26,33 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AL-LG-PgC" userLabel="ContainerView">
-                            <rect key="frame" x="0.0" y="13" width="320" height="568"/>
+                            <rect key="frame" x="0.0" y="13" width="321" height="568"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQu-fY-1nP" userLabel="InsiderView">
-                                    <rect key="frame" x="10" y="25" width="300" height="190"/>
+                                    <rect key="frame" x="10" y="25" width="301" height="186"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="270" translatesAutoresizingMaskIntoConstraints="NO" id="95b-z5-2Bn" userLabel="Label - LabelDescription">
-                                            <rect key="frame" x="20" y="10" width="270" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="271" translatesAutoresizingMaskIntoConstraints="NO" id="95b-z5-2Bn" userLabel="Label - LabelDescription">
+                                            <rect key="frame" x="20" y="10" width="271" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máximo 300 caracteres." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNN-E1-URL">
-                                            <rect key="frame" x="20" y="165" width="260" height="15"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máximo 300 caracteres." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="261" translatesAutoresizingMaskIntoConstraints="NO" id="dNN-E1-URL">
+                                            <rect key="frame" x="20" y="161" width="261" height="15"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPZ-Ql-uNE">
-                                            <rect key="frame" x="20" y="51" width="260" height="99"/>
+                                            <rect key="frame" x="20" y="48" width="261" height="98"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="98" id="0kW-bi-fji"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
@@ -69,13 +73,13 @@
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4s-mk-NaY">
-                                    <rect key="frame" x="20" y="265" width="280" height="40"/>
+                                    <rect key="frame" x="20" y="261" width="281" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.057049662891765954" green="0.082783651035449879" blue="0.52873796224594116" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="L6t-la-FXD"/>
+                                        <constraint firstAttribute="height" constant="44" id="L6t-la-FXD"/>
                                     </constraints>
-                                    <state key="normal" title="Guardar">
+                                    <state key="normal" title="Continuar">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>

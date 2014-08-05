@@ -43,8 +43,9 @@
 
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
-    self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Borrar" style: UIBarButtonItemStyleDone target:self action:@selector(clearButtonPressed:)];
+    //Funcionalidad de descartar cambios
+    //self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc]
+    //                                         initWithTitle:@"Borrar" style: UIBarButtonItemStyleDone target:self action:@selector(clearButtonPressed:)];
 }
 
 - (void)didReceiveMemoryWarning

@@ -30,9 +30,9 @@
     // Do any additional setup after loading the view.
     [self setTitle:[self getTitle]];
     self.labelDescription.text=[self getDescription];
-    self.scrollViewContainer.scrollEnabled=YES;
+    self.scrollViewContainer.scrollEnabled=NO;
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
+                                             initWithTitle:@"Continuar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
 
     UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapPressed:)];
     [self.view addGestureRecognizer:tapGesture];
@@ -48,9 +48,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark -custom methods
 /*If the amount of characters in the input is greater than the minimun requiered by the field, all buttons get enabled*/
 -(void) enableButtonsWithAmountOfCharacters:(NSInteger) amount andFloor: (NSInteger) floor{
-    if(amount>=floor-1){
+    if(amount>=floor){
         //enable button
         self.buttonContinue.enabled=YES;
         self.navigationItem.rightBarButtonItem.enabled=YES;
@@ -62,6 +63,12 @@
     }
 }
 
+-(void)setCharactersLeftLabelWithInteger:(NSInteger)charactersLeft{
+    NSString *baseString = @"Te quedan";
+    self.labelCharactersLeft.text=[baseString stringByAppendingFormat:
+                                   @" %d caracteres disponibles ",charactersLeft];
+    
+}
 
 #pragma mark - AddItemDelegate methods
 

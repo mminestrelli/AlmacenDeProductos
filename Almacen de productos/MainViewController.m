@@ -30,6 +30,8 @@
     //Suscription to clear and save notification in the last view of the navigation
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearNotificationHandle:) name:@"productClear" object:self.productReceivedInNotification];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveNotificationHandle:) name:@"productSave" object:self.productReceivedInNotification];
+    //[self.scrollViewMain setContentSize:self.view.frame.size];
+    
     return self;
 }
 

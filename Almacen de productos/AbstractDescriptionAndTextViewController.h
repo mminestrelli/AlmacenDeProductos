@@ -16,10 +16,13 @@
 @property (nonatomic,strong)ADPProduct * prodToFill;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 -(void) enableButtonsWithAmountOfCharacters:(NSInteger) amount andFloor: (NSInteger) floor;
+-(void)setCharactersLeftLabelWithInteger:(NSInteger)charactersLeft;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *labelDescription;
+@property (weak, nonatomic) IBOutlet UIView *viewInsider;
 @property (weak, nonatomic) IBOutlet UIButton *buttonContinue;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewContainer;
+@property (weak, nonatomic) IBOutlet UILabel *labelCharactersLeft;
 - (IBAction)saveButtonPressed:(id)sender;
 @end

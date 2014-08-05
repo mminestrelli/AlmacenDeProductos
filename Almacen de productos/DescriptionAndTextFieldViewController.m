@@ -7,6 +7,7 @@
 //
 
 #import "DescriptionAndTextFieldViewController.h"
+#define kMaxCharactersAllowed 40
 
 @interface DescriptionAndTextFieldViewController ()<ADPAddItemDelegate,UITextViewDelegate,UITextFieldDelegate>
 
@@ -26,6 +27,8 @@
     self.textField.delegate=self;
     [self setFieldContentIfSaved];
     [self setKeyboard];
+    [self registerForKeyboardNotifications];
+    [self setCharactersLeftLabelWithInteger:kMaxCharactersAllowed];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,10 +40,16 @@
 //Max characters allowed:40
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range     replacementString:(NSString *)string
 {
-    [self enableButtonsWithAmountOfCharacters: textField.text.length andFloor:[self minCharactersAllowed]]; 
-    if (textField.text.length >= 40 && range.length == 0)
+    NSString * current=[textField.text stringByReplacingCharactersInRange:range withString:string];
+    if([current length]>kMaxCharactersAllowed){
         return NO;
-    return YES;
+    }else{
+        //Min character amount validation disabled
+        [self enableButtonsWithAmountOfCharacters: [current length] andFloor:[self minCharactersAllowed]];
+        [self setCharactersLeftLabelWithInteger:kMaxCharactersAllowed-[current length]];
+        return YES;
+    }
+    
 }
 
 #pragma mark - Keyboard handling
@@ -71,6 +80,49 @@
     [self.view endEditing:YES];
 }
 
+// Call this method somewhere in your view controller setup code.
+- (void)registerForKeyboardNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardWillHideNotification object:nil];
+    
+}
+
+// Called when the UIKeyboardDidShowNotification is sent.
+- (void)keyboardWasShown:(NSNotification*)aNotification
+{
+    NSDictionary* info = [aNotification userInfo];
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+    self.scrollViewContainer.contentInset = contentInsets;
+    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
+    
+    // If active text field is hidden by keyboard, scroll it so it's visible
+    // Your app might not need or want this behavior.
+    CGRect aRect = self.view.frame;
+    aRect.size.height -= kbSize.height;
+    if (!CGRectContainsPoint(aRect, self.viewInsider.frame.origin) ) {
+        [self.scrollViewContainer scrollRectToVisible:self.viewInsider.frame animated:YES];
+        self.scrollViewContainer.scrollEnabled=YES;
+    }
+}
+
+
+// Called when the UIKeyboardWillHideNotification is sent
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification
+{
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0,0.0, 0.0);;
+    self.scrollViewContainer.contentInset = contentInsets;
+    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
+    [self.scrollViewContainer scrollsToTop];
+}
+
 #pragma mark - AddItemDelegate methods
 
 - (IBAction)saveButtonPressed:(id)sender {
@@ -82,6 +134,8 @@
 -(NSString*)getDescription{
     return @"";
 }
+
+
 
 @end
 
