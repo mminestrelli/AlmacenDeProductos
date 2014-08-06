@@ -52,7 +52,7 @@
     
     self.navigationItem.hidesBackButton=YES;
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-                                             initWithTitle:@"Agregar" style: UIBarButtonItemStyleDone target:self action:@selector(toRootButtonPressed)] ;
+                                             initWithTitle:@"Seguir Vendiendo" style: UIBarButtonItemStyleDone target:self action:@selector(toRootButtonPressed)] ;
     
 }
 

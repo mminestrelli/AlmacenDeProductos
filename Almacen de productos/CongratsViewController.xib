@@ -41,6 +41,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jeu-ph-SFX">
                                                     <rect key="frame" x="88" y="10" width="110" height="110"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="tintColor" red="0.21356374436442785" green="0.45032269021739135" blue="0.20368242321847019" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="110" id="7uu-Ho-XU3"/>
                                                         <constraint firstAttribute="width" secondItem="Jeu-ph-SFX" secondAttribute="height" multiplier="105:105" id="GSG-uu-GXs"/>

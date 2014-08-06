@@ -96,31 +96,35 @@
 // Called when the UIKeyboardDidShowNotification is sent.
 - (void)keyboardWasShown:(NSNotification*)aNotification
 {
-    NSDictionary* info = [aNotification userInfo];
-    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-    
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
-    self.scrollViewContainer.contentInset = contentInsets;
-    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
-    
-    // If active text field is hidden by keyboard, scroll it so it's visible
-    // Your app might not need or want this behavior.
-    CGRect aRect = self.view.frame;
-    aRect.size.height -= kbSize.height;
-    if (!CGRectContainsPoint(aRect, self.viewInsider.frame.origin) ) {
-        [self.scrollViewContainer scrollRectToVisible:self.viewInsider.frame animated:YES];
-        self.scrollViewContainer.scrollEnabled=YES;
-    }
+    self.scrollViewContainer.scrollEnabled=YES;
+//    NSDictionary* info = [aNotification userInfo];
+//    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+//    
+//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+//    self.scrollViewContainer.contentInset = contentInsets;
+//    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
+//    
+//    // If active text field is hidden by keyboard, scroll it so it's visible
+//    // Your app might not need or want this behavior.
+//    CGRect aRect = self.view.frame;
+//    aRect.size.height -= kbSize.height;
+//    if (!CGRectContainsPoint(aRect, self.viewInsider.frame.origin) ) {
+//        [self.scrollViewContainer scrollRectToVisible:self.viewInsider.frame animated:YES];
+//        self.scrollViewContainer.scrollEnabled=YES;
+//    }
 }
 
 
 // Called when the UIKeyboardWillHideNotification is sent
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification
 {
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0,0.0, 0.0);;
-    self.scrollViewContainer.contentInset = contentInsets;
-    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
-    [self.scrollViewContainer scrollsToTop];
+//    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0,0.0, 0.0);;
+//    self.scrollViewContainer.contentInset = contentInsets;
+//    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
+    
+    [self.scrollViewContainer setContentOffset:CGPointMake(self.scrollViewContainer.contentOffset.x, 0)
+                             animated:YES];
+    self.scrollViewContainer.scrollEnabled=NO;
 }
 
 #pragma mark - AddItemDelegate methods
