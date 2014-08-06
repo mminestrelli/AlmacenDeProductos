@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
 #import "ADPAddItemDelegate.h"
+#import "MBProgressHUD.h"
 
 @interface AbstractDescriptionAndTextViewController : UIViewController
 

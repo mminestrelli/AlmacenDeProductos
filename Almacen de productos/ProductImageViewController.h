@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
+#import "MBProgressHUD.h"
+#import "CongratsViewController.h"
 
 
-@interface ProductImageViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
+@class MBProgressHUD;
+@interface ProductImageViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>{
+    MBProgressHUD *HUD;
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UIScrollView *productImageSV;
 @property (weak, nonatomic) IBOutlet UIPickerView *imagePickerView;

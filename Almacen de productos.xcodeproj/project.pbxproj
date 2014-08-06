@@ -34,6 +34,10 @@
 		4E82532119821DC20002F68E /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E82531F19821DC20002F68E /* ProductListViewController.xib */; };
 		4E83C97B198A89850010C8A5 /* DescriptionAndTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */; };
 		4E83C97E198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */; };
+		4E8E1A3919928F6700A4D226 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E1A3819928F6700A4D226 /* MBProgressHUD.m */; };
+		4E8E1A3D1992A16700A4D226 /* CongratsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E1A3B1992A16700A4D226 /* CongratsViewController.m */; };
+		4E8E1A3E1992A16700A4D226 /* CongratsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8E1A3C1992A16700A4D226 /* CongratsViewController.xib */; };
+		4E8E1A401992B08700A4D226 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8E1A3F1992B08700A4D226 /* check.png */; };
 		4E90D74A1987E46800D4A482 /* DescriptionAndTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */; };
 		4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E90D74D198813CE00D4A482 /* DescriptionAndTextFieldViewController.m */; };
 		4EBCD1E6197E9ABC00B5F0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBCD1E5197E9ABC00B5F0A8 /* Foundation.framework */; };
@@ -66,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20767C150F8E46FAA3891187 /* Pods-Almacen de productos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Almacen de productos.xcconfig"; path = "Pods/Pods-Almacen de productos.xcconfig"; sourceTree = "<group>"; };
 		4E2F142B1982AABD002A74E6 /* sellTabBar_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sellTabBar_on.png; sourceTree = "<group>"; };
 		4E2F142C1982AABD002A74E6 /* sellTabBar_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sellTabBar_on@2x.png"; sourceTree = "<group>"; };
 		4E2F142D1982AABD002A74E6 /* sellTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sellTabBar.png; sourceTree = "<group>"; };
@@ -103,6 +108,12 @@
 		4E83C97A198A89850010C8A5 /* DescriptionAndTextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionAndTextViewViewController.m; sourceTree = "<group>"; };
 		4E83C97C198A95210010C8A5 /* AbstractDescriptionAndTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDescriptionAndTextViewController.h; sourceTree = "<group>"; };
 		4E83C97D198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractDescriptionAndTextViewController.m; sourceTree = "<group>"; };
+		4E8E1A3719928F6700A4D226 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4E8E1A3819928F6700A4D226 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4E8E1A3A1992A16700A4D226 /* CongratsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CongratsViewController.h; sourceTree = "<group>"; };
+		4E8E1A3B1992A16700A4D226 /* CongratsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CongratsViewController.m; sourceTree = "<group>"; };
+		4E8E1A3C1992A16700A4D226 /* CongratsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CongratsViewController.xib; sourceTree = "<group>"; };
+		4E8E1A3F1992B08700A4D226 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		4E90D7481987E46800D4A482 /* DescriptionAndTextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionAndTextFieldViewController.xib; sourceTree = "<group>"; };
 		4E90D74B1988135500D4A482 /* ADPAddItemDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADPAddItemDelegate.h; sourceTree = "<group>"; };
 		4E90D74C198813CE00D4A482 /* DescriptionAndTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionAndTextFieldViewController.h; sourceTree = "<group>"; };
@@ -176,6 +187,9 @@
 				4E825307197FFD940002F68E /* ProductImageViewController.h */,
 				4E825308197FFD940002F68E /* ProductImageViewController.m */,
 				4E825309197FFD940002F68E /* ProductImageViewController.xib */,
+				4E8E1A3A1992A16700A4D226 /* CongratsViewController.h */,
+				4E8E1A3B1992A16700A4D226 /* CongratsViewController.m */,
+				4E8E1A3C1992A16700A4D226 /* CongratsViewController.xib */,
 			);
 			name = "Selling Flow";
 			sourceTree = "<group>";
@@ -208,6 +222,7 @@
 				4E2F143B1982CE8E002A74E6 /* categoriesTabBar.png */,
 				4E2F143C1982CE8E002A74E6 /* categoriesTabBar@2x.png */,
 				4E2F143D1982CE8E002A74E6 /* CategoriesTabBar_on@2x.png */,
+				4E8E1A3F1992B08700A4D226 /* check.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -238,6 +253,7 @@
 				4EBCD204197E9ABC00B5F0A8 /* Almacen de productosTests */,
 				4EBCD1E4197E9ABC00B5F0A8 /* Frameworks */,
 				4EBCD1E3197E9ABC00B5F0A8 /* Products */,
+				20767C150F8E46FAA3891187 /* Pods-Almacen de productos.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +297,8 @@
 			children = (
 				4EBCD1ED197E9ABC00B5F0A8 /* Almacen de productos-Info.plist */,
 				4EBCD1EE197E9ABC00B5F0A8 /* InfoPlist.strings */,
+				4E8E1A3719928F6700A4D226 /* MBProgressHUD.h */,
+				4E8E1A3819928F6700A4D226 /* MBProgressHUD.m */,
 				4EBCD1F1197E9ABC00B5F0A8 /* main.m */,
 				4EBCD1F3197E9ABC00B5F0A8 /* Almacen de productos-Prefix.pch */,
 			);
@@ -373,9 +391,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EBCD20E197E9ABC00B5F0A8 /* Build configuration list for PBXNativeTarget "Almacen de productos" */;
 			buildPhases = (
+				8FAE8F50FF7B43ADA3C149E0 /* Check Pods Manifest.lock */,
 				4EBCD1DE197E9ABC00B5F0A8 /* Sources */,
 				4EBCD1DF197E9ABC00B5F0A8 /* Frameworks */,
 				4EBCD1E0197E9ABC00B5F0A8 /* Resources */,
+				5013622BCCC24224B853FD59 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,9 +472,11 @@
 				4E2F14321982AABD002A74E6 /* sellTabBar@2x.png in Resources */,
 				4E82531A19817BF50002F68E /* gallery3_2256.jpg in Resources */,
 				4E82531919817BF50002F68E /* gallery2_2256.jpg in Resources */,
+				4E8E1A3E1992A16700A4D226 /* CongratsViewController.xib in Resources */,
 				4E82531B19817BF50002F68E /* gallery4_2256.jpg in Resources */,
 				4E2F14301982AABD002A74E6 /* sellTabBar_on@2x.png in Resources */,
 				4E82532119821DC20002F68E /* ProductListViewController.xib in Resources */,
+				4E8E1A401992B08700A4D226 /* check.png in Resources */,
 				4E8252EE197FFD260002F68E /* MainViewController.xib in Resources */,
 				4EBCD1F0197E9ABC00B5F0A8 /* InfoPlist.strings in Resources */,
 				4E2F143E1982CE8E002A74E6 /* categoriesTabBar.png in Resources */,
@@ -475,6 +497,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5013622BCCC24224B853FD59 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Almacen de productos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FAE8F50FF7B43ADA3C149E0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4EBCD1DE197E9ABC00B5F0A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -490,9 +545,11 @@
 				4E83C97B198A89850010C8A5 /* DescriptionAndTextViewViewController.m in Sources */,
 				4EBCD1F6197E9ABC00B5F0A8 /* AppDelegate.m in Sources */,
 				4E8252FD197FFD620002F68E /* SubtitleViewController.m in Sources */,
+				4E8E1A3D1992A16700A4D226 /* CongratsViewController.m in Sources */,
 				4E82530F197FFE1A0002F68E /* TitleViewController.m in Sources */,
 				4EBCD1F2197E9ABC00B5F0A8 /* main.m in Sources */,
 				4E2F14391982CD80002A74E6 /* ProductTableViewCell.m in Sources */,
+				4E8E1A3919928F6700A4D226 /* MBProgressHUD.m in Sources */,
 				4EC20889198BCACF009EF9A4 /* ADPVehicle.m in Sources */,
 				4EBCD22C197EB92100B5F0A8 /* ADPStoreHouse.m in Sources */,
 				4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */,
@@ -610,6 +667,7 @@
 		};
 		4EBCD20F197E9ABC00B5F0A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20767C150F8E46FAA3891187 /* Pods-Almacen de productos.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -623,6 +681,7 @@
 		};
 		4EBCD210197E9ABC00B5F0A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20767C150F8E46FAA3891187 /* Pods-Almacen de productos.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

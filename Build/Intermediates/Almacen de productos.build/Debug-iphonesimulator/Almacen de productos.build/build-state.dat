@@ -1,0 +1,761 @@
+TAlmacen de productos
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution Check\ Pods\ Manifest.lock /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Script-8FAE8F50FF7B43ADA3C149E0.sh
+cProcessPCH /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch.pch Almacen\ de\ productos/Almacen\ de\ productos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/PriceViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/PriceViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductDetailViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/MainViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AbstractDescriptionAndTextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductImageViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductImageViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPProduct.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPProduct.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextViewViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AppDelegate.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/SubtitleViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/SubtitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/TitleViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/TitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/main.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductTableViewCell.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPVehicle.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPVehicle.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPStoreHouse.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPStoreHouse.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextFieldViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductListViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductListViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/Almacen\ de\ productos normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c0000000053B2C5BC00000000000003B4
+t1404224956
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053B2C5C4000000000000019E
+t1404224964
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000053B2C5C60000000000446820
+t1404224966
+s4483104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053B2C5C8000000000088D8C0
+t1404224968
+s8968384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000053B2C5CF0000000001F1DE10
+t1404224975
+s32628240
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053B2C6170000000000000ADC
+t1404225047
+s2780
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.m
+c0000000053DA73D400000000000004F5
+t1406825428
+s1269
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.m
+c0000000053D658AD0000000000000576
+t1406556333
+s1398
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPVehicle.m
+c0000000053DB95C70000000000000311
+t1406899655
+s785
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.m
+c0000000053E0E8CC0000000000000C11
+t1407248588
+s3089
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/Almacen de productos-Prefix.pch
+c0000000053CE633C0000000000000158
+t1406034748
+s344
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AppDelegate.m
+c0000000053DBD9460000000000000F59
+t1406916934
+s3929
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.m
+c0000000053E0F4570000000000001142
+t1407251543
+s4418
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.m
+c0000000053E0DA3600000000000009DB
+t1407244854
+s2523
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionViewController.m
+c0000000053DA77F30000000000000699
+t1406826483
+s1689
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.m
+c0000000053E0E6FB0000000000000CEA
+t1407248123
+s3306
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.m
+c0000000053E0DB6400000000000006FF
+t1407245156
+s1791
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.m
+c0000000053DBF7BD000000000000067F
+t1406924733
+s1663
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.m
+c0000000053E0D2590000000000000EC7
+t1407242841
+s3783
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductListViewController.m
+c0000000053DFB2A70000000000001496
+t1407169191
+s5270
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductTableViewCell.m
+c0000000053DBA29000000000000001D0
+t1406902928
+s464
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/SubtitleViewController.m
+c0000000053DA681D000000000000066F
+t1406822429
+s1647
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.m
+c0000000053DA77BF000000000000068A
+t1406826431
+s1674
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/main.m
+c0000000053CFC4470000000000000168
+t1406125127
+s360
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ADPProduct.o
+t1407340059
+s22660
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ADPStoreHouse.o
+t1407340060
+s16828
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ADPVehicle.o
+t1407340060
+s15752
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.o
+t1407340059
+s69448
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/Almacen de productos.LinkFileList
+c0000000053E24E1B0000000000000C5F
+t1407340059
+s3167
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/AppDelegate.o
+t1407340059
+s71140
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.o
+t1407340060
+s76116
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.o
+t1407340059
+s71260
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/DescriptionViewController.o
+t1407340059
+s57540
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/MainViewController.o
+t1407340059
+s58976
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/PriceViewController.o
+t1407340059
+s55760
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductDetailViewController.o
+t1407340061
+s60812
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductImageViewController.o
+t1407340059
+s69496
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductListViewController.o
+t1407340060
+s76784
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductTableViewCell.o
+t1407340060
+s48600
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/SubtitleViewController.o
+t1407340060
+s57372
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/TitleViewController.o
+t1407340060
+s57412
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/main.o
+t1407340060
+s3584
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Script-8FAE8F50FF7B43ADA3C149E0.sh
+c0000000053E24E1B0000000000000103
+t1407340059
+s259
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen de productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen de productos-Prefix.pch.pch
+t1407340059
+s123116
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen de productos.app/Almacen de productos
+t2
+s0
+
+N/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/libPods-Almacen de productos.a
+c00000000000000000000000000000000
+t2
+s0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPProduct.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPStoreHouse.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPVehicle.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AbstractDescriptionAndTextViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AppDelegate.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextFieldViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextViewViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/MainViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/PriceViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductDetailViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductImageViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductListViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductTableViewCell.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/SubtitleViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/TitleViewController.m
+r0
+
+CBuild AST from /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesf6253b9b8592b941^89b6579b8592b941^---0#1#1#--18"Check dependencies36"6AFEEB80-EEE5-41C0-9CCD-90152DA79301-
+
+CCompileAssetCatalog /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/Images.xcassets
+r0
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPProduct.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPProduct.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.673436
+e429032859.772256
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ADPProduct.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.m245"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPProduct.o Almacen\ de\ productos/ADPProduct.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7787ac9b8592b941^0daac59b8592b941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPProduct.m0000000000000000^4377"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPProduct.o Almacen\ de\ productos/ADPProduct.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPProduct.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPProduct.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPProduct.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPProduct.o36"ADD7C922-2665-4B58-9839-7A6745C79A5F-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPStoreHouse.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPStoreHouse.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032860.063607
+e429032860.155924
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ADPStoreHouse.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.m251"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPStoreHouse.o Almacen\ de\ productos/ADPStoreHouse.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0667109c8592b941^91f2279c8592b941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPStoreHouse.m0000000000000000^4395"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPStoreHouse.o Almacen\ de\ productos/ADPStoreHouse.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPStoreHouse.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPStoreHouse.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPStoreHouse.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPStoreHouse.o36"4D3B4500-A4D0-4EF8-A2CB-127DD9CBDEF7-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPVehicle.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPVehicle.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032860.063398
+e429032860.149025
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ADPVehicle.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPVehicle.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPVehicle.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPVehicle.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPVehicle.m245"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPVehicle.o Almacen\ de\ productos/ADPVehicle.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1f9f109c8592b941^562c269c8592b941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPVehicle.m0000000000000000^4377"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPVehicle.o Almacen\ de\ productos/ADPVehicle.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPVehicle.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPVehicle.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ADPVehicle.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ADPVehicle.o36"E27EA95C-0409-4A53-B0DB-10FC79988459-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AbstractDescriptionAndTextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.594055
+e429032859.872989
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.m305"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.o Almacen\ de\ productos/AbstractDescriptionAndTextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9fc7989b8592b941^137cdf9b8592b941^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/AbstractDescriptionAndTextViewController.m0000000000000000^4557"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.o Almacen\ de\ productos/AbstractDescriptionAndTextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AbstractDescriptionAndTextViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AbstractDescriptionAndTextViewController.o36"7FE30009-22FF-454C-A0F9-6FBD87EE594D-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AppDelegate.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.772533
+e429032859.962811
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/AppDelegate.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AppDelegate.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AppDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductListViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AppDelegate.m247"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AppDelegate.o Almacen\ de\ productos/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler71e4c59b8592b941^0b7bf69b8592b941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/AppDelegate.m0000000000000000^4383"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AppDelegate.o Almacen\ de\ productos/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AppDelegate.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/AppDelegate.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/AppDelegate.o36"1DCD7F6C-A84B-4E27-A5CA-EC4D531CA2DD-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextFieldViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032860.149355
+e429032860.335232
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.m299"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.o Almacen\ de\ productos/DescriptionAndTextFieldViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler145e269c8592b941^7cd2559c8592b941^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/DescriptionAndTextFieldViewController.m0000000000000000^4539"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.o Almacen\ de\ productos/DescriptionAndTextFieldViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextFieldViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextFieldViewController.o36"0625F8BC-463E-49E7-B923-05E4F921A2B1-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextViewViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.736307
+e429032859.903253
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.m297"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.o Almacen\ de\ productos/DescriptionAndTextViewViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbea1bc9b8592b941^923ce79b8592b941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/DescriptionAndTextViewViewController.m0000000000000000^4533"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.o Almacen\ de\ productos/DescriptionAndTextViewViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextViewViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionAndTextViewViewController.o36"698C37FD-1392-4E26-A594-28B1B74D4ABD-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.436385
+e429032859.672838
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/DescriptionViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionViewController.m275"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionViewController.o Almacen\ de\ productos/DescriptionViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler39d46f9b8592b941^2046ac9b8592b941^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/DescriptionViewController.m0000000000000000^4467"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionViewController.o Almacen\ de\ productos/DescriptionViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/DescriptionViewController.o36"5E43AFFC-B421-437F-AE7F-969107A379DB-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/MainViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.435436
+e429032859.592232
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/MainViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.m261"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/MainViewController.o Almacen\ de\ productos/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8bfb6f9b8592b941^2eac979b8592b941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/MainViewController.m0000000000000000^4425"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/MainViewController.o Almacen\ de\ productos/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/MainViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/MainViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/MainViewController.o36"C3EBCB05-B9CD-4575-BA01-A73015A30FA3-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/PriceViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/PriceViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.434523
+e429032859.592916
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/PriceViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.m263"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/PriceViewController.o Almacen\ de\ productos/PriceViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd0606f9b8592b941^e6cf979b8592b941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/PriceViewController.m0000000000000000^4431"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/PriceViewController.o Almacen\ de\ productos/PriceViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/PriceViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/PriceViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/PriceViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/PriceViewController.o36"0DDAECA8-7EC4-4D62-AE71-5DC92D534129-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductDetailViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.435084
+e429032861.619367
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductDetailViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.m279"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductDetailViewController.o Almacen\ de\ productos/ProductDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1821709b8592b941^f78e9e9d8592b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ProductDetailViewController.m0000000000000000^4479"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductDetailViewController.o Almacen\ de\ productos/ProductDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductDetailViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductDetailViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductDetailViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductDetailViewController.o36"4E76A92A-C54A-4390-9705-4184BAF79008-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductImageViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductImageViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.595026
+e429032859.734684
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductImageViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.m277"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductImageViewController.o Almacen\ de\ productos/ProductImageViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercf82989b8592b941^d714bc9b8592b941^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ProductImageViewController.m0000000000000000^4473"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductImageViewController.o Almacen\ de\ productos/ProductImageViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductImageViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductImageViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductImageViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductImageViewController.o36"7D178B4F-F846-48B8-96CF-747C5958002B-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductListViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductListViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032860.153266
+e429032860.311740
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductListViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductListViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductListViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductListViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductTableViewCell.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductListViewController.m275"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductListViewController.o Almacen\ de\ productos/ProductListViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere25c279c8592b941^2cd74f9c8592b941^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ProductListViewController.m0000000000000000^4467"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductListViewController.o Almacen\ de\ productos/ProductListViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductListViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductListViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductListViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductListViewController.o36"8BD02E65-F1ED-4449-95E1-1887C6C2E254-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductTableViewCell.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032860.026727
+e429032860.152957
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/ProductTableViewCell.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductTableViewCell.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductTableViewCell.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductTableViewCell.m265"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductTableViewCell.o Almacen\ de\ productos/ProductTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbaf9069c8592b941^6b2a279c8592b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ProductTableViewCell.m0000000000000000^4437"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductTableViewCell.o Almacen\ de\ productos/ProductTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductTableViewCell.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductTableViewCell.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductTableViewCell.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/ProductTableViewCell.o36"F8318D11-A77F-4C19-9DE2-D51A3BAA6983-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/SubtitleViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/SubtitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.875616
+e429032860.063140
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/SubtitleViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/SubtitleViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/SubtitleViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/SubtitleViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/SubtitleViewController.m269"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/SubtitleViewController.o Almacen\ de\ productos/SubtitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerfb74e09b8592b941^0e2f109c8592b941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/SubtitleViewController.m0000000000000000^4449"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/SubtitleViewController.o Almacen\ de\ productos/SubtitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/SubtitleViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/SubtitleViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/SubtitleViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/SubtitleViewController.o36"9AE9C794-4FE0-4536-A6ED-782E7613079C-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/TitleViewController.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/TitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.903598
+e429032860.062379
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/TitleViewController.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/SubtitleViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/PriceViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductImageViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextViewViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.m263"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/TitleViewController.o Almacen\ de\ productos/TitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0bb8e79b8592b941^98f80f9c8592b941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/TitleViewController.m0000000000000000^4431"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/TitleViewController.o Almacen\ de\ productos/TitleViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/TitleViewController.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/TitleViewController.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/TitleViewController.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/TitleViewController.o36"497683E2-0357-4FCA-AE59-F47C5CFFCA29-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/main.o /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.963230
+e429032860.025229
+r1
+xCompileC
+xBuild/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/main.o
+x/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/main.m
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AppDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/MainViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPStoreHouse.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPProduct.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/TitleViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/DescriptionAndTextFieldViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ADPAddItemDelegate.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/AbstractDescriptionAndTextViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductListViewController.h
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/ProductDetailViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/main.m233"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/main.o Almacen\ de\ productos/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compileraeb6f69b8592b941^0e6b069c8592b941^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/main.m0000000000000000^4341"CompileC Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/main.o Almacen\ de\ productos/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -include /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/main.dia -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/main.m -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/main.o36"F8077FC8-B2A8-484D-89E5-3A79F31942F4-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CCompileXIB /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextFieldViewController.xib
+r0
+
+CCompileXIB /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/DescriptionAndTextViewViewController.xib
+r0
+
+CCompileXIB /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/MainViewController.xib
+r0
+
+CCompileXIB /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductDetailViewController.xib
+r0
+
+CCompileXIB /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductImageViewController.xib
+r0
+
+CCompileXIB /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductListViewController.xib
+r0
+
+CCompileXIB /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/ProductTableViewCell.xib
+r0
+
+CCopyStringsFile /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/en.lproj/InfoPlist.strings Almacen\ de\ productos/en.lproj/InfoPlist.strings
+r0
+
+CCpResource Almacen\ de\ productos/CategoriesTabBar_on@2x.png Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/CategoriesTabBar_on@2x.png
+r0
+
+CCpResource Almacen\ de\ productos/categoriesTabBar.png Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/categoriesTabBar.png
+r0
+
+CCpResource Almacen\ de\ productos/categoriesTabBar@2x.png Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/categoriesTabBar@2x.png
+r0
+
+CCpResource Almacen\ de\ productos/gallery1_2256.jpg Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/gallery1_2256.jpg
+r0
+
+CCpResource Almacen\ de\ productos/gallery2_2256.jpg Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/gallery2_2256.jpg
+r0
+
+CCpResource Almacen\ de\ productos/gallery3_2256.jpg Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/gallery3_2256.jpg
+r0
+
+CCpResource Almacen\ de\ productos/gallery4_2256.jpg Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/gallery4_2256.jpg
+r0
+
+CCpResource Almacen\ de\ productos/gallery5_2256.jpg Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/gallery5_2256.jpg
+r0
+
+CCpResource Almacen\ de\ productos/sellTabBar.png Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/sellTabBar.png
+r0
+
+CCpResource Almacen\ de\ productos/sellTabBar@2x.png Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/sellTabBar@2x.png
+r0
+
+CCpResource Almacen\ de\ productos/sellTabBar_on.png Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/sellTabBar_on.png
+r0
+
+CCpResource Almacen\ de\ productos/sellTabBar_on@2x.png Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/sellTabBar_on@2x.png
+r0
+
+CGenerateDSYMFile /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app.dSYM /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/Almacen\ de\ productos
+r0
+
+CLd /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/Almacen\ de\ productos normal i386
+s429032861.620960
+e429032861.635207
+r0
+xLd
+x/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen de productos.app/Almacen de productos
+xnormal
+xi386
+d/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Objects-normal/i386/Almacen de productos.LinkFileList
+old: library not found for -lPods-Almacen de productos
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Link /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen de productos.app/Almacen de productos101"Ld Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/Almacen\ de\ productos normal i38635089f9d8592b941^6ec1a29d8592b941^-134"ld: library not found for -lPods-Almacen de productosclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@49"Library not found for -lPods-Almacen de productos-429032861#0#54#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-429032861#54#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--1641"Ld Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/Almacen\ de\ productos normal i386    cd /Users/mminestrelli/github/AlmacenDeProductos    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -filelist /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/Almacen\ de\ productos.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -ObjC -framework CoreGraphics -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.1 -framework CoreGraphics -framework UIKit -framework Foundation -lPods-Almacen\ de\ productos -Xlinker -dependency_info -Xlinker /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Objects-normal/i386/Almacen\ de\ productos_dependency_info.dat -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/Almacen\ de\ productos36"5DCBABFA-A242-4237-B40F-4667E6453428-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CPhaseScriptExecution Check\ Pods\ Manifest.lock /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Script-8FAE8F50FF7B43ADA3C149E0.sh
+s429032859.346561
+e429032859.374074
+r1
+xPhaseScriptExecution
+xCheck Pods Manifest.lock
+x/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen de productos.build/Debug-iphonesimulator/Almacen de productos.build/Script-8FAE8F50FF7B43ADA3C149E0.sh
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Run custom shell script 'Check Pods Manifest.lock'182"PhaseScriptExecution Check\ Pods\ Manifest.lock Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Script-8FAE8F50FF7B43ADA3C149E0.she8dc599b8592b941^32c65f9b8592b941^---0#0#1#--436"PhaseScriptExecution Check\ Pods\ Manifest.lock Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Script-8FAE8F50FF7B43ADA3C149E0.sh    cd /Users/mminestrelli/github/AlmacenDeProductos    /bin/sh -c \"/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Script-8FAE8F50FF7B43ADA3C149E0.sh\"36"C67973B0-383A-41E5-94BA-595F623F6564-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CPhaseScriptExecution Copy\ Pods\ Resources /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Script-5013622BCCC24224B853FD59.sh
+r0
+
+CProcessInfoPlistFile /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app/Info.plist /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/Almacen\ de\ productos-Info.plist
+r0
+
+CProcessPCH /Users/mminestrelli/Library/Developer/Xcode/DerivedData/Almacen_de_productos-hipzewmweoeruzdhzuhuxbavcxcb/Index/PrecompiledHeaders/Almacen\ de\ productos-Prefix-bdxxczhzqercmeemjanyxwlcxdrn_ast/Almacen\ de\ productos-Prefix.pch.pch Almacen\ de\ productos/Almacen\ de\ productos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch.pch Almacen\ de\ productos/Almacen\ de\ productos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429032859.375059
+e429032859.433545
+r1
+xProcessPCH
+x/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen de productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen de productos-Prefix.pch.pch
+xAlmacen de productos/Almacen de productos-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/Almacen de productos-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Precompile Almacen de productos/Almacen de productos-Prefix.pch271"ProcessPCH Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch.pch Almacen\ de\ productos/Almacen\ de\ productos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler2123609b8592b941^11fd6e9b8592b941^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/Almacen%20de%20productos-Prefix.pch0000000000000000^4249"ProcessPCH Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch.pch Almacen\ de\ productos/Almacen\ de\ productos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mminestrelli/github/AlmacenDeProductos    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-generated-files.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-own-target-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-all-target-headers.hmap -iquote /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/Almacen\ de\ productos-project-headers.hmap -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources/i386 -I/Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/Almacen\ de\ productos.build/Debug-iphonesimulator/Almacen\ de\ productos.build/DerivedSources -F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers -isystem /Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD --serialize-diagnostics /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch.dia -MMD -MT dependencies -MF /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch.d -c /Users/mminestrelli/github/AlmacenDeProductos/Almacen\ de\ productos/Almacen\ de\ productos-Prefix.pch -o /Users/mminestrelli/github/AlmacenDeProductos/Build/Intermediates/PrecompiledHeaders/Almacen\ de\ productos-Prefix-dlepiymvccyrvodjxnkhecytqpmu/Almacen\ de\ productos-Prefix.pch.pch36"0AF056D9-0AFD-4DDD-AFDF-5F11E80DFD4C-
+b31065604-CF13-4D37-927F-8369967BF96F
+
+CTouch /Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/Almacen\ de\ productos.app
+r0
+

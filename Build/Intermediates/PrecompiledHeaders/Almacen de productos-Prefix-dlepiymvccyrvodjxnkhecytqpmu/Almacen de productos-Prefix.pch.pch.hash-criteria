@@ -1,0 +1,35 @@
+Contents of /Users/mminestrelli/github/AlmacenDeProductos/Almacen de productos/Almacen de productos-Prefix.pch
+-x
+objective-c
+-arch
+i386
+-std=gnu99
+-fobjc-arc
+-fmodules
+-fmodules-cache-path=/Users/mminestrelli/Library/Developer/Xcode/DerivedData/ModuleCache
+-fpascal-strings
+-O0
+-DDEBUG=1
+-DCOCOAPODS=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+-fexceptions
+-fasm-blocks
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-mios-simulator-version-min=7.1
+-iquote
+-iquote
+-I/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator/include
+-I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers
+-I/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD
+-F/Users/mminestrelli/github/AlmacenDeProductos/Build/Products/Debug-iphonesimulator
+-isystem
+/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers
+-isystem
+/Users/mminestrelli/github/AlmacenDeProductos/Pods/Headers/MBProgressHUD
+i386-apple-darwin13.3.0
+"4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)"
+SDK_PRODUCT_BUILD_VERSION=11D167
+11D167
