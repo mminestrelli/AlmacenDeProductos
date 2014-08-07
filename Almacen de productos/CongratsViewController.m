@@ -23,8 +23,8 @@
 
 @implementation CongratsViewController
 
-- (id)initWithProduct:(ADPProduct*)prod{
-    self=[self initWithNibName:nil bundle:nil andProduct:prod];
+- (id)initWithServiceResponse:(ADPService*)service{
+    self=[self initWithNibName:nil bundle:nil andProduct:[service getProd]];
     return self;
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProduct:(ADPProduct*)prod

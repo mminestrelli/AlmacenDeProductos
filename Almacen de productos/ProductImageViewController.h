@@ -10,6 +10,7 @@
 #import "ADPProduct.h"
 #import "MBProgressHUD.h"
 #import "CongratsViewController.h"
+#import "ADPService.h"
 
 
 @class MBProgressHUD;

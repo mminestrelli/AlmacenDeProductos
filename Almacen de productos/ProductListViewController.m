@@ -104,7 +104,7 @@
 }
 
 #pragma mark -Notification handling
-/* Save notification is sent when the user selects the option save in ProductImageViewController the selector handles the object received adding it to the store house */
+/* Save notification is sent when the user selects the option save in ProductImageViewController the selector handles the object received adding it to the store house. If a new item was added data is reloaded  */
 -(void) saveNotificationHandle:(NSNotification*) notification{
     NSDictionary * usrInfo=[notification userInfo];
     [self.house addProduct: [usrInfo objectForKey:@"producto" ]];

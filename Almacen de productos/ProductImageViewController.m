@@ -129,14 +129,16 @@ numberOfRowsInComponent:(NSInteger)component
 //	HUD.mode = MBProgressHUDModeIndeterminate;
 //	HUD.labelText = @"Cleaning up";
 //	sleep(2);
-	// UIImageView is a UIKit class, we have to initialize it on the main thread
 
 	dispatch_sync(dispatch_get_main_queue(), ^{
-        [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
-            //[self.navigationController popToRootViewControllerAnimated:YES];
-        UIViewController * nextViewController= [self getNextViewController:self.prodToFill];
-        [self.navigationController pushViewController:nextViewController animated:YES];
+        
+        ADPService* service= [[ADPService alloc]startRequestWithProduct:self.prodToFill];
+        if([service getStatus]==200){
+            [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
+            CongratsViewController * nextViewController = [[CongratsViewController alloc] initWithServiceResponse:service];
+            [self.navigationController pushViewController:nextViewController animated:YES];
+        }
 	});
 
 	HUD.mode = MBProgressHUDModeCustomView;
@@ -144,11 +146,6 @@ numberOfRowsInComponent:(NSInteger)component
 	sleep(2);
 }
 
--(UIViewController*) getNextViewController:(ADPProduct*)productToFill{
-    
-    CongratsViewController * controller = [[CongratsViewController alloc] initWithProduct:productToFill];
-    
-    return controller;
-}
+
 
 @end

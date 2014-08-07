@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ADPProduct.h"
+#import "ADPService.h"
 
 @interface CongratsViewController : UIViewController
-- (id)initWithProduct:(ADPProduct*)prod;
+- (id)initWithServiceResponse:(ADPService*)service;
 @end
