@@ -17,6 +17,7 @@
 		4E2F143F1982CE8E002A74E6 /* categoriesTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F143C1982CE8E002A74E6 /* categoriesTabBar@2x.png */; };
 		4E2F14401982CE8E002A74E6 /* CategoriesTabBar_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F143D1982CE8E002A74E6 /* CategoriesTabBar_on@2x.png */; };
 		4E7E18511993C8DC00674DFE /* ADPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E18501993C8DC00674DFE /* ADPService.m */; };
+		4E7E18531993CD8300674DFE /* check_sign_icon_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E18521993CD8300674DFE /* check_sign_icon_green.png */; };
 		4E82435319896EA00010AD53 /* DescriptionAndTextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */; };
 		4E8252ED197FFD260002F68E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8252EB197FFD260002F68E /* MainViewController.m */; };
 		4E8252EE197FFD260002F68E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8252EC197FFD260002F68E /* MainViewController.xib */; };
@@ -84,6 +85,7 @@
 		4E2F143D1982CE8E002A74E6 /* CategoriesTabBar_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CategoriesTabBar_on@2x.png"; sourceTree = "<group>"; };
 		4E7E184F1993C8DC00674DFE /* ADPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPService.h; sourceTree = "<group>"; };
 		4E7E18501993C8DC00674DFE /* ADPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPService.m; sourceTree = "<group>"; };
+		4E7E18521993CD8300674DFE /* check_sign_icon_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_sign_icon_green.png; sourceTree = "<group>"; };
 		4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionAndTextViewViewController.xib; sourceTree = "<group>"; };
 		4E8252EA197FFD260002F68E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4E8252EB197FFD260002F68E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				4E2F143C1982CE8E002A74E6 /* categoriesTabBar@2x.png */,
 				4E2F143D1982CE8E002A74E6 /* CategoriesTabBar_on@2x.png */,
 				4E8E1A3F1992B08700A4D226 /* check.png */,
+				4E7E18521993CD8300674DFE /* check_sign_icon_green.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 			files = (
 				4E82530B197FFD940002F68E /* ProductImageViewController.xib in Resources */,
 				4E2F14311982AABD002A74E6 /* sellTabBar.png in Resources */,
+				4E7E18531993CD8300674DFE /* check_sign_icon_green.png in Resources */,
 				4E2F143F1982CE8E002A74E6 /* categoriesTabBar@2x.png in Resources */,
 				4E2F14401982CE8E002A74E6 /* CategoriesTabBar_on@2x.png in Resources */,
 				4E2F143A1982CD80002A74E6 /* ProductTableViewCell.xib in Resources */,

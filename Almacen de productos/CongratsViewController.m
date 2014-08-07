@@ -40,7 +40,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.imageCongrats.image=[UIImage imageNamed:@"check.png"];
+    self.imageCongrats.image=[UIImage imageNamed:@"check_sign_icon_green.png"];
     [self.imageCongrats setTintColor:[UIColor greenColor]];
     
     self.labelTitle.text=self.product.title;
