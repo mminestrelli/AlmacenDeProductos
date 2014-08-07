@@ -40,9 +40,11 @@
     // Do any additional setup after loading the view from its nib.
     self.labelPrice.text=self.price;
     self.labelSubtitle.text=self.subtitle;
-    self.textViewDescription.text=self.description;
+    self.labelDescription.text=self.description;
+    self.labelTitle.text=self.title;
     self.imageViewProduct.image=self.image;
     self.scrollViewContainer.scrollEnabled=YES;
+    [self setTitle:@"Producto"];
 }
 
 - (void)didReceiveMemoryWarning

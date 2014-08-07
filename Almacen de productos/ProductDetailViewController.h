@@ -12,7 +12,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewProduct;
 @property (weak, nonatomic) IBOutlet UILabel *labelPrice;
 @property (weak, nonatomic) IBOutlet UILabel *labelSubtitle;
-@property (weak, nonatomic) IBOutlet UITextView *textViewDescription;
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+@property (weak, nonatomic) IBOutlet UILabel *labelDescription;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProduct:(ADPProduct*)product;
 
