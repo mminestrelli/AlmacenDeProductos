@@ -43,7 +43,7 @@
 
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
-    
+    self.scrollViewContainer.scrollEnabled=NO;
 
     //Funcionalidad de descartar cambios
     //self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc]
@@ -93,12 +93,9 @@ numberOfRowsInComponent:(NSInteger)component
     
 	HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
 	[self.navigationController.view addSubview:HUD];
-	
-	//HUD.delegate = self;
-	HUD.labelText = @"Connecting";
+	HUD.labelText = @"Conectando";
 	HUD.minSize = CGSizeMake(135.f, 135.f);
-	
-	[HUD showWhileExecuting:@selector(doSomeFunkyStuff) onTarget:self withObject:nil animated:YES];
+	[HUD showWhileExecuting:@selector(saveProductService) onTarget:self withObject:nil animated:YES];
     
     
 //    [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
@@ -114,13 +111,13 @@ numberOfRowsInComponent:(NSInteger)component
     [self.navigationController popToRootViewControllerAnimated:YES];
     
 }
-
-- (void)doSomeFunkyStuff {
+#pragma mark - Services
+- (void)saveProductService {
 	// Indeterminate mode
 	sleep(2);
 	// Switch to determinate mode
 	HUD.mode = MBProgressHUDModeDeterminate;
-	HUD.labelText = @"Progress";
+	HUD.labelText = @"Cargando";
 	float progress = 0.0f;
 	while (progress < 1.0f)
 	{
@@ -133,10 +130,8 @@ numberOfRowsInComponent:(NSInteger)component
 //	HUD.labelText = @"Cleaning up";
 //	sleep(2);
 	// UIImageView is a UIKit class, we have to initialize it on the main thread
-	__block UIImageView *imageView;
+
 	dispatch_sync(dispatch_get_main_queue(), ^{
-		UIImage *image = [UIImage imageNamed:@"sellTabBar.png"];
-		imageView = [[UIImageView alloc] initWithImage:image];
         [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
             //[self.navigationController popToRootViewControllerAnimated:YES];
@@ -145,7 +140,7 @@ numberOfRowsInComponent:(NSInteger)component
 	});
 
 	HUD.mode = MBProgressHUDModeCustomView;
-	HUD.labelText = @"Completed";
+	HUD.labelText = @"Listo!";
 	sleep(2);
 }
 

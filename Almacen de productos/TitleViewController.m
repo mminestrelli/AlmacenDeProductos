@@ -64,6 +64,6 @@
 }
 
 -(NSInteger)minCharactersAllowed{
-    return 5;
+    return 0;
 }
 @end

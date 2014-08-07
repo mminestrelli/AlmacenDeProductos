@@ -40,10 +40,6 @@
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto2" code:55 subtitle:@"sub" description:@"desc" price:2343 andImage:[UIImage imageNamed: @"gallery1_2256.jpg"]]];
 }
 
--(void) viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [self.tableViewStoreHouse reloadData];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -112,6 +108,7 @@
 -(void) saveNotificationHandle:(NSNotification*) notification{
     NSDictionary * usrInfo=[notification userInfo];
     [self.house addProduct: [usrInfo objectForKey:@"producto" ]];
+    [self.tableViewStoreHouse reloadData];
 
 }
 

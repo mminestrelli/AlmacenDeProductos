@@ -29,10 +29,11 @@
     self.textView.delegate=self;
     [self setFieldContentIfSaved];
     [self setKeyboard];
+    [self registerForKeyboardNotifications];
     [self setCharactersLeftLabelWithInteger:kMaxCharactersAllowed];
-    self.buttonContinue.backgroundColor=[UIColor blueColor];
-    self.buttonContinue.enabled=YES;
-    self.navigationItem.rightBarButtonItem.enabled=YES;
+//    self.buttonContinue.backgroundColor=[UIColor blueColor];
+//    self.buttonContinue.enabled=YES;
+//    self.navigationItem.rightBarButtonItem.enabled=YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,6 +81,37 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     [self.view endEditing:YES];
+}
+// Call this method somewhere in your view controller setup code.
+- (void)registerForKeyboardNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardDidHideNotification object:nil];
+    
+}
+
+// Called when the UIKeyboardDidShowNotification is sent.
+- (void)keyboardWasShown:(NSNotification*)aNotification
+{
+    self.scrollViewContainer.scrollEnabled=YES;
+}
+
+
+// Called when the UIKeyboardWillHideNotification is sent
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification
+{
+    //    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0,0.0, 0.0);;
+    //    self.scrollViewContainer.contentInset = contentInsets;
+    //    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
+    
+    [self.scrollViewContainer setContentOffset:CGPointMake(self.scrollViewContainer.contentOffset.x, -35)
+                                      animated:YES];
+    self.scrollViewContainer.scrollEnabled=NO;
 }
 
 

@@ -37,9 +37,12 @@
     UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapPressed:)];
     [self.view addGestureRecognizer:tapGesture];
     
-    self.buttonContinue.backgroundColor=[UIColor grayColor];
-    self.buttonContinue.enabled=NO;
-    self.navigationItem.rightBarButtonItem.enabled=NO;
+//    self.buttonContinue.backgroundColor=[UIColor grayColor];
+//    self.buttonContinue.enabled=NO;
+//    self.navigationItem.rightBarButtonItem.enabled=NO;
+    self.buttonContinue.backgroundColor=[UIColor blueColor];
+    self.buttonContinue.enabled=YES;
+    self.navigationItem.rightBarButtonItem.enabled=YES;
 
 }
 

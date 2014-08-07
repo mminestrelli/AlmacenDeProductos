@@ -9,6 +9,7 @@
                 <outlet property="displayImageView" destination="Zfc-nb-Anb" id="O8x-4F-2go"/>
                 <outlet property="imagePickerView" destination="6z1-CO-cU2" id="soH-zH-vcP"/>
                 <outlet property="productImageSV" destination="kgD-yt-BFV" id="7S6-83-uNz"/>
+                <outlet property="scrollViewContainer" destination="kgD-yt-BFV" id="SAj-8q-TLZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,24 +23,27 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNF-ec-RLM" userLabel="ContainerView">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="572"/>
+                            <rect key="frame" x="0.0" y="0.0" width="330" height="399"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXN-Ju-cgk">
-                                    <rect key="frame" x="15" y="20" width="290" height="254"/>
+                                    <rect key="frame" x="0.0" y="20" width="330" height="217"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elegí una imagen para tu producto" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-Eb-Iru">
-                                            <rect key="frame" x="15" y="10" width="260" height="17"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elegí una imagen para tu producto" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-Eb-Iru">
+                                            <rect key="frame" x="15" y="10" width="300" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="BRP-6a-3Wh"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zfc-nb-Anb">
-                                            <rect key="frame" x="25" y="42" width="240" height="197"/>
+                                            <rect key="frame" x="60" y="42" width="210" height="150"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="197" id="YTK-Fs-dT2"/>
+                                                <constraint firstAttribute="height" constant="150" id="t1F-EI-SSP"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -47,27 +51,27 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Yyd-Eb-Iru" secondAttribute="trailing" constant="15" id="Nys-5g-CcX"/>
                                         <constraint firstItem="Yyd-Eb-Iru" firstAttribute="top" secondItem="LXN-Ju-cgk" secondAttribute="top" constant="10" id="TC1-uD-QKh"/>
-                                        <constraint firstAttribute="trailing" secondItem="Zfc-nb-Anb" secondAttribute="trailing" constant="25" id="X14-yT-rS2"/>
-                                        <constraint firstItem="Zfc-nb-Anb" firstAttribute="leading" secondItem="LXN-Ju-cgk" secondAttribute="leading" constant="25" id="fTK-BP-EiB"/>
+                                        <constraint firstAttribute="trailing" secondItem="Zfc-nb-Anb" secondAttribute="trailing" constant="60" id="nMx-RP-OiK"/>
+                                        <constraint firstItem="Zfc-nb-Anb" firstAttribute="leading" secondItem="LXN-Ju-cgk" secondAttribute="leading" constant="60" id="pf7-W7-WbB"/>
                                         <constraint firstItem="Zfc-nb-Anb" firstAttribute="top" secondItem="Yyd-Eb-Iru" secondAttribute="bottom" constant="15" id="rXp-cB-K25"/>
-                                        <constraint firstAttribute="bottom" secondItem="Zfc-nb-Anb" secondAttribute="bottom" constant="15" id="yIy-8o-EYA"/>
+                                        <constraint firstAttribute="bottom" secondItem="Zfc-nb-Anb" secondAttribute="bottom" constant="25" id="yIy-8o-EYA"/>
                                         <constraint firstItem="Yyd-Eb-Iru" firstAttribute="leading" secondItem="LXN-Ju-cgk" secondAttribute="leading" constant="15" id="zD7-VH-uaS"/>
                                     </constraints>
                                 </view>
                                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6z1-CO-cU2">
-                                    <rect key="frame" x="0.0" y="274" width="320" height="162"/>
+                                    <rect key="frame" x="20" y="227" width="290" height="162"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 </pickerView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="6z1-CO-cU2" secondAttribute="bottom" constant="136" id="MkQ-JT-OZV"/>
-                                <constraint firstItem="6z1-CO-cU2" firstAttribute="top" secondItem="LXN-Ju-cgk" secondAttribute="bottom" id="NOm-NQ-TJh"/>
-                                <constraint firstItem="6z1-CO-cU2" firstAttribute="leading" secondItem="zNF-ec-RLM" secondAttribute="leading" id="Nuj-Zc-B4A"/>
-                                <constraint firstItem="LXN-Ju-cgk" firstAttribute="leading" secondItem="zNF-ec-RLM" secondAttribute="leading" constant="15" id="dSO-pm-POz"/>
+                                <constraint firstAttribute="bottom" secondItem="6z1-CO-cU2" secondAttribute="bottom" constant="10" id="MkQ-JT-OZV"/>
+                                <constraint firstItem="6z1-CO-cU2" firstAttribute="top" secondItem="LXN-Ju-cgk" secondAttribute="bottom" constant="-10" id="NOm-NQ-TJh"/>
+                                <constraint firstItem="6z1-CO-cU2" firstAttribute="leading" secondItem="zNF-ec-RLM" secondAttribute="leading" constant="20" id="Nuj-Zc-B4A"/>
+                                <constraint firstItem="LXN-Ju-cgk" firstAttribute="leading" secondItem="zNF-ec-RLM" secondAttribute="leading" id="dSO-pm-POz"/>
                                 <constraint firstItem="LXN-Ju-cgk" firstAttribute="top" secondItem="zNF-ec-RLM" secondAttribute="top" constant="20" id="iJH-Df-zmK"/>
-                                <constraint firstAttribute="trailing" secondItem="6z1-CO-cU2" secondAttribute="trailing" id="iWX-YJ-1mx"/>
-                                <constraint firstAttribute="trailing" secondItem="LXN-Ju-cgk" secondAttribute="trailing" constant="15" id="zdp-2Q-VjX"/>
+                                <constraint firstAttribute="trailing" secondItem="6z1-CO-cU2" secondAttribute="trailing" constant="20" id="iWX-YJ-1mx"/>
+                                <constraint firstAttribute="trailing" secondItem="LXN-Ju-cgk" secondAttribute="trailing" id="zdp-2Q-VjX"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -76,7 +80,6 @@
                         <constraint firstItem="zNF-ec-RLM" firstAttribute="top" secondItem="kgD-yt-BFV" secondAttribute="top" id="IGr-SG-xDf"/>
                         <constraint firstAttribute="trailing" secondItem="zNF-ec-RLM" secondAttribute="trailing" id="geg-P7-Lfd"/>
                         <constraint firstItem="zNF-ec-RLM" firstAttribute="leading" secondItem="kgD-yt-BFV" secondAttribute="leading" id="lfx-Qt-5xH"/>
-                        <constraint firstItem="zNF-ec-RLM" firstAttribute="width" secondItem="kgD-yt-BFV" secondAttribute="width" id="vMI-od-rGG"/>
                     </constraints>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </scrollView>

@@ -18,6 +18,7 @@
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andProductToFill:(ADPProduct*)productToFill;
 @property (weak, nonatomic) IBOutlet UIScrollView *productImageSV;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewContainer;
 @property (weak, nonatomic) IBOutlet UIPickerView *imagePickerView;
 @property (weak, nonatomic) IBOutlet UIImageView *displayImageView;
 @property (nonatomic,strong) NSArray * imagesNames;
