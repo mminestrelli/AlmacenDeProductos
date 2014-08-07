@@ -109,7 +109,7 @@
 //    CGRect aRect = self.view.frame;
 //    aRect.size.height -= kbSize.height;
 //    if (!CGRectContainsPoint(aRect, self.viewInsider.frame.origin) ) {
-//        [self.scrollViewContainer scrollRectToVisible:self.viewInsider.frame animated:YES];
+//        [self.scrollViewContainer scrollRectToVisible:self.containerView.frame animated:YES];
 //        self.scrollViewContainer.scrollEnabled=YES;
 //    }
 }
@@ -122,7 +122,7 @@
 //    self.scrollViewContainer.contentInset = contentInsets;
 //    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
     
-    [self.scrollViewContainer setContentOffset:CGPointMake(self.scrollViewContainer.contentOffset.x, 0)
+    [self.scrollViewContainer setContentOffset:CGPointMake(self.scrollViewContainer.contentOffset.x, -35)
                              animated:YES];
     self.scrollViewContainer.scrollEnabled=NO;
 }
