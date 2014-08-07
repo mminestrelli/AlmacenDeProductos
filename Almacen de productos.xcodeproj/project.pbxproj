@@ -204,10 +204,13 @@
 			children = (
 				4E82531D19821DC20002F68E /* ProductListViewController.h */,
 				4E82531E19821DC20002F68E /* ProductListViewController.m */,
+				4E82531F19821DC20002F68E /* ProductListViewController.xib */,
 				4E2F14361982CD80002A74E6 /* ProductTableViewCell.h */,
 				4E2F14371982CD80002A74E6 /* ProductTableViewCell.m */,
+				4E2F14381982CD80002A74E6 /* ProductTableViewCell.xib */,
 				4EC2088A198BD07E009EF9A4 /* ProductDetailViewController.h */,
 				4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */,
+				4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */,
 			);
 			name = "Listing Flow";
 			sourceTree = "<group>";
@@ -231,25 +234,6 @@
 				4E7E18521993CD8300674DFE /* check_sign_icon_green.png */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		4E83C97F198AB1130010C8A5 /* Listing */ = {
-			isa = PBXGroup;
-			children = (
-				4E2F14381982CD80002A74E6 /* ProductTableViewCell.xib */,
-				4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */,
-				4E82531F19821DC20002F68E /* ProductListViewController.xib */,
-			);
-			name = Listing;
-			sourceTree = "<group>";
-		};
-		4E83C980198AB11F0010C8A5 /* Selling */ = {
-			isa = PBXGroup;
-			children = (
-				4EC20886198BCA83009EF9A4 /* Vehicles */,
-				4EC20885198BCA74009EF9A4 /* Products */,
-			);
-			name = Selling;
 			sourceTree = "<group>";
 		};
 		4EBCD1D9197E9ABC00B5F0A8 = {
@@ -288,7 +272,6 @@
 			children = (
 				4E82531219817BD80002F68E /* Images */,
 				4EBCD229197EB4B600B5F0A8 /* Controllers */,
-				4EBCD228197EB4AC00B5F0A8 /* Views */,
 				4EBCD227197EB49E00B5F0A8 /* Models */,
 				4EBCD1F4197E9ABC00B5F0A8 /* AppDelegate.h */,
 				4EBCD1F5197E9ABC00B5F0A8 /* AppDelegate.m */,
@@ -345,15 +328,6 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		4EBCD228197EB4AC00B5F0A8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4E83C97F198AB1130010C8A5 /* Listing */,
-				4E83C980198AB11F0010C8A5 /* Selling */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		4EBCD229197EB4B600B5F0A8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,20 +335,6 @@
 				4E82435019893B460010AD53 /* Selling Flow */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		4EC20885198BCA74009EF9A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4EC20886198BCA83009EF9A4 /* Vehicles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Vehicles;
 			sourceTree = "<group>";
 		};
 		4EC2088F198BE6C0009EF9A4 /* Abstract */ = {

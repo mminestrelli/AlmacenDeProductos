@@ -25,7 +25,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyz-VA-OJZ" userLabel="Container View">
-                            <rect key="frame" x="0.0" y="0.0" width="318" height="505"/>
+                            <rect key="frame" x="0.0" y="0.0" width="318" height="456"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PT4-t5-IrE" userLabel="Price and Image View">
@@ -112,7 +112,7 @@
                             <constraints>
                                 <constraint firstItem="eQa-gn-mJF" firstAttribute="top" secondItem="PT4-t5-IrE" secondAttribute="bottom" constant="24" id="03H-U6-PzH"/>
                                 <constraint firstItem="PT4-t5-IrE" firstAttribute="top" secondItem="gyz-VA-OJZ" secondAttribute="top" constant="20" id="DuI-G1-LKe"/>
-                                <constraint firstAttribute="bottom" secondItem="eQa-gn-mJF" secondAttribute="bottom" constant="69" id="MJi-TA-LVK"/>
+                                <constraint firstAttribute="bottom" secondItem="eQa-gn-mJF" secondAttribute="bottom" constant="20" id="MJi-TA-LVK"/>
                                 <constraint firstAttribute="trailing" secondItem="eQa-gn-mJF" secondAttribute="trailing" constant="10" id="UaO-cd-Yih"/>
                                 <constraint firstItem="PT4-t5-IrE" firstAttribute="leading" secondItem="gyz-VA-OJZ" secondAttribute="leading" constant="10" id="j0U-fS-AWw"/>
                                 <constraint firstItem="eQa-gn-mJF" firstAttribute="leading" secondItem="gyz-VA-OJZ" secondAttribute="leading" constant="10" id="pvg-tk-IF0"/>
