@@ -52,7 +52,7 @@
 }
 #pragma mark searchbarç
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    NSLog(self.searchBar.text);
+    //NSLog(self.searchBar.text);
     ItemListViewController * controller=[[ItemListViewController alloc]initWithInput:self.searchBar.text];
     [self.navigationController pushViewController:controller animated:YES];
 }

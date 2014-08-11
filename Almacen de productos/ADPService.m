@@ -10,16 +10,25 @@
 @interface ADPService()
 @property (nonatomic) NSInteger statusCode;
 @property (nonatomic,strong) ADPProduct * prod;
+
 @end
 
 @implementation ADPService
-- (id)startRequestWithProduct:(ADPProduct*) prod
+
+
+-(void) startRequestWithProduct:(ADPProduct*) prod
 {
-    if (self) {
-        self.statusCode=200;
+    
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.prod=prod;
-    }
-    return self;
+        self.statusCode=200;
+        sleep(1);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.delegate serviceDidFinish];
+        });
+    });
+    
 }
 
 -(ADPProduct*)getProd{

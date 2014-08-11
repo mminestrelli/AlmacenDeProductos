@@ -8,8 +8,9 @@
 
 #import "ProductImageViewController.h"
 
-@interface ProductImageViewController ()
+@interface ProductImageViewController ()<ADPServiceDelegate>
 @property (nonatomic,strong)ADPProduct * prodToFill;
+@property (nonatomic,strong) ADPService * service;
 
 
 @end
@@ -40,6 +41,7 @@
     self.displayImageView.image=[UIImage imageNamed: @"gallery1_2256.jpg"];
     self.productImageSV.scrollEnabled=YES;
     self.imagePickerView.delegate=self;
+    self.service.delegate=self;
 
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
@@ -113,8 +115,32 @@ numberOfRowsInComponent:(NSInteger)component
 }
 #pragma mark - Services
 - (void)saveProductService {
-	// Indeterminate mode
-	sleep(2);
+    [self loadingHud];
+
+    if (self.service==nil) {
+        self.service= [[ADPService alloc]init];
+        [self.service setDelegate:self];
+    }
+    
+    [self.service startRequestWithProduct:self.prodToFill];
+
+}
+
+#pragma mark ADPServiceDelegate methods
+-(void) serviceDidFinish{
+    if([self.service getStatus]==200){
+        [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
+        CongratsViewController * nextViewController = [[CongratsViewController alloc] initWithServiceResponse:self.service];
+        [self.navigationController pushViewController:nextViewController animated:YES];
+    }
+    [self finishingHUD];
+}
+
+#pragma mark MBProgressHud animations
+-(void) loadingHud{
+    // Indeterminate mode
+	//sleep(2);
 	// Switch to determinate mode
 	HUD.mode = MBProgressHUDModeDeterminate;
 	HUD.labelText = @"Cargando";
@@ -123,27 +149,13 @@ numberOfRowsInComponent:(NSInteger)component
 	{
 		progress += 0.01f;
 		HUD.progress = progress;
-		usleep(50000);
+		//usleep(50000);
 	}
-	// Back to indeterminate mode
-//	HUD.mode = MBProgressHUDModeIndeterminate;
-//	HUD.labelText = @"Cleaning up";
-//	sleep(2);
-
-	dispatch_sync(dispatch_get_main_queue(), ^{
-        
-        ADPService* service= [[ADPService alloc]startRequestWithProduct:self.prodToFill];
-        if([service getStatus]==200){
-            [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
-            CongratsViewController * nextViewController = [[CongratsViewController alloc] initWithServiceResponse:service];
-            [self.navigationController pushViewController:nextViewController animated:YES];
-        }
-	});
-
-	HUD.mode = MBProgressHUDModeCustomView;
+}
+-(void)finishingHUD{
+    HUD.mode = MBProgressHUDModeCustomView;
 	HUD.labelText = @"Listo!";
-	sleep(2);
+	//sleep(2);
 }
 
 

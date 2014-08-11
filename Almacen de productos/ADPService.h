@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "ADPProduct.h"
+@protocol ADPServiceDelegate <NSObject>
+-(void) serviceDidFinish;
+@end
+
 @interface ADPService : NSObject
 -(ADPProduct*)getProd;
-- (id)startRequestWithProduct:(ADPProduct*) prod;
+- (void)startRequestWithProduct:(ADPProduct*) prod;
 -(NSInteger) getStatus;
+@property(nonatomic,weak) id<ADPServiceDelegate>   delegate;
+
 @end
