@@ -59,38 +59,19 @@
                                         <action selector="onProductAddButtonPressed:" destination="-1" eventType="touchUpInside" id="Yb3-Ds-B3N"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb2-qf-8js">
-                                    <rect key="frame" x="20" y="210" width="280" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="1" green="0.73968473300000004" blue="0.17891891870000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="280" id="ScG-ca-HRo"/>
-                                        <constraint firstAttribute="height" constant="44" id="TFC-ol-73K"/>
-                                    </constraints>
-                                    <state key="normal" title="Buscar en MeLi">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="onSearchInMeliButtonPressed:" destination="-1" eventType="touchUpInside" id="70l-gh-vlj"/>
-                                    </connections>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="Bb2-qf-8js" firstAttribute="top" secondItem="opH-cz-M7W" secondAttribute="bottom" constant="17" id="52C-mM-5uA"/>
+                                <constraint firstAttribute="bottom" secondItem="opH-cz-M7W" secondAttribute="bottom" constant="138" id="0FB-tc-Pwz"/>
                                 <constraint firstItem="opH-cz-M7W" firstAttribute="leading" secondItem="sHC-Y0-05T" secondAttribute="leading" constant="20" id="9Kb-bg-yeZ"/>
                                 <constraint firstItem="opH-cz-M7W" firstAttribute="top" secondItem="y6e-ai-AHz" secondAttribute="bottom" constant="17" id="AZn-WN-xEU"/>
                                 <constraint firstAttribute="trailing" secondItem="a8F-dv-4A2" secondAttribute="trailing" constant="10" id="DZY-dp-qkX"/>
-                                <constraint firstItem="Bb2-qf-8js" firstAttribute="leading" secondItem="sHC-Y0-05T" secondAttribute="leading" constant="20" id="KTV-o1-hYE"/>
                                 <constraint firstAttribute="trailing" secondItem="y6e-ai-AHz" secondAttribute="trailing" constant="20" id="NDp-gR-5z6"/>
                                 <constraint firstItem="y6e-ai-AHz" firstAttribute="top" secondItem="a8F-dv-4A2" secondAttribute="bottom" constant="50" id="P3e-s7-D4q"/>
                                 <constraint firstItem="a8F-dv-4A2" firstAttribute="leading" secondItem="sHC-Y0-05T" secondAttribute="leading" constant="15" id="T35-bP-BGe"/>
                                 <constraint firstItem="a8F-dv-4A2" firstAttribute="top" secondItem="sHC-Y0-05T" secondAttribute="top" constant="20" id="bF2-eI-l9W"/>
                                 <constraint firstItem="y6e-ai-AHz" firstAttribute="leading" secondItem="sHC-Y0-05T" secondAttribute="leading" constant="20" id="efk-IR-5ZL"/>
                                 <constraint firstAttribute="trailing" secondItem="opH-cz-M7W" secondAttribute="trailing" constant="20" id="ge2-fN-ZfX"/>
-                                <constraint firstAttribute="trailing" secondItem="Bb2-qf-8js" secondAttribute="trailing" constant="20" id="qqv-hM-WLS"/>
-                                <constraint firstAttribute="bottom" secondItem="Bb2-qf-8js" secondAttribute="bottom" constant="77" id="rbx-Cb-xhk"/>
                             </constraints>
                         </view>
                     </subviews>

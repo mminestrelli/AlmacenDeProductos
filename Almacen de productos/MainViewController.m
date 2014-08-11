@@ -35,8 +35,6 @@
     return self;
 }
 
-- (IBAction)onSearchInMeliButtonPressed:(id)sender {
-}
 
 - (void)viewDidLoad
 {
