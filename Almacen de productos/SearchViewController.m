@@ -10,16 +10,15 @@
 #import "ItemListViewController.h"
 
 @interface SearchViewController ()
-
+@property (nonatomic,strong)NSMutableArray* history;
 @end
 
 @implementation SearchViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.history=[[NSMutableArray alloc]init];
     }
     return self;
 }
@@ -27,8 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    //self.tableViewHistory.delegate = self;
+    //self.tableViewHistory.dataSource = self;
+    self.searchBar.delegate=self;
+    [self setTitle:@"Busca tu producto"];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -36,81 +39,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    if (tableView == self.searchDisplayController.searchResultsTableView) {
-//        return [searchResults count];
-//        
-//    } else {
-//        return [recipes count];
-//    }
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return 71;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"CustomTableCell";
-//    RecipeTableCell *cell = (RecipeTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    
-//    // Configure the cell...
-//    if (cell == nil) {
-//        cell = [[RecipeTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//    }
-//    
-//    // Display recipe in the table cell
-//    Recipe *recipe = nil;
-//    if (tableView == self.searchDisplayController.searchResultsTableView) {
-//        recipe = [searchResults objectAtIndex:indexPath.row];
-//    } else {
-//        recipe = [recipes objectAtIndex:indexPath.row];
-//    }
-//    
-////    cell.nameLabel.text = recipe.name;
-////    cell.thumbnailImageView.image = [UIImage imageNamed:recipe.image];
-////    cell.prepTimeLabel.text = recipe.prepTime;
-//    
-//    return cell;
-//}
-//
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
-//        NSIndexPath *indexPath = nil;
-//        Recipe *recipe = nil;
-//        
-//        if (self.searchDisplayController.active) {
-//            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-//            recipe = [searchResults objectAtIndex:indexPath.row];
-//        } else {
-//            indexPath = [self.tableView indexPathForSelectedRow];
-//            recipe = [recipes objectAtIndex:indexPath.row];
-//        }
-//        
-//        //RecipeDetailViewController *destViewController = segue.destinationViewController;
-//        //destViewController.recipe = recipe;
-//    }
-//}
-//
-//- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
-//{
-//    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
-//    searchResults = [recipes filteredArrayUsingPredicate:resultPredicate];
-//}
-//
-//-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-//{
-//    [self filterContentForSearchText:searchString
-//                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
-//                                      objectAtIndex:[self.searchDisplayController.searchBar
-//                                                     selectedScopeButtonIndex]]];
-//    
-//    return YES;
-//}
-- (IBAction)botonPressed:(id)sender {
-    ItemListViewController * nextViewController= [[ItemListViewController alloc]initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:nextViewController animated:YES];
+#pragma mark table
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.history.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
+#pragma mark searchbarç
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    NSLog(self.searchBar.text);
+    ItemListViewController * controller=[[ItemListViewController alloc]initWithInput:self.searchBar.text];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 @end

@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SearchViewController : UIViewController
-
-- (IBAction)botonPressed:(id)sender;
-
+@interface SearchViewController :UIViewController<UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate,UISearchDisplayDelegate>
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+//@property (weak, nonatomic) IBOutlet UITableView *tableViewHistory;
 
 @end

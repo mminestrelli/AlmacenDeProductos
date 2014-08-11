@@ -15,21 +15,20 @@
 @property (nonatomic,strong) NSArray *items;
 @property (nonatomic,strong)SearchManager *manager;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic,copy) NSString* input;
 
 @end
 
 @implementation ItemListViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithInput:(NSString*)input
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super init];
     if (self) {
-        // Custom initialization
+        self.input=input;
     }
     return self;
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -47,11 +46,11 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(startFetchingItems:)
-                                                 name:@"kCLAuthorizationStatusAuthorized"
-                                               object:nil];
-    [self startFetchingItems:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(startFetchingItems:)
+//                                                 name:@"kCLAuthorizationStatusAuthorized"
+//                                               object:nil];
+    [self startFetchingItemsWithInput];
 }
 
 #pragma mark - Notification Observer
@@ -59,6 +58,10 @@
 {
     NSString* input=@"hola";
     [self.manager fetchItemsWithInput:input];
+}
+- (void)startFetchingItemsWithInput
+{
+    [self.manager fetchItemsWithInput:self.input];
 }
 
 #pragma mark - SearchManagerDelegate

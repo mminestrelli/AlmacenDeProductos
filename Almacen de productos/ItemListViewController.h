@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ItemListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
-
+- (id)initWithInput:(NSString*)input;
 @end
