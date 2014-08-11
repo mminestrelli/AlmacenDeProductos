@@ -35,6 +35,9 @@
     return self;
 }
 
+- (IBAction)onSearchInMeliButtonPressed:(id)sender {
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -55,6 +58,7 @@
      TitleViewController * titleView = [[TitleViewController alloc]initWithNibName:@"DescriptionAndTextFieldViewController" bundle:nil andProductToFill:self.prodToFill ];
     [self.navigationController pushViewController:titleView animated:YES];
 }
+
 
 #pragma mark Notification Handling
 

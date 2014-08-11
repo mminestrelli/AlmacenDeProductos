@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
 #import "ProductListViewController.h"
+#import "SearchViewController.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

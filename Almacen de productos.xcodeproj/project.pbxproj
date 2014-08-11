@@ -18,6 +18,10 @@
 		4E2F14401982CE8E002A74E6 /* CategoriesTabBar_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F143D1982CE8E002A74E6 /* CategoriesTabBar_on@2x.png */; };
 		4E7E18511993C8DC00674DFE /* ADPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E18501993C8DC00674DFE /* ADPService.m */; };
 		4E7E18531993CD8300674DFE /* check_sign_icon_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E18521993CD8300674DFE /* check_sign_icon_green.png */; };
+		4E7E185819951E8800674DFE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E185619951E8800674DFE /* SearchViewController.m */; };
+		4E7E185919951E8800674DFE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E185719951E8800674DFE /* SearchViewController.xib */; };
+		4E7E185C19951FFD00674DFE /* searchTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E185A19951FFD00674DFE /* searchTabBar.png */; };
+		4E7E185D19951FFD00674DFE /* searchTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E185B19951FFD00674DFE /* searchTabBar@2x.png */; };
 		4E82435319896EA00010AD53 /* DescriptionAndTextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */; };
 		4E8252ED197FFD260002F68E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8252EB197FFD260002F68E /* MainViewController.m */; };
 		4E8252EE197FFD260002F68E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8252EC197FFD260002F68E /* MainViewController.xib */; };
@@ -59,6 +63,12 @@
 		4EC20889198BCACF009EF9A4 /* ADPVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC20888198BCACF009EF9A4 /* ADPVehicle.m */; };
 		4EC2088D198BD07E009EF9A4 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */; };
 		4EC2088E198BD07E009EF9A4 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */; };
+		4EDCC81F1998EF9B00CC7F02 /* SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC81E1998EF9B00CC7F02 /* SearchItem.m */; };
+		4EDCC8281998F02600CC7F02 /* SearchCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC8221998F02600CC7F02 /* SearchCommunicator.m */; };
+		4EDCC8291998F02600CC7F02 /* ItemBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC8241998F02600CC7F02 /* ItemBuilder.m */; };
+		4EDCC82A1998F02600CC7F02 /* SearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC8271998F02600CC7F02 /* SearchManager.m */; };
+		4EDCC82E1998F5D600CC7F02 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC82C1998F5D600CC7F02 /* ItemListViewController.m */; };
+		4EDCC82F1998F5D600CC7F02 /* ItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EDCC82D1998F5D600CC7F02 /* ItemListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +96,11 @@
 		4E7E184F1993C8DC00674DFE /* ADPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPService.h; sourceTree = "<group>"; };
 		4E7E18501993C8DC00674DFE /* ADPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPService.m; sourceTree = "<group>"; };
 		4E7E18521993CD8300674DFE /* check_sign_icon_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_sign_icon_green.png; sourceTree = "<group>"; };
+		4E7E185519951E8800674DFE /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		4E7E185619951E8800674DFE /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		4E7E185719951E8800674DFE /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		4E7E185A19951FFD00674DFE /* searchTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchTabBar.png; sourceTree = "<group>"; };
+		4E7E185B19951FFD00674DFE /* searchTabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchTabBar@2x.png"; sourceTree = "<group>"; };
 		4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionAndTextViewViewController.xib; sourceTree = "<group>"; };
 		4E8252EA197FFD260002F68E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4E8252EB197FFD260002F68E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -148,6 +163,19 @@
 		4EC2088A198BD07E009EF9A4 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
+		4EDCC81D1998EF9B00CC7F02 /* SearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchItem.h; sourceTree = "<group>"; };
+		4EDCC81E1998EF9B00CC7F02 /* SearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchItem.m; sourceTree = "<group>"; };
+		4EDCC8201998F02600CC7F02 /* SearchCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCommunicatorDelegate.h; sourceTree = "<group>"; };
+		4EDCC8211998F02600CC7F02 /* SearchCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCommunicator.h; sourceTree = "<group>"; };
+		4EDCC8221998F02600CC7F02 /* SearchCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCommunicator.m; sourceTree = "<group>"; };
+		4EDCC8231998F02600CC7F02 /* ItemBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemBuilder.h; sourceTree = "<group>"; };
+		4EDCC8241998F02600CC7F02 /* ItemBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemBuilder.m; sourceTree = "<group>"; };
+		4EDCC8251998F02600CC7F02 /* SearchManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchManagerDelegate.h; sourceTree = "<group>"; };
+		4EDCC8261998F02600CC7F02 /* SearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchManager.h; sourceTree = "<group>"; };
+		4EDCC8271998F02600CC7F02 /* SearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchManager.m; sourceTree = "<group>"; };
+		4EDCC82B1998F5D600CC7F02 /* ItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListViewController.h; sourceTree = "<group>"; };
+		4EDCC82C1998F5D600CC7F02 /* ItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
+		4EDCC82D1998F5D600CC7F02 /* ItemListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +202,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E7E185419951E5000674DFE /* Searching Flow */ = {
+			isa = PBXGroup;
+			children = (
+				4E7E185519951E8800674DFE /* SearchViewController.h */,
+				4E7E185619951E8800674DFE /* SearchViewController.m */,
+				4E7E185719951E8800674DFE /* SearchViewController.xib */,
+				4EDCC81D1998EF9B00CC7F02 /* SearchItem.h */,
+				4EDCC81E1998EF9B00CC7F02 /* SearchItem.m */,
+				4EDCC8201998F02600CC7F02 /* SearchCommunicatorDelegate.h */,
+				4EDCC8211998F02600CC7F02 /* SearchCommunicator.h */,
+				4EDCC8221998F02600CC7F02 /* SearchCommunicator.m */,
+				4EDCC8231998F02600CC7F02 /* ItemBuilder.h */,
+				4EDCC8241998F02600CC7F02 /* ItemBuilder.m */,
+				4EDCC8251998F02600CC7F02 /* SearchManagerDelegate.h */,
+				4EDCC8261998F02600CC7F02 /* SearchManager.h */,
+				4EDCC8271998F02600CC7F02 /* SearchManager.m */,
+				4EDCC82B1998F5D600CC7F02 /* ItemListViewController.h */,
+				4EDCC82C1998F5D600CC7F02 /* ItemListViewController.m */,
+				4EDCC82D1998F5D600CC7F02 /* ItemListViewController.xib */,
+			);
+			name = "Searching Flow";
+			sourceTree = "<group>";
+		};
 		4E82435019893B460010AD53 /* Selling Flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +283,8 @@
 				4E2F143D1982CE8E002A74E6 /* CategoriesTabBar_on@2x.png */,
 				4E8E1A3F1992B08700A4D226 /* check.png */,
 				4E7E18521993CD8300674DFE /* check_sign_icon_green.png */,
+				4E7E185A19951FFD00674DFE /* searchTabBar.png */,
+				4E7E185B19951FFD00674DFE /* searchTabBar@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -331,6 +384,7 @@
 		4EBCD229197EB4B600B5F0A8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4E7E185419951E5000674DFE /* Searching Flow */,
 				4E82435119893B6B0010AD53 /* Listing Flow */,
 				4E82435019893B460010AD53 /* Selling Flow */,
 			);
@@ -430,9 +484,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E82530B197FFD940002F68E /* ProductImageViewController.xib in Resources */,
+				4EDCC82F1998F5D600CC7F02 /* ItemListViewController.xib in Resources */,
 				4E2F14311982AABD002A74E6 /* sellTabBar.png in Resources */,
 				4E7E18531993CD8300674DFE /* check_sign_icon_green.png in Resources */,
 				4E2F143F1982CE8E002A74E6 /* categoriesTabBar@2x.png in Resources */,
+				4E7E185D19951FFD00674DFE /* searchTabBar@2x.png in Resources */,
 				4E2F14401982CE8E002A74E6 /* CategoriesTabBar_on@2x.png in Resources */,
 				4E2F143A1982CD80002A74E6 /* ProductTableViewCell.xib in Resources */,
 				4E82531C19817BF50002F68E /* gallery5_2256.jpg in Resources */,
@@ -442,11 +498,13 @@
 				4E82531A19817BF50002F68E /* gallery3_2256.jpg in Resources */,
 				4E82531919817BF50002F68E /* gallery2_2256.jpg in Resources */,
 				4E8E1A3E1992A16700A4D226 /* CongratsViewController.xib in Resources */,
+				4E7E185919951E8800674DFE /* SearchViewController.xib in Resources */,
 				4E82531B19817BF50002F68E /* gallery4_2256.jpg in Resources */,
 				4E2F14301982AABD002A74E6 /* sellTabBar_on@2x.png in Resources */,
 				4E82532119821DC20002F68E /* ProductListViewController.xib in Resources */,
 				4E8E1A401992B08700A4D226 /* check.png in Resources */,
 				4E8252EE197FFD260002F68E /* MainViewController.xib in Resources */,
+				4E7E185C19951FFD00674DFE /* searchTabBar.png in Resources */,
 				4EBCD1F0197E9ABC00B5F0A8 /* InfoPlist.strings in Resources */,
 				4E2F143E1982CE8E002A74E6 /* categoriesTabBar.png in Resources */,
 				4EC2088E198BD07E009EF9A4 /* ProductDetailViewController.xib in Resources */,
@@ -508,20 +566,26 @@
 				4EC2088D198BD07E009EF9A4 /* ProductDetailViewController.m in Sources */,
 				4E8252ED197FFD260002F68E /* MainViewController.m in Sources */,
 				4E8252F8197FFD510002F68E /* DescriptionViewController.m in Sources */,
+				4EDCC81F1998EF9B00CC7F02 /* SearchItem.m in Sources */,
 				4E83C97E198A95210010C8A5 /* AbstractDescriptionAndTextViewController.m in Sources */,
 				4E82530A197FFD940002F68E /* ProductImageViewController.m in Sources */,
 				4EBCD226197EB47B00B5F0A8 /* ADPProduct.m in Sources */,
 				4E83C97B198A89850010C8A5 /* DescriptionAndTextViewViewController.m in Sources */,
+				4EDCC8281998F02600CC7F02 /* SearchCommunicator.m in Sources */,
 				4E7E18511993C8DC00674DFE /* ADPService.m in Sources */,
 				4EBCD1F6197E9ABC00B5F0A8 /* AppDelegate.m in Sources */,
 				4E8252FD197FFD620002F68E /* SubtitleViewController.m in Sources */,
 				4E8E1A3D1992A16700A4D226 /* CongratsViewController.m in Sources */,
 				4E82530F197FFE1A0002F68E /* TitleViewController.m in Sources */,
+				4EDCC82A1998F02600CC7F02 /* SearchManager.m in Sources */,
+				4E7E185819951E8800674DFE /* SearchViewController.m in Sources */,
 				4EBCD1F2197E9ABC00B5F0A8 /* main.m in Sources */,
 				4E2F14391982CD80002A74E6 /* ProductTableViewCell.m in Sources */,
+				4EDCC82E1998F5D600CC7F02 /* ItemListViewController.m in Sources */,
 				4E8E1A3919928F6700A4D226 /* MBProgressHUD.m in Sources */,
 				4EC20889198BCACF009EF9A4 /* ADPVehicle.m in Sources */,
 				4EBCD22C197EB92100B5F0A8 /* ADPStoreHouse.m in Sources */,
+				4EDCC8291998F02600CC7F02 /* ItemBuilder.m in Sources */,
 				4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */,
 				4E82532019821DC20002F68E /* ProductListViewController.m in Sources */,
 			);

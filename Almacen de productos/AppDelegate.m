@@ -17,25 +17,33 @@
     self.window.backgroundColor = [UIColor whiteColor];
     UITabBarItem* sellProductTabBarItem = nil;
     UITabBarItem* productListTabBarItem = nil;
-    
+    UITabBarItem* searchProductTabBarItem= nil;
     //Seller navigation
     MainViewController * mainViewController= [[MainViewController alloc]initWithNibName:nil bundle:nil ];
     //List of products added
     ProductListViewController *productList=[[ProductListViewController alloc]initWithNibName:nil bundle:nil];
+    //Search Navigation
+    SearchViewController * searchViewController= [[SearchViewController alloc]initWithNibName:nil bundle:nil];
+    
     UINavigationController * navigationControllerSelling = [[UINavigationController alloc]initWithRootViewController: mainViewController];
+    UINavigationController * navigationControllerSearch = [[UINavigationController alloc]initWithRootViewController: searchViewController];
     UINavigationController * navigationControllerListing = [[UINavigationController alloc]initWithRootViewController: productList];
     UITabBarController * tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
    
     //Tab bar items
     sellProductTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Vender" image:[UIImage imageNamed:@"sellTabBar.png"] tag:0];
     productListTabBarItem= [[UITabBarItem alloc] initWithTitle:@"Lista de Productos"  image:[UIImage imageNamed:@"categoriesTabBar.png"] tag:1];
+    searchProductTabBarItem=[[UITabBarItem alloc] initWithTitle:@"Buscar"  image:[UIImage imageNamed:@"searchTabBar.png"] tag:1];
+    
+    //Seleccionado en amarillo
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor yellowColor]];
     tabBarController.tabBar.barTintColor = [self colorWith255Red:84 withGreen:84 withBlue:84];
     //tabBarController.tabBar.barTintColor=[UIColor colorWithRed:240 green:210 blue:0 alpha:1];
     navigationControllerSelling.tabBarItem=sellProductTabBarItem;
     productList.tabBarItem=productListTabBarItem;
+    navigationControllerSearch.tabBarItem=searchProductTabBarItem;
     
-    [tabBarController setViewControllers:@[navigationControllerSelling, navigationControllerListing]];
+    [tabBarController setViewControllers:@[navigationControllerSelling, navigationControllerListing,navigationControllerSearch]];
     
     self.window.rootViewController= tabBarController;
     [self.window makeKeyAndVisible];

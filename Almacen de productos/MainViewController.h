@@ -17,4 +17,5 @@
 @property (nonatomic,strong)ADPProduct * prodToFill;
 - (IBAction)onProductAddButtonPressed:(UIButton *)sender;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+- (IBAction)onSearchInMeliButtonPressed:(id)sender;
 @end
