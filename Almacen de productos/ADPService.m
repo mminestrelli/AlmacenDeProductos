@@ -22,7 +22,7 @@
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.prod=prod;
         self.statusCode=200;
-        sleep(1);
+        sleep(5);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.delegate serviceDidFinish];

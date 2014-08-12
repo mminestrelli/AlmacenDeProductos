@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MBProgressHUD.h"
 
 @interface SearchViewController :UIViewController<UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate,UISearchDisplayDelegate>
+{
+    MBProgressHUD *HUD;
+}
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 //@property (weak, nonatomic) IBOutlet UITableView *tableViewHistory;
 

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ItemListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+#import "MBProgressHUD.h"
+@interface ItemListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
+    MBProgressHUD *HUD;
+}
 - (id)initWithInput:(NSString*)input;
 @end

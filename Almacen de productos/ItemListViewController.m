@@ -45,22 +45,14 @@
     self.manager.delegate = self;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(startFetchingItems:)
-//                                                 name:@"kCLAuthorizationStatusAuthorized"
-//                                               object:nil];
+    [self setTitle:@"Resultados"];
     [self startFetchingItemsWithInput];
 }
 
 #pragma mark - Notification Observer
-- (void)startFetchingItems:(NSNotification *)notification
-{
-    NSString* input=@"hola";
-    [self.manager fetchItemsWithInput:input];
-}
 - (void)startFetchingItemsWithInput
 {
+    [self loadingHud];
     [self.manager fetchItemsWithInput:self.input];
 }
 
@@ -69,6 +61,7 @@
 {
     self.items = items;
     [self.tableView reloadData];
+    [self finishingHUD];
 }
 
 - (void)fetchingItemsFailedWithError:(NSError *)error
@@ -101,16 +94,33 @@
     
     SearchItem *item = self.items[indexPath.row];
     [cell.labeltitle setText:item.title];
-    [cell.labelSubtitle setText:@"hola"];
+    if([item.subtitle class]!=[NSNull class]){
+    [cell.labelSubtitle setText:item.subtitle];
+    }
     [cell.labelPrice setText:[NSString stringWithFormat:@"%d",item.price] ];
     NSURL *url = [NSURL URLWithString:item.thumbnail];
     NSData *data = [NSData dataWithContentsOfURL:url];
     cell.imageViewPreview.image= [UIImage imageWithData:data];
     
-    
-    
-    
     return cell;
+}
+#pragma mark progress hud animation
+-(void)finishingHUD{
+    HUD.mode = MBProgressHUDModeText;
+	HUD.labelText = @"Listo!";
+    [HUD hide:YES afterDelay:3];
+    //[HUD hide:YES];
+}
+-(void) loadingHud{
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    HUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+	// Configure for text only and offset down
+	HUD.mode = MBProgressHUDModeIndeterminate;
+	HUD.labelText = @"Conectando";
+	HUD.margin = 10.f;
+	HUD.yOffset = 150.f;
+	HUD.removeFromSuperViewOnHide = YES;
+    
 }
 
 @end
