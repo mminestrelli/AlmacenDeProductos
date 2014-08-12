@@ -50,14 +50,12 @@
 {
     return nil;
 }
-#pragma mark searchbarç
+#pragma mark searchbar
+
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    //NSLog(self.searchBar.text);
-    //[self loadingHud];
     ItemListViewController * controller=[[ItemListViewController alloc]initWithInput:self.searchBar.text];
     [self.navigationController pushViewController:controller animated:YES];
 }
-#pragma mark MBProgressHud animations
 
 
 @end

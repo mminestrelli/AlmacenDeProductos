@@ -15,7 +15,7 @@
 
 @implementation ADPService
 
-
+/*Run the service in another thread with callback serviceDidFinish in main queue*/
 -(void) startRequestWithProduct:(ADPProduct*) prod
 {
     
@@ -29,6 +29,35 @@
         });
     });
     
+}
+/*Run request with blocks. Execute the service core in a custom serial queue  and after that executes completion or error blocks secuentially respect the service core but in main thread*/
+-(void) runRequestWithProduct:(ADPProduct*) prod completionBlock:(void (^)(void)) completion errorBlock:(void (^)(void)) error {
+    dispatch_queue_t serial_queue = dispatch_queue_create(
+                                                      "my_queue", DISPATCH_QUEUE_SERIAL
+                                                      );
+    self.statusCode=200;
+    dispatch_async(serial_queue, ^{
+        self.prod=prod;
+        
+        sleep(5);
+    });
+    
+    if (self.statusCode==200) {
+        dispatch_async(serial_queue, ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion();
+            });
+        });
+    }else{
+        dispatch_async(serial_queue, ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                error();
+            });
+
+        });
+    }
+
+
 }
 
 -(ADPProduct*)getProd{

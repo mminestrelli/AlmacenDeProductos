@@ -42,11 +42,11 @@
     self.productImageSV.scrollEnabled=YES;
     self.imagePickerView.delegate=self;
     self.service.delegate=self;
-
+    
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
                                              initWithTitle:@"Guardar" style: UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)] ;
     self.scrollViewContainer.scrollEnabled=NO;
-
+    
     //Funcionalidad de descartar cambios
     //self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc]
     //                                         initWithTitle:@"Borrar" style: UIBarButtonItemStyleDone target:self action:@selector(clearButtonPressed:)];
@@ -85,7 +85,7 @@ numberOfRowsInComponent:(NSInteger)component
 {
     NSString*aux=self.imagesPaths[row];
     self.displayImageView.image=[UIImage imageNamed: [aux stringByAppendingString:@".jpg"]];
-
+    
 }
 
 #pragma mark Bar items selectors
@@ -97,12 +97,21 @@ numberOfRowsInComponent:(NSInteger)component
         self.service= [[ADPService alloc]init];
         [self.service setDelegate:self];
     }
+    [self.service runRequestWithProduct:self.prodToFill
+                        completionBlock:^{
+                            [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
+                            [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
+                            CongratsViewController * nextViewController = [[CongratsViewController alloc] initWithServiceResponse:self.service];
+                            [self.navigationController pushViewController:nextViewController animated:YES];
+                        [self finishingHUD];}
+                             errorBlock:^{
+                                 NSLog(@"Error");}];
     
-    [self.service startRequestWithProduct:self.prodToFill];
+    //[self.service startRequestWithProduct:self.prodToFill];
 }
 /*Pops to the root controller and notifies to discard all the changes saved in the product*/
 - (IBAction)clearButtonPressed:(UIButton *)sender {
-
+    
     [NSNotification  notificationWithName:@"productClear" object:self.prodToFill];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"productClear" object:self.prodToFill];
     [self.navigationController popToRootViewControllerAnimated:YES];
@@ -132,7 +141,7 @@ numberOfRowsInComponent:(NSInteger)component
 	HUD.margin = 10.f;
 	HUD.yOffset = 150.f;
 	HUD.removeFromSuperViewOnHide = YES;
-
+    
 }
 /*Finish loading animation and hud removal*/
 -(void)finishingHUD{

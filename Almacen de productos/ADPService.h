@@ -16,6 +16,7 @@
 -(ADPProduct*)getProd;
 - (void)startRequestWithProduct:(ADPProduct*) prod;
 -(NSInteger) getStatus;
+-(void) runRequestWithProduct:(ADPProduct*) prod completionBlock:(void (^)(void)) completion errorBlock:(void (^)(void)) error ;
 @property(nonatomic,weak) id<ADPServiceDelegate>   delegate;
 
 @end
