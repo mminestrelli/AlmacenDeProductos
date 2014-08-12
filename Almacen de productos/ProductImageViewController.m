@@ -110,6 +110,7 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 #pragma mark ADPServiceDelegate methods
+/*Callback from service start request with product, handles the service response and notifies succesfull save*/
 -(void) serviceDidFinish{
     if([self.service getStatus]==200){
         [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
@@ -121,6 +122,7 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 #pragma mark MBProgressHud animations
+/*Loading animation*/
 -(void) loadingHud{
     HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
     HUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
@@ -132,6 +134,7 @@ numberOfRowsInComponent:(NSInteger)component
 	HUD.removeFromSuperViewOnHide = YES;
 
 }
+/*Finish loading animation and hud removal*/
 -(void)finishingHUD{
     HUD.mode = MBProgressHUDModeText;
 	HUD.labelText = @"Listo!";
