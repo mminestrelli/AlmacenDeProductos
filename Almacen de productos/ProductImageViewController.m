@@ -7,8 +7,9 @@
 //
 
 #import "ProductImageViewController.h"
+#define kRetryButtonIndex   1
 
-@interface ProductImageViewController ()<ADPServiceDelegate>
+@interface ProductImageViewController ()<ADPServiceDelegate,UIAlertViewDelegate>
 @property (nonatomic,strong)ADPProduct * prodToFill;
 @property (nonatomic,strong) ADPService * service;
 
@@ -100,12 +101,18 @@ numberOfRowsInComponent:(NSInteger)component
     [self.service runRequestWithProduct:self.prodToFill
                         completionBlock:^{
                             [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
+                            
                             [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
+                            
                             CongratsViewController * nextViewController = [[CongratsViewController alloc] initWithServiceResponse:self.service];
                             [self.navigationController pushViewController:nextViewController animated:YES];
-                        [self finishingHUD];}
-                             errorBlock:^{
-                                 NSLog(@"Error");}];
+                            [self finishingHUD];}
+                        errorBlock:^{
+                            NSLog(@"Error");
+                            [HUD hide:YES];
+                            [self setErrorAlert];
+                        }
+     ];
     
     //[self.service startRequestWithProduct:self.prodToFill];
 }
@@ -121,25 +128,24 @@ numberOfRowsInComponent:(NSInteger)component
 #pragma mark ADPServiceDelegate methods
 /*Callback from service start request with product, handles the service response and notifies succesfull save*/
 -(void) serviceDidFinish{
-    if([self.service getStatus]==200){
         [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"productSave" object:self.prodToFill userInfo:[NSDictionary dictionaryWithObject:self.prodToFill forKey:@"producto" ]];
         CongratsViewController * nextViewController = [[CongratsViewController alloc] initWithServiceResponse:self.service];
         [self.navigationController pushViewController:nextViewController animated:YES];
-    }
     [self finishingHUD];
 }
 
+-(void) serviceDidFinishWithError{
+    [HUD hide:YES];
+    [self setErrorAlert];
+}
 #pragma mark MBProgressHud animations
 /*Loading animation*/
 -(void) loadingHud{
     HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
     HUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-	// Configure for text only and offset down
 	HUD.mode = MBProgressHUDModeText;
 	HUD.labelText = @"Cargando";
-	HUD.margin = 10.f;
-	HUD.yOffset = 150.f;
 	HUD.removeFromSuperViewOnHide = YES;
     
 }
@@ -149,7 +155,23 @@ numberOfRowsInComponent:(NSInteger)component
 	HUD.labelText = @"Listo!";
     [HUD hide:YES afterDelay:3];
 }
+#pragma mark alert
+-(void)setErrorAlert{
+    UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:@"Oops"
+                                                     message:@"No se ha podido completar la operacion"
+                                                    delegate:self
+                                           cancelButtonTitle:@"Cancelar"
+                                           otherButtonTitles: nil];
+    [alert addButtonWithTitle:@"Reintentar"];
+    [alert show];
+}
 
-
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == kRetryButtonIndex)
+    {
+        [self saveButtonPressed:nil];
+    }
+}
 
 @end

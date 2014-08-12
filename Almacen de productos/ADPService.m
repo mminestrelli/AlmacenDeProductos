@@ -8,63 +8,84 @@
 
 #import "ADPService.h"
 @interface ADPService()
-@property (nonatomic) NSInteger statusCode;
-@property (nonatomic,strong) ADPProduct * prod;
+
 
 @end
 
 @implementation ADPService
 
 /*Run the service in another thread with callback serviceDidFinish in main queue*/
+
+
 -(void) startRequestWithProduct:(ADPProduct*) prod
 {
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.prod=prod;
-        self.statusCode=200;
+        NSUInteger statusCode = [self createStatusCode];
         sleep(5);
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.delegate serviceDidFinish];
-        });
+        if (statusCode >= 200 && statusCode < 400){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.delegate serviceDidFinish];
+            });
+        }
+        else{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.delegate serviceDidFinishWithError];
+            });
+        }
     });
+    
+}
+
+
+-(NSUInteger) createStatusCode{
+    
+    static NSUInteger counter  = 0;
+    
+    if (counter++ % 2){
+        return 200;
+    }
+    else{
+        return 400;
+    }
     
 }
 /*Run request with blocks. Execute the service core in a custom serial queue  and after that executes completion or error blocks secuentially respect the service core but in main thread*/
 -(void) runRequestWithProduct:(ADPProduct*) prod completionBlock:(void (^)(void)) completion errorBlock:(void (^)(void)) error {
-    dispatch_queue_t serial_queue = dispatch_queue_create(
-                                                      "my_queue", DISPATCH_QUEUE_SERIAL
-                                                      );
-    self.statusCode=200;
-    dispatch_async(serial_queue, ^{
-        self.prod=prod;
-        
+ 
+    // self.statusCode=200;
+    self.prod=prod;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+        //Concatenacion de data
         sleep(5);
-    });
-    
-    if (self.statusCode==200) {
-        dispatch_async(serial_queue, ^{
+        
+        NSUInteger statusCode = [self createStatusCode];
+        
+        //Ok el request
+        if (statusCode >= 200 && statusCode < 400){
             dispatch_async(dispatch_get_main_queue(), ^{
                 completion();
             });
-        });
-    }else{
-        dispatch_async(serial_queue, ^{
+        }
+        //Fail de request
+        else{
+            
             dispatch_async(dispatch_get_main_queue(), ^{
                 error();
             });
 
-        });
-    }
-
-
+            
+        }
+        
+        
+        
+    });
+    
+    
+    
 }
 
--(ADPProduct*)getProd{
-    return self.prod;
-}
 
--(NSInteger) getStatus{
-    return self.statusCode;
-}
 @end
