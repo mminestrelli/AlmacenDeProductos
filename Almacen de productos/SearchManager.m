@@ -13,7 +13,6 @@
 @implementation SearchManager
 - (void)fetchItemsWithInput:(NSString*)input
 {
-    //Parse and clean input
     [self.communicator searchWithText:input] ;
 }
 

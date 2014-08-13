@@ -13,7 +13,8 @@
 
 - (void)searchWithText:(NSString*)input
 {
-    NSString *urlAsString = [NSString stringWithFormat:@"https://api.mercadolibre.com/sites/MLA/search?q=%@",input];
+    NSString * planeInput=[input stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    NSString *urlAsString = [NSString stringWithFormat:@"https://api.mercadolibre.com/sites/MLA/search?q=%@",planeInput];
     NSURL *url = [[NSURL alloc] initWithString:urlAsString];
     NSLog(@"%@", urlAsString);
     

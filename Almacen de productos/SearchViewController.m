@@ -9,8 +9,10 @@
 #import "SearchViewController.h"
 #import "ItemListViewController.h"
 #import "HistoryTableViewCell.h"
+#define kHistoryCellHeight 36;
 
 @interface SearchViewController ()
+//Search history
 @property (nonatomic,strong)NSMutableArray* history;
 @end
 
@@ -72,14 +74,15 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 36;
+    return kHistoryCellHeight;
 }
 #pragma mark keyboard
+/*Dismisses searchbar keyboard*/
 -(void)dismissKeyboard{
     [self.searchBar resignFirstResponder];
 }
 #pragma mark searchbar
-
+/*Search bar button clicked pushes item list view controller, adds input from search to history*/
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     [self dismissKeyboard];
     [self.history addObject:self.searchBar.text];

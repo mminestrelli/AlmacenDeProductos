@@ -98,6 +98,7 @@ numberOfRowsInComponent:(NSInteger)component
         self.service= [[ADPService alloc]init];
         [self.service setDelegate:self];
     }
+    //Service run implementation with blocks
     [self.service runRequestWithProduct:self.prodToFill
                         completionBlock:^{
                             [NSNotification  notificationWithName:@"productSave" object:self.prodToFill];
@@ -113,7 +114,7 @@ numberOfRowsInComponent:(NSInteger)component
                             [self setErrorAlert];
                         }
      ];
-    
+    //Service run implementation with serviceDelegate
     //[self.service startRequestWithProduct:self.prodToFill];
 }
 /*Pops to the root controller and notifies to discard all the changes saved in the product*/
@@ -134,12 +135,13 @@ numberOfRowsInComponent:(NSInteger)component
         [self.navigationController pushViewController:nextViewController animated:YES];
     [self finishingHUD];
 }
-
+/*Callback from service start request with product, handles the error displaying an alert*/
 -(void) serviceDidFinishWithError{
     [HUD hide:YES];
     [self setErrorAlert];
 }
 #pragma mark MBProgressHud animations
+
 /*Loading animation*/
 -(void) loadingHud{
     HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
@@ -156,6 +158,7 @@ numberOfRowsInComponent:(NSInteger)component
     [HUD hide:YES afterDelay:1];
 }
 #pragma mark alert
+/*Request failed alert,provides the functionality to retry or cancel*/
 -(void)setErrorAlert{
     UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:@"Oops"
                                                      message:@"No se ha podido completar la operacion"

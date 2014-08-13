@@ -39,7 +39,7 @@ typedef void (^ADPServiceBlock)(void);
     
 }
 
-
+/*Generates a status code depending on the call number and it returns an error status code once an next a valid one*/
 -(NSUInteger) createStatusCode{
     
     static NSUInteger counter  = 0;

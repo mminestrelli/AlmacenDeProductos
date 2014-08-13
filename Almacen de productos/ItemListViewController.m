@@ -11,7 +11,10 @@
 #import "SearchItem.h"
 #import "SearchManager.h"
 #import "SearchCommunicator.h"
+#define kProductCellHeight 72
+
 @interface ItemListViewController ()<SearchManagerDelegate>
+
 @property (nonatomic,strong) NSArray *items;
 @property (nonatomic,strong)SearchManager *manager;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -84,7 +87,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 72;
+    return kProductCellHeight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
