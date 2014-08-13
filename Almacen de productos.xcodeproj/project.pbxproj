@@ -63,6 +63,8 @@
 		4EC20889198BCACF009EF9A4 /* ADPVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC20888198BCACF009EF9A4 /* ADPVehicle.m */; };
 		4EC2088D198BD07E009EF9A4 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */; };
 		4EC2088E198BD07E009EF9A4 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */; };
+		4EC8FD6B199BE07600F3CA8A /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8FD69199BE07600F3CA8A /* HistoryTableViewCell.m */; };
+		4EC8FD6C199BE07600F3CA8A /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8FD6A199BE07600F3CA8A /* HistoryTableViewCell.xib */; };
 		4EDCC81F1998EF9B00CC7F02 /* SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC81E1998EF9B00CC7F02 /* SearchItem.m */; };
 		4EDCC8281998F02600CC7F02 /* SearchCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC8221998F02600CC7F02 /* SearchCommunicator.m */; };
 		4EDCC8291998F02600CC7F02 /* ItemBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC8241998F02600CC7F02 /* ItemBuilder.m */; };
@@ -163,6 +165,9 @@
 		4EC2088A198BD07E009EF9A4 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		4EC2088B198BD07E009EF9A4 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
+		4EC8FD68199BE07600F3CA8A /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		4EC8FD69199BE07600F3CA8A /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		4EC8FD6A199BE07600F3CA8A /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		4EDCC81D1998EF9B00CC7F02 /* SearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchItem.h; sourceTree = "<group>"; };
 		4EDCC81E1998EF9B00CC7F02 /* SearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchItem.m; sourceTree = "<group>"; };
 		4EDCC8201998F02600CC7F02 /* SearchCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCommunicatorDelegate.h; sourceTree = "<group>"; };
@@ -221,6 +226,9 @@
 				4EDCC82B1998F5D600CC7F02 /* ItemListViewController.h */,
 				4EDCC82C1998F5D600CC7F02 /* ItemListViewController.m */,
 				4EDCC82D1998F5D600CC7F02 /* ItemListViewController.xib */,
+				4EC8FD68199BE07600F3CA8A /* HistoryTableViewCell.h */,
+				4EC8FD69199BE07600F3CA8A /* HistoryTableViewCell.m */,
+				4EC8FD6A199BE07600F3CA8A /* HistoryTableViewCell.xib */,
 			);
 			name = "Searching Flow";
 			sourceTree = "<group>";
@@ -496,6 +504,7 @@
 				4E82531819817BF50002F68E /* gallery1_2256.jpg in Resources */,
 				4E2F14321982AABD002A74E6 /* sellTabBar@2x.png in Resources */,
 				4E82531A19817BF50002F68E /* gallery3_2256.jpg in Resources */,
+				4EC8FD6C199BE07600F3CA8A /* HistoryTableViewCell.xib in Resources */,
 				4E82531919817BF50002F68E /* gallery2_2256.jpg in Resources */,
 				4E8E1A3E1992A16700A4D226 /* CongratsViewController.xib in Resources */,
 				4E7E185919951E8800674DFE /* SearchViewController.xib in Resources */,
@@ -573,6 +582,7 @@
 				4E83C97B198A89850010C8A5 /* DescriptionAndTextViewViewController.m in Sources */,
 				4EDCC8281998F02600CC7F02 /* SearchCommunicator.m in Sources */,
 				4E7E18511993C8DC00674DFE /* ADPService.m in Sources */,
+				4EC8FD6B199BE07600F3CA8A /* HistoryTableViewCell.m in Sources */,
 				4EBCD1F6197E9ABC00B5F0A8 /* AppDelegate.m in Sources */,
 				4E8252FD197FFD620002F68E /* SubtitleViewController.m in Sources */,
 				4E8E1A3D1992A16700A4D226 /* CongratsViewController.m in Sources */,

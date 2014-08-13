@@ -153,7 +153,7 @@ numberOfRowsInComponent:(NSInteger)component
 -(void)finishingHUD{
     HUD.mode = MBProgressHUDModeText;
 	HUD.labelText = @"Listo!";
-    [HUD hide:YES afterDelay:3];
+    [HUD hide:YES afterDelay:1];
 }
 #pragma mark alert
 -(void)setErrorAlert{

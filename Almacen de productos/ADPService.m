@@ -7,6 +7,7 @@
 //
 
 #import "ADPService.h"
+typedef void (^ADPServiceBlock)(void);
 @interface ADPService()
 
 

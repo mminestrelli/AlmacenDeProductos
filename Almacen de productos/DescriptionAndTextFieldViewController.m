@@ -96,7 +96,7 @@
 // Called when the UIKeyboardDidShowNotification is sent.
 - (void)keyboardWasShown:(NSNotification*)aNotification
 {
-    self.scrollViewContainer.scrollEnabled=YES;
+    //self.scrollViewContainer.scrollEnabled=YES;
 //    NSDictionary* info = [aNotification userInfo];
 //    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
 //    
@@ -124,7 +124,7 @@
     
     [self.scrollViewContainer setContentOffset:CGPointMake(self.scrollViewContainer.contentOffset.x, -35)
                              animated:YES];
-    self.scrollViewContainer.scrollEnabled=NO;
+    //self.scrollViewContainer.scrollEnabled=NO;
 }
 
 #pragma mark - AddItemDelegate methods

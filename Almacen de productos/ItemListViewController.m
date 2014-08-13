@@ -26,6 +26,7 @@
     self = [super init];
     if (self) {
         self.input=input;
+        //[input stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
     }
     return self;
 }
@@ -101,17 +102,18 @@
     [cell.labelSubtitle setText:item.subtitle];
     }
     [cell.labelPrice setText:[NSString stringWithFormat:@"%d",item.price] ];
-    NSURL *url = [NSURL URLWithString:item.thumbnail];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    cell.imageViewPreview.image= [UIImage imageWithData:data];
-    
+    if([item.thumbnail class]!=[NSNull class]){
+        NSURL *url = [NSURL URLWithString:item.thumbnail];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        cell.imageViewPreview.image= [UIImage imageWithData:data];
+    }
     return cell;
 }
 #pragma mark progress hud animation
 -(void)finishingHUD{
     HUD.mode = MBProgressHUDModeText;
 	HUD.labelText = @"Listo!";
-    [HUD hide:YES afterDelay:3];
+    [HUD hide:YES afterDelay:1];
     //[HUD hide:YES];
 }
 -(void) loadingHud{
@@ -120,8 +122,6 @@
 	// Configure for text only and offset down
 	HUD.mode = MBProgressHUDModeIndeterminate;
 	HUD.labelText = @"Conectando";
-	HUD.margin = 10.f;
-	HUD.yOffset = 150.f;
 	HUD.removeFromSuperViewOnHide = YES;
     
 }

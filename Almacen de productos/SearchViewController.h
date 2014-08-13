@@ -14,6 +14,6 @@
     MBProgressHUD *HUD;
 }
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-//@property (weak, nonatomic) IBOutlet UITableView *tableViewHistory;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewHistory;
 
 @end

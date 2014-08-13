@@ -98,7 +98,7 @@
 // Called when the UIKeyboardDidShowNotification is sent.
 - (void)keyboardWasShown:(NSNotification*)aNotification
 {
-    self.scrollViewContainer.scrollEnabled=YES;
+    //self.scrollViewContainer.scrollEnabled=YES;
 }
 
 

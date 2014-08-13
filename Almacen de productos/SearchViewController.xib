@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="searchBar" destination="GpO-Eq-g4s" id="poC-f2-sHF"/>
                 <outlet property="searchDisplayController" destination="aqD-Lm-HVq" id="fkt-bl-ttc"/>
+                <outlet property="tableViewHistory" destination="PZD-Ol-3xP" id="Cxa-CF-zm4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,12 +26,21 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PZD-Ol-3xP">
+                            <rect key="frame" x="0.0" y="94" width="320" height="454"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="PZD-Ol-3xP" firstAttribute="top" secondItem="GpO-Eq-g4s" secondAttribute="bottom" id="9A2-At-911"/>
+                        <constraint firstItem="PZD-Ol-3xP" firstAttribute="leading" secondItem="Tuf-ps-8AH" secondAttribute="leading" id="9of-ka-CF8"/>
                         <constraint firstItem="GpO-Eq-g4s" firstAttribute="leading" secondItem="Tuf-ps-8AH" secondAttribute="leading" id="Lby-LZ-fdf"/>
                         <constraint firstItem="GpO-Eq-g4s" firstAttribute="top" secondItem="Tuf-ps-8AH" secondAttribute="top" constant="50" id="Oa6-85-XPF"/>
+                        <constraint firstAttribute="bottom" secondItem="PZD-Ol-3xP" secondAttribute="bottom" id="U5g-Wa-wtc"/>
                         <constraint firstAttribute="trailing" secondItem="GpO-Eq-g4s" secondAttribute="trailing" id="bx5-4e-GwC"/>
+                        <constraint firstAttribute="trailing" secondItem="PZD-Ol-3xP" secondAttribute="trailing" id="qZ0-g4-xMo"/>
                     </constraints>
                 </view>
             </subviews>
