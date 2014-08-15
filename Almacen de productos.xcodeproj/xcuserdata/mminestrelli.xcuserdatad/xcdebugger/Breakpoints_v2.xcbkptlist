@@ -554,7 +554,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/ItemBuilder.m"
@@ -574,11 +574,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/ItemListViewController.m"
-            timestampString = "429652266.424407"
+            timestampString = "429722889.545061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -606,11 +606,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/ItemListViewController.m"
-            timestampString = "429652266.424407"
+            timestampString = "429722889.545061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "-didReceiveItems:"
             landmarkType = "5">
             <Locations>
@@ -621,11 +621,11 @@
                   symbolName = "-[ItemListViewController didReceiveItems:]"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ItemListViewController.m"
-                  timestampString = "429650378.714817"
+                  timestampString = "429800227.889547"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
                   offsetFromSymbolStart = "128">
                </Location>
                <Location
@@ -635,11 +635,11 @@
                   symbolName = "__42-[ItemListViewController didReceiveItems:]_block_invoke"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ItemListViewController.m"
-                  timestampString = "429650378.715166"
+                  timestampString = "429800227.889907"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
                   offsetFromSymbolStart = "19">
                </Location>
             </Locations>
@@ -652,11 +652,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/ItemListViewController.m"
-            timestampString = "429652266.424407"
+            timestampString = "429722889.545061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "5">
          </BreakpointContent>
@@ -715,7 +715,7 @@
                   symbolName = "-[ADPService startRequestWithProduct:]"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPService.m"
-                  timestampString = "429650378.827831"
+                  timestampString = "429800227.98106"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -729,7 +729,7 @@
                   symbolName = "__38-[ADPService startRequestWithProduct:]_block_invoke"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPService.m"
-                  timestampString = "429650378.831332"
+                  timestampString = "429800227.981407"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -761,7 +761,7 @@
                   symbolName = "__38-[ADPService startRequestWithProduct:]_block_invoke"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPService.m"
-                  timestampString = "429650378.833324"
+                  timestampString = "429800228.057771"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -775,7 +775,7 @@
                   symbolName = "__38-[ADPService startRequestWithProduct:]_block_invoke_2"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPService.m"
-                  timestampString = "429650378.833656"
+                  timestampString = "429800228.058178"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -808,7 +808,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Almacen de productos/ItemListViewController.m"
-            timestampString = "429652266.424407"
+            timestampString = "429800227.577993"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -919,7 +919,7 @@
                   symbolName = "__63-[ADPService runRequestWithProduct:completionBlock:errorBlock:]_block_invoke"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPService.m"
-                  timestampString = "429650378.887318"
+                  timestampString = "429800228.067292"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "76"
@@ -933,7 +933,7 @@
                   symbolName = "__63-[ADPService runRequestWithProduct:completionBlock:errorBlock:]_block_invoke19"
                   moduleName = "Almacen de productos"
                   urlString = "file:///Users/mminestrelli/github/AlmacenDeProductos/Almacen%20de%20productos/ADPService.m"
-                  timestampString = "429650378.887669"
+                  timestampString = "429800228.067627"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "76"
@@ -1017,6 +1017,54 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Almacen de productos/ItemListViewController.m"
+            timestampString = "429800227.577993"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Almacen de productos/ItemBuilder.m"
+            timestampString = "429723522.709021"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+itemsFromJSON:error:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Almacen de productos/ItemListViewController.m"
+            timestampString = "429803013.638266"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>

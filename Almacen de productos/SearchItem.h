@@ -11,7 +11,8 @@
 @interface SearchItem : NSObject
 @property (nonatomic,copy) NSString * title;
 @property (nonatomic,copy) NSString * subtitle;
-@property (nonatomic) NSInteger price;
+@property (nonatomic) NSNumber * price;
 @property (nonatomic,copy) NSString * thumbnail;
-
+@property (nonatomic,copy) NSString * permalink;
+@property (nonatomic) NSInteger sold_quantity;
 @end

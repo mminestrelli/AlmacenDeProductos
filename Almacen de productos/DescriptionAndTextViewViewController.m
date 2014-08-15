@@ -109,9 +109,9 @@
     //    self.scrollViewContainer.contentInset = contentInsets;
     //    self.scrollViewContainer.scrollIndicatorInsets = contentInsets;
     
-    [self.scrollViewContainer setContentOffset:CGPointMake(self.scrollViewContainer.contentOffset.x, -35)
-                                      animated:YES];
-    self.scrollViewContainer.scrollEnabled=NO;
+//    [self.scrollViewContainer setContentOffset:CGPointMake(self.scrollViewContainer.contentOffset.x, -35)
+//                                      animated:YES];
+//    self.scrollViewContainer.scrollEnabled=NO;
 }
 
 

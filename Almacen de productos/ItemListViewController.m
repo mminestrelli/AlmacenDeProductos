@@ -11,6 +11,7 @@
 #import "SearchItem.h"
 #import "SearchManager.h"
 #import "SearchCommunicator.h"
+#import "ItemDetailViewController.h"
 #define kProductCellHeight 72
 
 @interface ItemListViewController ()<SearchManagerDelegate>
@@ -101,10 +102,9 @@
     
     SearchItem *item = self.items[indexPath.row];
     [cell.labeltitle setText:item.title];
-    if([item.subtitle class]!=[NSNull class]){
-    [cell.labelSubtitle setText:item.subtitle];
-    }
-    [cell.labelPrice setText:[NSString stringWithFormat:@"%d",item.price] ];
+    NSString* soldQty=[NSString stringWithFormat:@"%d%@",item.sold_quantity,@" vendidos." ];
+    [cell.labelPrice setText:[NSString stringWithFormat:@"%@",item.price ]];
+    [cell.labelSubtitle setText:soldQty];
     if([item.thumbnail class]!=[NSNull class]){
         NSURL *url = [NSURL URLWithString:item.thumbnail];
         NSData *data = [NSData dataWithContentsOfURL:url];
@@ -112,6 +112,15 @@
     }
     return cell;
 }
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    SearchItem *item = self.items[indexPath.row];
+    ItemDetailViewController * detailView= [[ItemDetailViewController alloc] initWithNibName:nil bundle:nil andItem:item ];
+    [self.navigationController pushViewController:detailView animated:YES];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 #pragma mark progress hud animation
 -(void)finishingHUD{
     HUD.mode = MBProgressHUDModeText;

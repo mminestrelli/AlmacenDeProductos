@@ -10,7 +10,7 @@
 #import "SearchCommunicatorDelegate.h"
 
 @implementation SearchCommunicator
-
+/*Url request with input. Spaces are replaced by %20. Error and success callbacks*/
 - (void)searchWithText:(NSString*)input
 {
     NSString * planeInput=[input stringByReplacingOccurrencesOfString:@" " withString:@"%20"];

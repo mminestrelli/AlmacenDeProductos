@@ -65,6 +65,9 @@
 		4EC2088E198BD07E009EF9A4 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC2088C198BD07E009EF9A4 /* ProductDetailViewController.xib */; };
 		4EC8FD6B199BE07600F3CA8A /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8FD69199BE07600F3CA8A /* HistoryTableViewCell.m */; };
 		4EC8FD6C199BE07600F3CA8A /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8FD6A199BE07600F3CA8A /* HistoryTableViewCell.xib */; };
+		4EC8FD7E199CE91900F3CA8A /* AWPagedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8FD7D199CE91900F3CA8A /* AWPagedArray.m */; };
+		4EC8FEF9199D071B00F3CA8A /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8FEF7199D071B00F3CA8A /* ItemDetailViewController.m */; };
+		4EC8FEFA199D071B00F3CA8A /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8FEF8199D071B00F3CA8A /* ItemDetailViewController.xib */; };
 		4EDCC81F1998EF9B00CC7F02 /* SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC81E1998EF9B00CC7F02 /* SearchItem.m */; };
 		4EDCC8281998F02600CC7F02 /* SearchCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC8221998F02600CC7F02 /* SearchCommunicator.m */; };
 		4EDCC8291998F02600CC7F02 /* ItemBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCC8241998F02600CC7F02 /* ItemBuilder.m */; };
@@ -168,6 +171,11 @@
 		4EC8FD68199BE07600F3CA8A /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
 		4EC8FD69199BE07600F3CA8A /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		4EC8FD6A199BE07600F3CA8A /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		4EC8FD7C199CE91900F3CA8A /* AWPagedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWPagedArray.h; sourceTree = "<group>"; };
+		4EC8FD7D199CE91900F3CA8A /* AWPagedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWPagedArray.m; sourceTree = "<group>"; };
+		4EC8FEF6199D071B00F3CA8A /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		4EC8FEF7199D071B00F3CA8A /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		4EC8FEF8199D071B00F3CA8A /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 		4EDCC81D1998EF9B00CC7F02 /* SearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchItem.h; sourceTree = "<group>"; };
 		4EDCC81E1998EF9B00CC7F02 /* SearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchItem.m; sourceTree = "<group>"; };
 		4EDCC8201998F02600CC7F02 /* SearchCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCommunicatorDelegate.h; sourceTree = "<group>"; };
@@ -229,6 +237,9 @@
 				4EC8FD68199BE07600F3CA8A /* HistoryTableViewCell.h */,
 				4EC8FD69199BE07600F3CA8A /* HistoryTableViewCell.m */,
 				4EC8FD6A199BE07600F3CA8A /* HistoryTableViewCell.xib */,
+				4EC8FEF6199D071B00F3CA8A /* ItemDetailViewController.h */,
+				4EC8FEF7199D071B00F3CA8A /* ItemDetailViewController.m */,
+				4EC8FEF8199D071B00F3CA8A /* ItemDetailViewController.xib */,
 			);
 			name = "Searching Flow";
 			sourceTree = "<group>";
@@ -349,6 +360,8 @@
 				4EBCD1EE197E9ABC00B5F0A8 /* InfoPlist.strings */,
 				4E8E1A3719928F6700A4D226 /* MBProgressHUD.h */,
 				4E8E1A3819928F6700A4D226 /* MBProgressHUD.m */,
+				4EC8FD7C199CE91900F3CA8A /* AWPagedArray.h */,
+				4EC8FD7D199CE91900F3CA8A /* AWPagedArray.m */,
 				4EBCD1F1197E9ABC00B5F0A8 /* main.m */,
 				4EBCD1F3197E9ABC00B5F0A8 /* Almacen de productos-Prefix.pch */,
 			);
@@ -474,6 +487,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es_AR,
 			);
 			mainGroup = 4EBCD1D9197E9ABC00B5F0A8;
 			productRefGroup = 4EBCD1E3197E9ABC00B5F0A8 /* Products */;
@@ -493,6 +507,7 @@
 			files = (
 				4E82530B197FFD940002F68E /* ProductImageViewController.xib in Resources */,
 				4EDCC82F1998F5D600CC7F02 /* ItemListViewController.xib in Resources */,
+				4EC8FEFA199D071B00F3CA8A /* ItemDetailViewController.xib in Resources */,
 				4E2F14311982AABD002A74E6 /* sellTabBar.png in Resources */,
 				4E7E18531993CD8300674DFE /* check_sign_icon_green.png in Resources */,
 				4E2F143F1982CE8E002A74E6 /* categoriesTabBar@2x.png in Resources */,
@@ -572,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E825305197FFD800002F68E /* PriceViewController.m in Sources */,
+				4EC8FD7E199CE91900F3CA8A /* AWPagedArray.m in Sources */,
 				4EC2088D198BD07E009EF9A4 /* ProductDetailViewController.m in Sources */,
 				4E8252ED197FFD260002F68E /* MainViewController.m in Sources */,
 				4E8252F8197FFD510002F68E /* DescriptionViewController.m in Sources */,
@@ -597,6 +613,7 @@
 				4EBCD22C197EB92100B5F0A8 /* ADPStoreHouse.m in Sources */,
 				4EDCC8291998F02600CC7F02 /* ItemBuilder.m in Sources */,
 				4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */,
+				4EC8FEF9199D071B00F3CA8A /* ItemDetailViewController.m in Sources */,
 				4E82532019821DC20002F68E /* ProductListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,9 +732,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Almacen de productos/Almacen de productos-Prefix.pch";
 				INFOPLIST_FILE = "Almacen de productos/Almacen de productos-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mminestrelli/Downloads/google-plus-ios-sdk-1.2.1/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -729,9 +754,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Almacen de productos/Almacen de productos-Prefix.pch";
 				INFOPLIST_FILE = "Almacen de productos/Almacen de productos-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mminestrelli/Downloads/google-plus-ios-sdk-1.2.1/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

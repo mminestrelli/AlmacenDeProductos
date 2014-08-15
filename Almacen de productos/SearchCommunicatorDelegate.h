@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+/*Communicator protocol provides callbacks for success or failure in api requests*/
 @protocol SearchCommunicatorDelegate
+
 - (void)receivedItemsJSON:(NSData *)objectNotation;
 - (void)fetchingItemsFailedWithError:(NSError *)error;
 @end
