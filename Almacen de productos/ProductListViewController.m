@@ -33,15 +33,13 @@
     self.tableViewStoreHouse.dataSource = self;
     // Do any additional setup after loading the view from its nib.
     [self setTitle:@"Mis Publicaciones"];
-    //self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]
-//                                             initWithTitle:@"Editar" style: UIBarButtonItemStyleBordered target:self action:@selector(tableView: commitEditingStyle:forRowAtIndexPath:)];
-    //Mock add
+
+    //Mock add - Deprecated
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"MacBook Pro retina 17 inch" code:54 subtitle:@"sub" description:@"Retina display: 13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 resolution at 227 pixels per inch with support for millions of colors" price:21399 andImage:[UIImage imageNamed: @"gallery2_2256.jpg"]]];
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto2" code:55 subtitle:@"sub" description:@"desc" price:2343 andImage:[UIImage imageNamed: @"gallery1_2256.jpg"]]];
     
     //Load from file
-    NSString* fileName = @"/Users/mminestrelli/Desktop/ObjetoDePrueba.txt";
-    self.house.products = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
+    self.house.products = [NSKeyedUnarchiver unarchiveObjectWithFile:[self getCacheFilePath]];
 }
 
 
@@ -114,15 +112,16 @@
     [self.house addProduct: [usrInfo objectForKey:@"producto" ]];
     [self.tableViewStoreHouse reloadData];
     
-    
-    //Guardado en archivo
-    NSMutableArray * products=self.house.products;
-    NSArray * paths = NSSearchPathForDirectoriesInDomains (NSDesktopDirectory, NSUserDomainMask, YES);
-    NSString * desktopPath = [paths objectAtIndex:0];
-    //Hardcoded desktop path
-    desktopPath=@"/Users/mminestrelli/Desktop";
-    NSString *file = [desktopPath stringByAppendingPathComponent:@"objetoDePrueba.txt"];
-    [NSKeyedArchiver archiveRootObject:products toFile:file];
+    //Save to file
+    [NSKeyedArchiver archiveRootObject:self.house.products toFile:[self getCacheFilePath]];
+}
+
+-(NSString*) getCacheFilePath{
+    /*Library folder, where you store configuration files and writable databases that you also want to keep around, but you don't want the user to be able to mess with through iTunes*/
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *libraryDirectory = [paths objectAtIndex:0];
+    NSString *file = [libraryDirectory stringByAppendingPathComponent:@"cache.txt"];
+    return file;
 }
 
 @end

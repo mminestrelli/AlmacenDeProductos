@@ -14,5 +14,5 @@
 @interface ProductListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
-
+-(NSString*) getCacheFilePath;
 @end
