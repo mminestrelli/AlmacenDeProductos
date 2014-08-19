@@ -43,6 +43,28 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
 -(NSInteger)getIdentification{
     return self.code;
 }
+/*Encoding and decoding */
+-(void)encodeWithCoder:(NSCoder *)encoder{
+    [encoder encodeObject:self.title forKey:@"title"];
+    [encoder encodeObject:self.subtitle forKey:@"subtitle"];
+    [encoder encodeInt:self.code forKey:@"code"];
+    [encoder encodeObject:self.description forKey:@"description"];
+    [encoder encodeFloat:self.price forKey:@"price" ];
+    [encoder encodeObject:self.image forKey:@"image"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    if (self = [super init]) {
+        self.title = [decoder decodeObjectForKey:@"title"];
+        self.subtitle = [decoder decodeObjectForKey:@"subtitle"];
+        self.description = [decoder decodeObjectForKey:@"description"];
+        self.image = [decoder decodeObjectForKey:@"image"];
+        self.code= [decoder decodeIntForKey:@"code"];
+        self.price= [decoder decodeFloatForKey:@"price"];
+    }
+    return self;
+}
+
 /*Returns saved price as string formatted acording to user preferences*/
 -(NSString*)getFormattedPriceString{
     return [self.numberFormatter stringFromNumber:[NSNumber numberWithFloat:self.price]];

@@ -67,12 +67,14 @@
     self.prodToFill=[[ADPProduct alloc]initWithCode:code];
 }
 /* Save notification is sent when the user selects the option save in ProductImageViewController the selector handles the object received initializing an empty product with the following code*/
+
 -(void) saveNotificationHandle:(NSNotification*) notification{
     self.productReceivedInNotification= [[notification userInfo] objectForKey:@"producto"];
     NSInteger code=self.productReceivedInNotification.code;
     // Se cambio a productListViewController.m
     //[self.house addProduct:self.prodToFill];
     self.prodToFill=[[ADPProduct alloc]initWithCode:code+1];
+    
 }
 
 

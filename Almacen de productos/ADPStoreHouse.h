@@ -10,9 +10,8 @@
 #import "ADPProduct.h"
 
 @interface ADPStoreHouse : NSObject
-
+@property (nonatomic,strong) NSMutableArray * products;
 -(void) deleteProduct:(ADPProduct*) prod;
 -(void) addProduct:(ADPProduct*) prod;
 -(NSInteger) amountOfProductsStocked;
--(NSMutableArray*) getProducts;
 @end

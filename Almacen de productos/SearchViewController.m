@@ -87,7 +87,9 @@
     [self dismissKeyboard];
     [self.history addObject:self.searchBar.text];
     [self.tableViewHistory reloadData];
+    
     ItemListViewController * controller=[[ItemListViewController alloc]initWithInput:self.searchBar.text];
+    self.searchBar.text=@"";
     [self.navigationController pushViewController:controller animated:YES];
 }
 

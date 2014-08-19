@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ADPProduct : NSObject
+@interface ADPProduct : NSObject<NSCoding>
 
 @property (nonatomic,copy) NSString * title;
 @property (nonatomic,copy) NSString * subtitle;

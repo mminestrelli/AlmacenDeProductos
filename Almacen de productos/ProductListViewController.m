@@ -38,6 +38,10 @@
     //Mock add
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"MacBook Pro retina 17 inch" code:54 subtitle:@"sub" description:@"Retina display: 13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 resolution at 227 pixels per inch with support for millions of colors" price:21399 andImage:[UIImage imageNamed: @"gallery2_2256.jpg"]]];
     [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto2" code:55 subtitle:@"sub" description:@"desc" price:2343 andImage:[UIImage imageNamed: @"gallery1_2256.jpg"]]];
+    
+    //Load from file
+    NSString* fileName = @"/Users/mminestrelli/Desktop/ObjetoDePrueba.txt";
+    self.house.products = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
 }
 
 
@@ -62,7 +66,7 @@
         productCell = [nib objectAtIndex:0];
     }
  
-    ADPProduct* current=[self.house getProducts][indexPath.row ];
+    ADPProduct* current=self.house.products[indexPath.row ];
     productCell.labeltitle.text=current.title;
     productCell.labelSubtitle.text=current.subtitle;
     //productCell.labelPrice.text=@"$";
@@ -97,7 +101,7 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    ADPProduct* product= [self.house getProducts][indexPath.row ];
+    ADPProduct* product= self.house.products[indexPath.row ];
     ProductDetailViewController * detailView= [[ProductDetailViewController alloc] initWithNibName:nil bundle:nil andProduct:product];
     [self.navigationController pushViewController:detailView animated:YES];
     [self.tableViewStoreHouse deselectRowAtIndexPath:indexPath animated:YES];
@@ -109,7 +113,16 @@
     NSDictionary * usrInfo=[notification userInfo];
     [self.house addProduct: [usrInfo objectForKey:@"producto" ]];
     [self.tableViewStoreHouse reloadData];
-
+    
+    
+    //Guardado en archivo
+    NSMutableArray * products=self.house.products;
+    NSArray * paths = NSSearchPathForDirectoriesInDomains (NSDesktopDirectory, NSUserDomainMask, YES);
+    NSString * desktopPath = [paths objectAtIndex:0];
+    //Hardcoded desktop path
+    desktopPath=@"/Users/mminestrelli/Desktop";
+    NSString *file = [desktopPath stringByAppendingPathComponent:@"objetoDePrueba.txt"];
+    [NSKeyedArchiver archiveRootObject:products toFile:file];
 }
 
 @end

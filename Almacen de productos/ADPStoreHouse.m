@@ -14,7 +14,7 @@
     NSInteger _currentId;
 }
 
-@property (nonatomic,strong) NSMutableArray * products;
+
 @property (nonatomic) NSInteger currentId;
 @end
 
@@ -53,9 +53,6 @@
         }
     }
 }
--(NSMutableArray*) getProducts{
-    return self.products;
-};
 
 -(NSInteger) amountOfProductsStocked{
     return [self.products count];
