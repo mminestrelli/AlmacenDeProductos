@@ -12,7 +12,7 @@
 
 @property (nonatomic,copy) NSString * title;
 @property (nonatomic,copy) NSString * subtitle;
-@property (nonatomic,copy) NSString * description;
+@property (nonatomic,copy) NSString * productDescription;
 @property (nonatomic,strong) UIImage * image;
 @property  (nonatomic) CGFloat price;
 @property  (nonatomic) NSInteger code;

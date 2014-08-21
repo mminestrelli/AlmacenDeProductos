@@ -9,10 +9,9 @@
 #import <XCTest/XCTest.h>
 #import "ADPProduct.h"
 #import "ADPStoreHouse.h"
+#import "ADPDaoManager.h"
 
-@interface Almacen_de_productosTests : XCTestCase{
-    ADPStoreHouse * _storeHouse;
-}
+@interface Almacen_de_productosTests : XCTestCase
 @property (nonatomic,strong) ADPStoreHouse * storeHouse;
 @end
 
@@ -31,11 +30,6 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
-
 
 -(void) testAddingAndDeleting
 {
@@ -48,6 +42,23 @@
     [self.storeHouse deleteProduct:prod1];
     XCTAssertEqual(1, [self.storeHouse amountOfProductsStocked], "After deleting the amount of products must be 1");
     //NSMutableArray * aux= [self.storeHouse getProducts];
+}
+
+-(void)testSingletonUniqueInstance{
+    id dao1=[ADPDaoManager sharedManager];
+    id dao2=[ADPDaoManager sharedManager];
+    XCTAssertEqualObjects(dao1, dao2, "An instance of a singleton created more than once should be the same");
+    
+    id storeHouse1=[ADPStoreHouse sharedStoreHouse];
+    id storeHouse2=[ADPStoreHouse sharedStoreHouse];
+    XCTAssertEqualObjects(storeHouse1, storeHouse2, "An instance of a singleton created more than once should be the same");
+    
+    ADPProduct * prod1= [[ADPProduct alloc]initWithTitle:@"Ipod Nano" code:24 subtitle:@"Subtitulo"description:@"Ipod Nano 32 GB"price:2500 andImage:[[UIImage alloc]init]];
+    [dao1 getProducts];
+    [dao1 addProduct:prod1];
+    NSMutableArray * prods=[dao1 getProducts];
+    XCTAssertTrue([prods containsObject:prod1],"El producto debería estar en memoria despues de agregarlo");
+    [dao1 deleteProduct:prod1];
 }
 
 @end

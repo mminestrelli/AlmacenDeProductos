@@ -33,13 +33,8 @@
     self.tableViewStoreHouse.dataSource = self;
     // Do any additional setup after loading the view from its nib.
     [self setTitle:@"Mis Publicaciones"];
-
-    //Mock add - Deprecated
-    [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"MacBook Pro retina 17 inch" code:54 subtitle:@"sub" description:@"Retina display: 13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 resolution at 227 pixels per inch with support for millions of colors" price:21399 andImage:[UIImage imageNamed: @"gallery2_2256.jpg"]]];
-    [self.house addProduct:[[ADPProduct alloc] initWithTitle:@"producto2" code:55 subtitle:@"sub" description:@"desc" price:2343 andImage:[UIImage imageNamed: @"gallery1_2256.jpg"]]];
-    
-    //Load from file
-    self.house.products = [NSKeyedUnarchiver unarchiveObjectWithFile:[self getCacheFilePath]];
+    // Manager should load from disk in case it was necessary and taking care of the first case
+    [self.house loadFromDisk];
 }
 
 
@@ -111,17 +106,10 @@
     NSDictionary * usrInfo=[notification userInfo];
     [self.house addProduct: [usrInfo objectForKey:@"producto" ]];
     [self.tableViewStoreHouse reloadData];
-    
-    //Save to file
-    [NSKeyedArchiver archiveRootObject:self.house.products toFile:[self getCacheFilePath]];
+    //guardado en disco, deberia ser un mensaje al manager y el deberia encargarse de guardar en memoria y sincornizar
+    [self.house saveToDiskAddingProduct:[usrInfo objectForKey:@"producto" ]];
 }
 
--(NSString*) getCacheFilePath{
-    /*Library folder, where you store configuration files and writable databases that you also want to keep around, but you don't want the user to be able to mess with through iTunes*/
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    NSString *libraryDirectory = [paths objectAtIndex:0];
-    NSString *file = [libraryDirectory stringByAppendingPathComponent:@"cache.txt"];
-    return file;
-}
+
 
 @end

@@ -22,6 +22,9 @@
 		4E7E185919951E8800674DFE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E185719951E8800674DFE /* SearchViewController.xib */; };
 		4E7E185C19951FFD00674DFE /* searchTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E185A19951FFD00674DFE /* searchTabBar.png */; };
 		4E7E185D19951FFD00674DFE /* searchTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E185B19951FFD00674DFE /* searchTabBar@2x.png */; };
+		4E7EF47619A62BA900ABAECD /* ADPDaoFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7EF47519A62BA900ABAECD /* ADPDaoFileSystem.m */; };
+		4E7EF47919A62BB700ABAECD /* ADPDaoMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7EF47819A62BB700ABAECD /* ADPDaoMemory.m */; };
+		4E7EF47C19A62DE900ABAECD /* ADPDaoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7EF47B19A62DE900ABAECD /* ADPDaoManager.m */; };
 		4E82435319896EA00010AD53 /* DescriptionAndTextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */; };
 		4E8252ED197FFD260002F68E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8252EB197FFD260002F68E /* MainViewController.m */; };
 		4E8252EE197FFD260002F68E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8252EC197FFD260002F68E /* MainViewController.xib */; };
@@ -106,6 +109,13 @@
 		4E7E185719951E8800674DFE /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		4E7E185A19951FFD00674DFE /* searchTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchTabBar.png; sourceTree = "<group>"; };
 		4E7E185B19951FFD00674DFE /* searchTabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchTabBar@2x.png"; sourceTree = "<group>"; };
+		4E7EF46D19A62A8300ABAECD /* ADPDaoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADPDaoDelegate.h; sourceTree = "<group>"; };
+		4E7EF47419A62BA900ABAECD /* ADPDaoFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPDaoFileSystem.h; sourceTree = "<group>"; };
+		4E7EF47519A62BA900ABAECD /* ADPDaoFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPDaoFileSystem.m; sourceTree = "<group>"; };
+		4E7EF47719A62BB700ABAECD /* ADPDaoMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPDaoMemory.h; sourceTree = "<group>"; };
+		4E7EF47819A62BB700ABAECD /* ADPDaoMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPDaoMemory.m; sourceTree = "<group>"; };
+		4E7EF47A19A62DE900ABAECD /* ADPDaoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPDaoManager.h; sourceTree = "<group>"; };
+		4E7EF47B19A62DE900ABAECD /* ADPDaoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPDaoManager.m; sourceTree = "<group>"; };
 		4E82435219896EA00010AD53 /* DescriptionAndTextViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionAndTextViewViewController.xib; sourceTree = "<group>"; };
 		4E8252EA197FFD260002F68E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4E8252EB197FFD260002F68E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -398,6 +408,13 @@
 				4EC20888198BCACF009EF9A4 /* ADPVehicle.m */,
 				4E7E184F1993C8DC00674DFE /* ADPService.h */,
 				4E7E18501993C8DC00674DFE /* ADPService.m */,
+				4E7EF46D19A62A8300ABAECD /* ADPDaoDelegate.h */,
+				4E7EF47419A62BA900ABAECD /* ADPDaoFileSystem.h */,
+				4E7EF47519A62BA900ABAECD /* ADPDaoFileSystem.m */,
+				4E7EF47719A62BB700ABAECD /* ADPDaoMemory.h */,
+				4E7EF47819A62BB700ABAECD /* ADPDaoMemory.m */,
+				4E7EF47A19A62DE900ABAECD /* ADPDaoManager.h */,
+				4E7EF47B19A62DE900ABAECD /* ADPDaoManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -600,6 +617,8 @@
 				4E7E18511993C8DC00674DFE /* ADPService.m in Sources */,
 				4EC8FD6B199BE07600F3CA8A /* HistoryTableViewCell.m in Sources */,
 				4EBCD1F6197E9ABC00B5F0A8 /* AppDelegate.m in Sources */,
+				4E7EF47C19A62DE900ABAECD /* ADPDaoManager.m in Sources */,
+				4E7EF47919A62BB700ABAECD /* ADPDaoMemory.m in Sources */,
 				4E8252FD197FFD620002F68E /* SubtitleViewController.m in Sources */,
 				4E8E1A3D1992A16700A4D226 /* CongratsViewController.m in Sources */,
 				4E82530F197FFE1A0002F68E /* TitleViewController.m in Sources */,
@@ -613,6 +632,7 @@
 				4EBCD22C197EB92100B5F0A8 /* ADPStoreHouse.m in Sources */,
 				4EDCC8291998F02600CC7F02 /* ItemBuilder.m in Sources */,
 				4E90D74E198813CE00D4A482 /* DescriptionAndTextFieldViewController.m in Sources */,
+				4E7EF47619A62BA900ABAECD /* ADPDaoFileSystem.m in Sources */,
 				4EC8FEF9199D071B00F3CA8A /* ItemDetailViewController.m in Sources */,
 				4E82532019821DC20002F68E /* ProductListViewController.m in Sources */,
 			);

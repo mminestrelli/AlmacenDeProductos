@@ -43,12 +43,12 @@
 }
 
 -(void) setFieldContentIfSaved{
-    if(self.prodToFill.description!=nil){
-        self.textView.text=self.prodToFill.description;
+    if(self.prodToFill.productDescription!=nil){
+        self.textView.text=self.prodToFill.productDescription;
     }
 }
 -(void)saveField{
-    self.prodToFill.description=self.textView.text;
+    self.prodToFill.productDescription=self.textView.text;
 }
 
 -(UIViewController*) getNextViewController:(ADPProduct*)productToFill{

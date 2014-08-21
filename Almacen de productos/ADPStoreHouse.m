@@ -9,16 +9,31 @@
 #import "ADPStoreHouse.h"
 #import "ADPProduct.h"
 
-@interface ADPStoreHouse(){
-    NSMutableArray* _products;
-    NSInteger _currentId;
-}
+@interface ADPStoreHouse()
 
 
 @property (nonatomic) NSInteger currentId;
 @end
 
 @implementation ADPStoreHouse
+
++ (id)sharedStoreHouse {
+    static ADPStoreHouse *sharedStoreHouse = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedStoreHouse = [[self alloc] init];
+    });
+    return sharedStoreHouse;
+}
+
++ (id)sharedStoreHouseWithProduct:(ADPProduct*) prod {
+    static ADPStoreHouse *sharedStoreHouse = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedStoreHouse = [[self alloc] initWithProduct:prod];
+    });
+    return sharedStoreHouse;
+}
 
 -(id)init{
     if([super init]){
@@ -56,5 +71,28 @@
 
 -(NSInteger) amountOfProductsStocked{
     return [self.products count];
+}
+#pragma mark- Saving to disk
+
+-(void)saveToDiskAddingProduct:(ADPProduct*) product{
+    //Save to file. should be asyncronous and notify with a delegate completition
+    //[self addProduct:product];
+    [NSKeyedArchiver archiveRootObject:self.products toFile:[self getCacheFilePath]];
+}
+
+-(void)loadFromDisk{
+    //Load products from cache file
+    NSMutableArray * prodsFromFile=[NSKeyedUnarchiver unarchiveObjectWithFile:[self getCacheFilePath]];
+    if(prodsFromFile!=nil){
+        self.products = prodsFromFile;
+    }
+}
+
+-(NSString*) getCacheFilePath{
+    /*Library folder, where you store configuration files and writable databases that you also want to keep around, but you don't want the user to be able to mess with through iTunes*/
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *libraryDirectory = [paths objectAtIndex:0];
+    NSString *file = [libraryDirectory stringByAppendingPathComponent:@"cache.txt"];
+    return file;
 }
 @end

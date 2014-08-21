@@ -11,7 +11,14 @@
 
 @interface ADPStoreHouse : NSObject
 @property (nonatomic,strong) NSMutableArray * products;
+
 -(void) deleteProduct:(ADPProduct*) prod;
 -(void) addProduct:(ADPProduct*) prod;
 -(NSInteger) amountOfProductsStocked;
+-(void)loadFromDisk;
+-(void)saveToDiskAddingProduct:(ADPProduct*) product;
+
++ (id)sharedStoreHouseWithProduct:(ADPProduct*) prod;
++ (id)sharedStoreHouse;
+
 @end

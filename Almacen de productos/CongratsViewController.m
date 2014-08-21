@@ -48,7 +48,7 @@
     self.labelPrice.text=[NSString stringWithFormat:@"%f",self.product.price];
     self.imageViewProduct.image=self.product.image;
     self.labelCongrats.text=@"Felicitaciones! concretaste tu compra";
-    self.labelDescription.text=self.product.description;
+    self.labelDescription.text=self.product.productDescription;
     
     self.navigationItem.hidesBackButton=YES;
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]

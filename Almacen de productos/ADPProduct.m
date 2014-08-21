@@ -23,7 +23,7 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
         self.title=aTitle;
         self.code=aCode;
         self.subtitle=aSubtitle;
-        self.description=aDescription;
+        self.productDescription=aDescription;
         self.price=aPrice;
         self.image=anImage;
         self.numberFormatter = [[NSNumberFormatter alloc] init];
@@ -48,7 +48,7 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
     [encoder encodeObject:self.title forKey:@"title"];
     [encoder encodeObject:self.subtitle forKey:@"subtitle"];
     [encoder encodeInt:self.code forKey:@"code"];
-    [encoder encodeObject:self.description forKey:@"description"];
+    [encoder encodeObject:self.productDescription forKey:@"productDescription"];
     [encoder encodeFloat:self.price forKey:@"price" ];
     [encoder encodeObject:self.image forKey:@"image"];
 }
@@ -57,7 +57,7 @@ price:(CGFloat) aPrice andImage:(UIImage*) anImage{
     if (self = [super init]) {
         self.title = [decoder decodeObjectForKey:@"title"];
         self.subtitle = [decoder decodeObjectForKey:@"subtitle"];
-        self.description = [decoder decodeObjectForKey:@"description"];
+        self.productDescription = [decoder decodeObjectForKey:@"productDescription"];
         self.image = [decoder decodeObjectForKey:@"image"];
         self.code= [decoder decodeIntForKey:@"code"];
         self.price= [decoder decodeFloatForKey:@"price"];

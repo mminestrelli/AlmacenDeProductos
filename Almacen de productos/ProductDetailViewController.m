@@ -11,7 +11,7 @@
 @interface ProductDetailViewController ()
 @property (nonatomic,copy) NSString * title;
 @property (nonatomic,copy) NSString * subtitle;
-@property (nonatomic,copy) NSString * description;
+@property (nonatomic,copy) NSString * productDescription;
 @property (nonatomic,strong) UIImage * image;
 @property  (nonatomic,copy) NSString * price;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewContainer;
@@ -25,7 +25,7 @@
     if (self) {
         self.title=product.title;
         self.subtitle=product.subtitle;
-        self.description=product.description;
+        self.productDescription=product.productDescription;
         self.image=product.image;
         //self.price=@"$";
         //self.price= [self.price stringByAppendingString:[product getFormattedPriceString]];
@@ -38,9 +38,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
     self.labelPrice.text=self.price;
     self.labelSubtitle.text=self.subtitle;
-    self.labelDescription.text=self.description;
+    self.labelDescription.text=self.productDescription;
     self.labelTitle.text=self.title;
     self.imageViewProduct.image=self.image;
     self.scrollViewContainer.scrollEnabled=YES;
